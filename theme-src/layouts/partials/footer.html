@@ -7,8 +7,8 @@
     <div class="row">
       <div class="col-xs-3">
         <ul class="list-inline">
-          <li><a href="/misc/imprint">Imprint</a></li>
-          <li><a href="/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+          <li><a href="{{ $.Site.BaseURL }}misc/imprint">Imprint</a></li>
+          <li><a href="{{ $.Site.BaseURL }}misc/privacy">Privacy Policy &amp; Cookies</a></li>
         </ul>
       </div>
 
@@ -17,34 +17,28 @@
           <li>
             <a href="http://github.com/camunda">
               <span class="cam-blog-github"></span>
-              <!-- <span class="visible-lg">GitHub</span> -->
             </a>
           </li>
           <li>
             <a href="http://stackoverflow.com/questions/tagged/camunda">
               <span class="cam-blog-stackoverflow"></span>
-              <!-- <span class="visible-lg">stackoverflow</span> -->
             </a>
           </li>
           <li>
             <a href="http://twitter.com/camundabpm">
               <span class="cam-blog-twitter"></span>
-              <!-- <span class="visible-lg">Twitter</span> -->
             </a>
           </li>
           <li>
             <a href="https://vimeo.com/user22820658">
               <span class="cam-blog-vimeo"></span>
-              <!-- <span class="visible-lg">Vimeo</span> -->
             </a>
           </li>
-
-          {{ if .RSSlink }}<li>
-            <a href="{{ .RSSlink }}">
+          <li>
+            <a href="{{ .Site.BaseURL }}index.xml">
               <span class="cam-blog-rss"></span>
-              <!-- <span class="visible-lg">RSS feed</span> -->
             </a>
-          </li>{{ end }}
+          </li>
         </ul>
       </nav>
 
@@ -55,6 +49,6 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="{{ .Site.BaseURL }}js/scripts.js"></script>
+<script type="text/javascript" src="{{ $.Site.BaseURL }}js/scripts.js"></script>
 </body>
 </html>
