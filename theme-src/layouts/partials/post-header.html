@@ -4,8 +4,6 @@
   <div class="meta col-xs-12">
     Written by <span class="author">{{ .Params.author }}</span>
     on <time pubdate="{{ .PublishDate }}">{{ .Date.Format "Wed, 2 Jan 2015" }}</time>,
-    under {{ range .Params.categories }}<a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a>{{ end }} category<!--
-    and tagged: <ul class="tags-list">{{ range .Params.tags }}<li><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>{{ end }}</ul>
-    -->.
+    under {{ range .Params.categories }}<a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a>{{ end }} category.
   </div>
 </header>
