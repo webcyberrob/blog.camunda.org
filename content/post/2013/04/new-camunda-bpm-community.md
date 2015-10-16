@@ -5,7 +5,6 @@ author: "Jakob Freund"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/04/new-camunda-bpm-community.html"

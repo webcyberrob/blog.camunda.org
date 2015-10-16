@@ -5,9 +5,6 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Release"
-tags: 
-  - "community-extensions"
-  - "release notes"
 
 aliases:
   - "/2014/03/camunda-bpm-assert-10-released-as.html"

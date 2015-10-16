@@ -5,8 +5,6 @@ author: "Roman Smirnov"
 
 categories:
   - "Release"
-tags: 
-  - "release notes"
 
 aliases:
   - "/2013/07/camunda-bpm-70-alpha7-released.html"

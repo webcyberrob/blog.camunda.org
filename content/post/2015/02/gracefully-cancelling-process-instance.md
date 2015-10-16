@@ -5,9 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
-  - "compensation"
 
 aliases:
   - "/2015/02/gracefully-cancelling-process-instance.html"

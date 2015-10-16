@@ -5,7 +5,6 @@ author: "Andreas Drobisch"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/03/the-html5-parts-in-camunda-bpm.html"

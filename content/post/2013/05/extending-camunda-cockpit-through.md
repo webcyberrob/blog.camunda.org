@@ -5,10 +5,6 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Development"
-tags: 
-  - "cockpit"
-  - "how-to"
-  - "plugins"
 
 aliases:
   - "/2013/05/extending-camunda-cockpit-through.html"

@@ -5,7 +5,6 @@ author: "Nastasja Johnston"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/07/prague-history-beer-and-camunda-bpm.html"

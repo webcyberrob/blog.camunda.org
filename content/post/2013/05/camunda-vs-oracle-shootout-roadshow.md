@@ -5,7 +5,6 @@ author: "Jakob Freund"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/05/camunda-vs-oracle-shootout-roadshow.html"

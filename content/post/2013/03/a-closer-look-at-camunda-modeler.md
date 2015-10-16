@@ -5,8 +5,6 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Development"
-tags: 
-  - "camunda-modeler"
 
 aliases:
   - "/2013/03/a-closer-look-at-camunda-modeler.html"

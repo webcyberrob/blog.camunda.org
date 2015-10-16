@@ -5,7 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Release"
-tags: 
 
 aliases:
   - "/2015/07/camunda-bpm-740-alpha-1-released.html"

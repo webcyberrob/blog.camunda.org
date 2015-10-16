@@ -5,10 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "bpmn.io"
-  - "JavaScript"
-  - "modeling"
 
 aliases:
   - "/2014/07/bpmnio-introduces-simple-modeling.html"

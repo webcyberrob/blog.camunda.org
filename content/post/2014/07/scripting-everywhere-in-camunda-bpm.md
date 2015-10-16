@@ -5,10 +5,6 @@ author: "Sebastian Menski"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
-  - "groovy"
-  - "scripting"
 
 aliases:
   - "/2014/07/scripting-everywhere-in-camunda-bpm.html"

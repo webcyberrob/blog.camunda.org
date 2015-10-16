@@ -5,14 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "ACM"
-  - "adaptive case management"
-  - "BPMN"
-  - "case management"
-  - "CMMN"
-  - "dynamic case management"
-  - "Open Source"
 
 aliases:
   - "/2014/07/open-source-embedded-case-management.html"

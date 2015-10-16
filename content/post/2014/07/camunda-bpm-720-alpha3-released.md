@@ -5,8 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Release"
-tags: 
-  - "release notes"
 
 aliases:
   - "/2014/07/camunda-bpm-720-alpha3-released.html"

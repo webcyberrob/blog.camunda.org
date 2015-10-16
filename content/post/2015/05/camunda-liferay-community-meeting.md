@@ -5,7 +5,6 @@ author: "Bernd Rücker"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/05/camunda-liferay-community-meeting.html"

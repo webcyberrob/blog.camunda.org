@@ -5,8 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Release"
-tags: 
-  - "release notes"
 
 aliases:
   - "/2015/01/camunda-BPM-7.3.0-alpha1-released.html"

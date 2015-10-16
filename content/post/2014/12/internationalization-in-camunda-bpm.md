@@ -5,9 +5,6 @@ author: "Robert Gimbel"
 
 categories:
   - "Development"
-tags: 
-  - "tasklist"
-  - "web-app"
 
 aliases:
   - "/2014/12/internationalization-in-camunda-bpm.html"

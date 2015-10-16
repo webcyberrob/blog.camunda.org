@@ -5,9 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "php"
-  - "polyglot"
 
 aliases:
   - "/2013/05/php-sdk-for-camunda-bpm-new-incubation.html"

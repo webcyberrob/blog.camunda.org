@@ -5,12 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "ACM"
-  - "adaptive case management"
-  - "case management"
-  - "CMMN"
-  - "dynamic case management"
 
 aliases:
   - "/2014/07/embedded-case-management-with-cmmn-in.html"

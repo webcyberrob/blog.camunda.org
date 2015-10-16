@@ -5,7 +5,6 @@ author: "Bernd Rücker"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2014/02/how-to-use-camunda-bpmnjs-to-visulize.html"

@@ -5,8 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "release notes"
 
 aliases:
   - "/2013/03/camunda-forks-activiti-and-launches.html"

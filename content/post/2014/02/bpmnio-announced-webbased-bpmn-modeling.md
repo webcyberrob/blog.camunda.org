@@ -5,7 +5,6 @@ author: "Robert Gimbel"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2014/02/bpmnio-announced-webbased-bpmn-modeling.html"

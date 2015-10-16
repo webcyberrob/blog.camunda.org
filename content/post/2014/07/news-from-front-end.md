@@ -5,18 +5,6 @@ author: "Valentin Vago"
 
 categories:
   - "Development"
-tags: 
-  - "cockpit"
-  - "embedded forms"
-  - "JavaScript"
-  - "node.js"
-  - "SDK"
-  - "task forms"
-  - "tasklist"
-  - "toolkit"
-  - "UI"
-  - "web-app"
-  - "webapp"
 
 aliases:
   - "/2014/07/news-from-front-end.html"

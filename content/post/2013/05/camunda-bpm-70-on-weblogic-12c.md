@@ -5,7 +5,6 @@ author: "Bernd Rücker"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/05/camunda-bpm-70-on-weblogic-12c.html"

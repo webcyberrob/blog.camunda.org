@@ -5,7 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2014/03/custom-location-for-bpm-platformxml.html"

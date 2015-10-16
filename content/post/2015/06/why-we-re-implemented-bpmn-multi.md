@@ -5,7 +5,6 @@ author: "Thorben Lindhauer"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/06/why-we-re-implemented-bpmn-multi.html"

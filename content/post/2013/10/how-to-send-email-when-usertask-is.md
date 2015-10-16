@@ -5,7 +5,6 @@ author: "Jakob Freund"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/10/how-to-send-email-when-usertask-is.html"

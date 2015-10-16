@@ -5,7 +5,6 @@ author: "Bernd Rücker"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/09/camunda-bpm-apache-camel-integrating.html"

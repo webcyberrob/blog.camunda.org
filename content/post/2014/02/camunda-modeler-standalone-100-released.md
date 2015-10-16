@@ -5,10 +5,6 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Release"
-tags: 
-  - "BPMN"
-  - "camunda-modeler-standalone"
-  - "release notes"
 
 aliases:
   - "/2014/02/camunda-modeler-standalone-100-released.html"

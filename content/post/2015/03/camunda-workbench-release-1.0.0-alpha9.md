@@ -5,7 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Release"
-tags: 
 
 aliases:
   - "/2015/03/camunda-workbench-release-1.0.0-alpha9.html"

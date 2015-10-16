@@ -5,7 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/06/would-you-use-apache-cassandra-for.html"

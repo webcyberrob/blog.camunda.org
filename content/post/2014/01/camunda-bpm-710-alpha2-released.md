@@ -5,8 +5,6 @@ author: "Roman Smirnov"
 
 categories:
   - "Release"
-tags: 
-  - "release notes"
 
 aliases:
   - "/2014/01/camunda-bpm-710-alpha2-released.html"

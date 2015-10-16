@@ -5,7 +5,6 @@ author: "Jakob Freund"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/03/camunda-bpmnext-2013.html"

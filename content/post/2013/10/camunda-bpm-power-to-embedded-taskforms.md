@@ -5,9 +5,6 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Development"
-tags: 
-  - "task forms"
-  - "tasklist"
 
 aliases:
   - "/2013/10/camunda-bpm-power-to-embedded-taskforms.html"

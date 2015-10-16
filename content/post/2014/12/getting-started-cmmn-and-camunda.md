@@ -5,8 +5,6 @@ author: "Thorben Lindhauer"
 
 categories:
   - "Development"
-tags: 
-  - "CMMN"
 
 aliases:
   - "/2014/12/getting-started-cmmn-and-camunda.html"

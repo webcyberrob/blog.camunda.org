@@ -5,10 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
-  - "community-extensions"
-  - "testing"
 
 aliases:
   - "/2014/06/testing-bpmn-processes-with-fluent-api.html"

@@ -5,9 +5,6 @@ author: "Bernd Rücker"
 
 categories:
   - "Development"
-tags: 
-  - "cockpit"
-  - "plugins"
 
 aliases:
   - "/2014/08/cockpit-plugin-store.html"

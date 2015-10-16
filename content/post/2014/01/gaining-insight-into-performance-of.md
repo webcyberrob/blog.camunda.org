@@ -5,7 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2014/01/gaining-insight-into-performance-of.html"

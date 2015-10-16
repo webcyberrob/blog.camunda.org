@@ -5,12 +5,6 @@ author: "Michael Schöttes"
 
 categories:
   - "Release"
-tags: 
-  - "BPMN"
-  - "camunda-modeler"
-  - "camunda-modeler-standalone"
-  - "Eclipse"
-  - "release notes"
 
 aliases:
   - "/2014/04/camunda-modeler-250-released-extension.html"

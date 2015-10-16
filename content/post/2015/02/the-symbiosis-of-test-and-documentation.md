@@ -5,11 +5,6 @@ author: "Sebastian Stamm"
 
 categories:
   - "Development"
-tags: 
-  - "e2e test"
-  - "JavaScript"
-  - "testing"
-  - "UI test"
 
 aliases:
   - "/2015/02/the-symbiosis-of-test-and-documentation.html"

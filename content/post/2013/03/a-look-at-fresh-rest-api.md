@@ -5,7 +5,6 @@ author: "Thorben Lindhauer"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/03/a-look-at-fresh-rest-api.html"

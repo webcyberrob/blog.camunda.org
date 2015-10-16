@@ -5,9 +5,6 @@ author: "Sebastian Stamm"
 
 categories:
   - "Release"
-tags: 
-  - "BPMN"
-  - "release notes"
 
 aliases:
   - "/2014/12/cycle-31-released.html"

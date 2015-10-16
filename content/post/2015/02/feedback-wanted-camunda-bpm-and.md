@@ -5,7 +5,6 @@ author: "Robert Gimbel"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/02/feedback-wanted-camunda-bpm-and.html"

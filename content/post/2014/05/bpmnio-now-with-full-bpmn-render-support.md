@@ -5,10 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
-  - "bpmn.io"
-  - "JavaScript"
 
 aliases:
   - "/2014/05/bpmnio-now-with-full-bpmn-render-support.html"

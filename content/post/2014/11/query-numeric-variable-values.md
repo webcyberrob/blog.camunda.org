@@ -5,8 +5,6 @@ author: "Thorben Lindhauer"
 
 categories:
   - "Development"
-tags: 
-  - "engine"
 
 aliases:
   - "/2014/11/query-numeric-variable-values.html"

@@ -5,8 +5,6 @@ author: "Thorben Lindhauer"
 
 categories:
   - "Release"
-tags: 
-  - "release notes"
 
 aliases:
   - "/2013/05/camunda-bpm-700-alpha3-released.html"

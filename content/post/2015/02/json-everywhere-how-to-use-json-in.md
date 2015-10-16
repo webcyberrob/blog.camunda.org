@@ -5,10 +5,6 @@ author: "Roman Smirnov"
 
 categories:
   - "Development"
-tags: 
-  - "embedded forms"
-  - "JSON"
-  - "spin"
 
 aliases:
   - "/2015/02/json-everywhere-how-to-use-json-in.html"

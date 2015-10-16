@@ -5,9 +5,6 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Release"
-tags: 
-  - "camunda-modeler"
-  - "release notes"
 
 aliases:
   - "/2013/04/camunda-modeler-2012-released.html"

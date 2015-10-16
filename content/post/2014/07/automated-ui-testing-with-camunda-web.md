@@ -5,12 +5,6 @@ author: "Michael Schöttes"
 
 categories:
   - "Development"
-tags: 
-  - "e2e test"
-  - "grunt"
-  - "Protractor"
-  - "testing"
-  - "UI test"
 
 aliases:
   - "/2014/07/automated-ui-testing-with-camunda-web.html"

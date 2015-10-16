@@ -5,7 +5,6 @@ author: "Bernd Rücker"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/05/long-running-processes-and-service.html"

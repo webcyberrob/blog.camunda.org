@@ -5,8 +5,6 @@ author: "Sebastian Menski"
 
 categories:
   - "Development"
-tags: 
-  - "bpmn-model-api"
 
 aliases:
   - "/2014/02/the-new-camunda-bpmn-model-api.html"

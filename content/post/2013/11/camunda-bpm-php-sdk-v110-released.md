@@ -5,9 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Release"
-tags: 
-  - "php"
-  - "polyglot"
 
 aliases:
   - "/2013/11/camunda-bpm-php-sdk-v110-released.html"

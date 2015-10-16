@@ -5,7 +5,6 @@ author: "Thorben Lindhauer"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/09/scaling-camunda-bpm-in-cluster-job.html"

@@ -5,7 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/04/camunda-bpm-incubation-space-launched.html"

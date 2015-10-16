@@ -5,10 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "data mapping"
-  - "data transformations"
-  - "spin"
 
 aliases:
   - "/2015/02/data-mapping-and-transformation-with.html"

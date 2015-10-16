@@ -5,9 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "java ee"
-  - "jsf"
 
 aliases:
   - "/2014/04/get-started-with-camunda-bpm-and-java-ee.html"

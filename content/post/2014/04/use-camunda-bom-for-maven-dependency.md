@@ -5,8 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "maven"
 
 aliases:
   - "/2014/04/use-camunda-bom-for-maven-dependency.html"

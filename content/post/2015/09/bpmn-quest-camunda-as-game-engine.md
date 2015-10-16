@@ -5,7 +5,6 @@ author: "Niall Deehan"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/09/bpmn-quest-camunda-as-game-engine.html"

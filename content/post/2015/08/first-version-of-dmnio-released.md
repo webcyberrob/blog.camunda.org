@@ -5,7 +5,6 @@ author: "Sebastian Stamm"
 
 categories:
   - "Release"
-tags: 
 
 aliases:
   - "/2015/08/first-version-of-dmnio-released.html"

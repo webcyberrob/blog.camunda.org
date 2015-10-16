@@ -5,7 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2014/03/camunda-grails-plugin-by-martin-schimak.html"

@@ -5,8 +5,6 @@ author: "Falko Menge"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
 
 aliases:
   - "/2013/08/camunda-bpm-participates-in-bpmn.html"

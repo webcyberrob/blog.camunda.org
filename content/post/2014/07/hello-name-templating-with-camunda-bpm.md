@@ -5,10 +5,6 @@ author: "Sebastian Menski"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
-  - "scripting"
-  - "templating"
 
 aliases:
   - "/2014/07/hello-name-templating-with-camunda-bpm.html"

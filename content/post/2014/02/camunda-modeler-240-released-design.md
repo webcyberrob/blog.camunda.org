@@ -5,10 +5,6 @@ author: "Michael Schöttes"
 
 categories:
   - "Release"
-tags: 
-  - "BPMN"
-  - "camunda-modeler"
-  - "release notes"
 
 aliases:
   - "/2014/02/camunda-modeler-240-released-design.html"

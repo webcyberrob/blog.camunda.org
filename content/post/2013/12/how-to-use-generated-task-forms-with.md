@@ -5,10 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "camunda-modeler"
-  - "task forms"
-  - "tasklist"
 
 aliases:
   - "/2013/12/how-to-use-generated-task-forms-with.html"

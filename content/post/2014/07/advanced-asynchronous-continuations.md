@@ -5,10 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "async"
-  - "BPMN"
-  - "engine"
 
 aliases:
   - "/2014/07/advanced-asynchronous-continuations.html"

@@ -5,7 +5,6 @@ author: "Nastasja Johnston"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/04/the-start-of-camundaorg-community-events.html"

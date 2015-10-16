@@ -5,12 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "big data"
-  - "cassandra"
-  - "community"
-  - "horizontal scalability"
-  - "zalando"
 
 aliases:
   - "/2015/03/camunda-meets-cassandra-zalando.html"

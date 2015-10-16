@@ -5,9 +5,6 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Release"
-tags: 
-  - "cockpit"
-  - "release notes"
 
 aliases:
   - "/2013/08/camunda-bpm-700-alpha9-released.html"

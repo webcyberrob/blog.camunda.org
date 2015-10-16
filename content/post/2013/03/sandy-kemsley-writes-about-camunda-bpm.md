@@ -5,7 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/03/sandy-kemsley-writes-about-camunda-bpm.html"

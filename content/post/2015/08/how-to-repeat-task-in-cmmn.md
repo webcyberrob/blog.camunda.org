@@ -5,7 +5,6 @@ author: "Roman Smirnov"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/08/how-to-repeat-task-in-cmmn.html"

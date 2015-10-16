@@ -5,9 +5,6 @@ author: "Bernd Rücker"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
-  - "how-to"
 
 aliases:
   - "/2013/09/how-to-use-bpmn-20-scripttask-with.html"

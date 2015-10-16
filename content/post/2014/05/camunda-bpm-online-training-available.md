@@ -5,7 +5,6 @@ author: "Jakob Freund"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2014/05/camunda-bpm-online-training-available.html"

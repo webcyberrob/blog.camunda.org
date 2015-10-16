@@ -5,9 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "community"
-  - "Open Source"
 
 aliases:
   - "/2014/09/camunda-bpm-community-day.html"

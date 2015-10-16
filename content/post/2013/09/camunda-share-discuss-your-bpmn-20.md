@@ -5,8 +5,6 @@ author: "Bernd Rücker"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
 
 aliases:
   - "/2013/09/camunda-share-discuss-your-bpmn-20.html"

@@ -5,10 +5,6 @@ author: "Ingo Richtsmeier"
 
 categories:
   - "Development"
-tags: 
-  - "cockpit"
-  - "plugins"
-  - "store"
 
 aliases:
   - "/2014/12/cockpit-and-deployments.html"

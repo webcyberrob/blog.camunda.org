@@ -5,9 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
-  - "service task"
 
 aliases:
   - "/2013/11/bpmn-service-synchronous-asynchronous.html"

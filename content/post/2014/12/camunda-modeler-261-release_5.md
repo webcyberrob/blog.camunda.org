@@ -5,9 +5,6 @@ author: "Robert Gimbel"
 
 categories:
   - "Release"
-tags: 
-  - "Eclipse"
-  - "release notes"
 
 aliases:
   - "/2014/12/camunda-modeler-261-release_5.html"

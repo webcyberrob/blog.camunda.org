@@ -5,10 +5,6 @@ author: "Robert Gimbel"
 
 categories:
   - "Development"
-tags: 
-  - "async"
-  - "cockpit"
-  - "engine"
 
 aliases:
   - "/2014/11/job-suspension-powerful-operations-with.html"

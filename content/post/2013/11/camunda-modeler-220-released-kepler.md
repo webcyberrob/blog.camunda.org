@@ -5,9 +5,6 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Release"
-tags: 
-  - "camunda-modeler"
-  - "release notes"
 
 aliases:
   - "/2013/11/camunda-modeler-220-released-kepler.html"

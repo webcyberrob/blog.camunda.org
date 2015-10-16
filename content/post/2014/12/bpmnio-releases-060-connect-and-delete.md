@@ -5,8 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Release"
-tags: 
-  - "bpmn.io"
 
 aliases:
   - "/2014/12/bpmnio-releases-060-connect-and-delete.html"

@@ -5,9 +5,6 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
-  - "camunda-modeler"
 
 aliases:
   - "/2013/12/camunda-modeler-standalone-introduction.html"

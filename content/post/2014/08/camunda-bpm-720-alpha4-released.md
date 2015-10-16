@@ -5,8 +5,6 @@ author: "Sebastian Menski"
 
 categories:
   - "Release"
-tags: 
-  - "release notes"
 
 aliases:
   - "/2014/08/camunda-bpm-720-alpha4-released.html"

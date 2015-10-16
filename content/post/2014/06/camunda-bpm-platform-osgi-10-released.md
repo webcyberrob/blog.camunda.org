@@ -5,11 +5,6 @@ author: "Roman Smirnov"
 
 categories:
   - "Release"
-tags: 
-  - "camunda-bpm-platform-osgi"
-  - "community-extensions"
-  - "osgi"
-  - "release notes"
 
 aliases:
   - "/2014/06/camunda-bpm-platform-osgi-10-released.html"

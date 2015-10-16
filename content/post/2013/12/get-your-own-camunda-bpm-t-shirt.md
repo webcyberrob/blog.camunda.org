@@ -5,7 +5,6 @@ author: "Bernd Rücker"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2013/12/get-your-own-camunda-bpm-t-shirt.html"

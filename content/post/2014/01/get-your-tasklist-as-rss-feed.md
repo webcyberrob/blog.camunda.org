@@ -5,9 +5,6 @@ author: "Jakob Freund"
 
 categories:
   - "Development"
-tags: 
-  - "how-to"
-  - "tasklist"
 
 aliases:
   - "/2014/01/get-your-tasklist-as-rss-feed.html"

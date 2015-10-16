@@ -5,10 +5,6 @@ author: "Niall Deehan"
 
 categories:
   - "Development"
-tags: 
-  - "amazon web services"
-  - "camunda bpm platform"
-  - "docker"
 
 aliases:
   - "/2015/06/deploy-camunda-bpm-docker-image-with.html"

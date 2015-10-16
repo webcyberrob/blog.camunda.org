@@ -5,7 +5,6 @@ author: "Ingo Richtsmeier"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/07/how-to-clean-uppurge-camunda-history.html"

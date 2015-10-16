@@ -5,9 +5,6 @@ author: "Ingo Richtsmeier"
 
 categories:
   - "Development"
-tags: 
-  - "jsf"
-  - "tasklist"
 
 aliases:
   - "/2015/06/build-your-own-camunda-task-explorer.html"

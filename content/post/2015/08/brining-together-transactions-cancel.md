@@ -5,7 +5,6 @@ author: "Niall Deehan"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/08/brining-together-transactions-cancel.html"

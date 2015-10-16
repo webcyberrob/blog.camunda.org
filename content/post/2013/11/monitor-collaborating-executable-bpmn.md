@@ -5,9 +5,6 @@ author: "Bernd Rücker"
 
 categories:
   - "Development"
-tags: 
-  - "BPMN"
-  - "cockpit"
 
 aliases:
   - "/2013/11/monitor-collaborating-executable-bpmn.html"

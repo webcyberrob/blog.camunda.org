@@ -5,8 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "tasklist"
 
 aliases:
   - "/2014/09/introducing-task-filters.html"

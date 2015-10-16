@@ -5,12 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Development"
-tags: 
-  - "classless"
-  - "feedback"
-  - "JSON"
-  - "spin"
-  - "XML"
 
 aliases:
   - "/2014/05/feedback-request-process-implementation.html"

@@ -5,8 +5,6 @@ author: "Robert Gimbel"
 
 categories:
   - "Release"
-tags: 
-  - "release notes"
 
 aliases:
   - "/2013/06/announcing-release-date-of-camunda-bpm.html"

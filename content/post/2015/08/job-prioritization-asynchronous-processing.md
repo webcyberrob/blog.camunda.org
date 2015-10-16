@@ -5,7 +5,6 @@ author: "Thorben Lindhauer"
 
 categories:
   - "Development"
-tags: 
 
 aliases:
   - "/2015/08/job-prioritization-asynchronous-processing.html"

@@ -5,10 +5,6 @@ author: "Daniel Meyer"
 
 categories:
   - "Release"
-tags: 
-  - "cockpit"
-  - "release notes"
-  - "task forms"
 
 aliases:
   - "/2013/11/camunda-BPM-7.1.0-alpha1-released.html"
