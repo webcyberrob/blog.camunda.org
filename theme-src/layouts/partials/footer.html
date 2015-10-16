@@ -5,20 +5,52 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div>
-        <ul>
+      <div class="col-xs-3">
+        <ul class="list-inline">
           <li><a href="/misc/imprint">Imprint</a></li>
           <li><a href="/misc/privacy">Privacy Policy &amp; Cookies</a></li>
         </ul>
       </div>
-      <nav class="col-xs-6">
+
+      <nav class="col-xs-6 text-center">
         <ul class="list-inline">
-          <li><a href="http://github.com/camunda"><span class="cam-blog-github"></span></a></li>
-          <li><a href="http://github.com/camunda"><span class="cam-blog-github"></span></a></li>
-          {{ if .RSSlink }}<li><a href="{{ .RSSlink }}"><span class="cam-blog-rss"></span></a></li>{{ end }}
+          <li>
+            <a href="http://github.com/camunda">
+              <span class="cam-blog-github"></span>
+              <!-- <span class="visible-lg">GitHub</span> -->
+            </a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/camunda">
+              <span class="cam-blog-stackoverflow"></span>
+              <!-- <span class="visible-lg">stackoverflow</span> -->
+            </a>
+          </li>
+          <li>
+            <a href="http://twitter.com/camundabpm">
+              <span class="cam-blog-twitter"></span>
+              <!-- <span class="visible-lg">Twitter</span> -->
+            </a>
+          </li>
+          <li>
+            <a href="https://vimeo.com/user22820658">
+              <span class="cam-blog-vimeo"></span>
+              <!-- <span class="visible-lg">Vimeo</span> -->
+            </a>
+          </li>
+
+          {{ if .RSSlink }}<li>
+            <a href="{{ .RSSlink }}">
+              <span class="cam-blog-rss"></span>
+              <!-- <span class="visible-lg">RSS feed</span> -->
+            </a>
+          </li>{{ end }}
         </ul>
       </nav>
-      <div class="col-xs-3 back-to-top text-right"><a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a></div>
+
+      <div class="col-xs-3 back-to-top text-right">
+        <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+      </div>
     </div>
   </div>
 </footer>
