@@ -171,21 +171,6 @@ body {
     list-style: none;
     padding: 0 0 0 (@grid-gutter-width * 0.5);
   }
-
-  .tags li {
-    display: inline;
-    margin: 0;
-    padding: 0;
-    &:after {
-      display: inline;
-      content: '|';
-      margin-left: 0.2em;
-      color: @gray-light;
-    }
-    &:last-of-type:after {
-      display: none;
-    }
-  }
 }
 
 body > footer {
@@ -232,24 +217,6 @@ section {
   > header {
     overflow: hidden;
     margin-bottom: (@grid-gutter-width * 0.5);
-  }
-
-  .tags-list {
-    display: inline;
-    padding: 0;
-    margin: 0;
-    li {
-      display: inline;
-      padding: 0;
-      margin: 0;
-      &:after {
-        display: inline;
-        content: ', ';
-      }
-      &:last-of-type:after {
-        display: none;
-      }
-    }
   }
 
   > .content {
