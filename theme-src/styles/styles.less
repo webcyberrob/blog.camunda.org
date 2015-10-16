@@ -53,9 +53,8 @@ blockquote {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  // max-width: 960px;
-  // margin: 0 auto;
   background-color: @body-bg;
+  min-height: ~"calc(100vh - 80px)";
 }
 
 body {
@@ -143,8 +142,18 @@ body {
       }
     }
   }
-  &.page-sidebar-open .sidebar-toggle {
 
+  > footer {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: @footer-height;
+    line-height: @footer-height;
+    background-color: @gray-lighter;
+    font-size: small;
+    border-top: 1px solid #E4E4E4;
   }
 }
 
@@ -173,17 +182,6 @@ body {
   }
 }
 
-body > footer {
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: @footer-height;
-  line-height: @footer-height;
-  background-color: @gray-lighter;
-  font-size: small;
-}
 
 
 h1.page-title {
@@ -338,6 +336,7 @@ body.scrolled {
       overflow-y: auto;
       padding-left: @grid-gutter-width * 1.5;
       background-color: @gray-lighter;
+      border-right: 1px solid #F7F7F7;
 
       width: 320px;
       transform: translateX(-320px);
