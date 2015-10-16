@@ -1,25 +1,30 @@
 {{ partial "header.html" . }}
-  <!-- <pre>{{ printf "%#v" . }}</pre> -->
-
 
   <div class="page-content col-xs-12 col-sm-8">
-  {{ range first 5 .Data.Pages }}
-    <article>
-      {{ partial "post-header.html" . }}
+    <header>
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ if .Description }}<div class="description">{{ .Description }}</div>{{ end }}
+    </header>
 
-      <div class="content">
+    {{ range .Data.Pages }}
+    <section>
+      <header class="row">
+        <h1 class="col-xs-12"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      </header>
+
+      <div class="content summary">
         {{ .Summary }}
       </div>
 
       <footer>
         {{ partial "readmore.html" . }}
       </footer>
-    </article>
-  {{ end }}
+    </section>
+    {{ end }}
 
-  {{ template "_internal/pagination.html" . }}
+    {{ template "_internal/pagination.html" . }}
   </div>
 
-{{ partial "sidebar.html" . }}
+  {{ partial "sidebar.html" . }}
 
 {{ partial "footer.html" . }}

@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+
+  <div class="page-content col-xs-12 col-sm-8">
+    <article>
+      {{ partial "post-header.html" . }}
+
+      <div class="content">
+        {{ .Content }}
+      </div>
+
+      <footer class="row">
+        <div class="col-xs-3 previous-post">{{ if .Prev }}<a href="{{ .Prev }}">Previous post</a>{{ end }}</div>
+
+        <div class="tags col-xs-6">
+          <!-- About the author? -->
+        </div>
+
+        <div class="col-xs-3 next-post">{{ if .Next }}<a href="{{ .Next }}">Next post</a>{{ end }}</div>
+      </footer>
+
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+  </div>
+
+  {{ partial "sidebar.html" . }}
+
+{{ partial "footer.html" . }}

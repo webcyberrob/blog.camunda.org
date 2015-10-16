@@ -1,9 +1,12 @@
 {{ partial "header.html" . }}
-  {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 10 }}
-
 
   <div class="page-content col-xs-12 col-sm-8">
-  {{ range (.Paginator 10).Pages }}
+    <header>
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ if .Description }}<div class="description">{{ .Description }}</div>{{ end }}
+    </header>
+
+  {{ range .Data.Pages }}
     <article>
       {{ partial "post-header.html" . }}
 
@@ -20,6 +23,6 @@
   {{ template "_internal/pagination.html" . }}
   </div>
 
-{{ partial "sidebar.html" . }}
+  {{ partial "sidebar.html" . }}
 
 {{ partial "footer.html" . }}

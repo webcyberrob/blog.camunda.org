@@ -1,16 +1,26 @@
+  </div><!-- / .row -->
+</div><!-- / .page-wrapper -->
 
-</div><!-- ./ page-wrapper -->
 
-
-<footer class="container-fluid">
-  <nav class="col-xs-9">
-    <ul class="list-inline">
-      <li><a href="http://github.com/camunda"><span class="cam-blog-github"></span></a></li>
-      <li><a href="http://github.com/camunda"><span class="cam-blog-github"></span></a></li>
-      {{ if .RSSlink }}<li><a href="{{ .RSSlink }}"><span class="cam-blog-rss"></span></a></li>{{ end }}
-    </ul>
-  </nav>
-  <div class="col-xs-3 back-to-top text-right"><a href="#">Back to top</a></div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div>
+        <ul>
+          <li><a href="/misc/imprint">Imprint</a></li>
+          <li><a href="/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+        </ul>
+      </div>
+      <nav class="col-xs-6">
+        <ul class="list-inline">
+          <li><a href="http://github.com/camunda"><span class="cam-blog-github"></span></a></li>
+          <li><a href="http://github.com/camunda"><span class="cam-blog-github"></span></a></li>
+          {{ if .RSSlink }}<li><a href="{{ .RSSlink }}"><span class="cam-blog-rss"></span></a></li>{{ end }}
+        </ul>
+      </nav>
+      <div class="col-xs-3 back-to-top text-right"><a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a></div>
+    </div>
+  </div>
 </footer>
 
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/scripts.js"></script>
