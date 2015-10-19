@@ -11,7 +11,6 @@ html {
 body {
   padding-top: @navbar-height-at-top;
   transition: padding-top 0.218s ease;
-  background-color: @gray-lighter;
   .font-regular;
 }
 
@@ -27,10 +26,15 @@ h2,
 h3,
 h4,
 h5 {
-  a,
-  a:hover {
+  a {
     text-decoration: none;
     color: @brand-primary;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    color: darken(@brand-primary, 20);
+    outline: none;
   }
 }
 
@@ -55,6 +59,8 @@ blockquote {
   overflow: hidden;
   background-color: @body-bg;
   min-height: ~"calc(100vh - 80px)";
+  padding-top: @grid-gutter-width;
+  padding-bottom: @grid-gutter-width;
 }
 
 body {
