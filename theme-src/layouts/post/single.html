@@ -8,15 +8,7 @@
         {{ .Content }}
       </div>
 
-      <footer class="row">
-        <div class="col-xs-3 previous-post">{{ if .Prev }}<a href="{{ .Prev }}">Previous post</a>{{ end }}</div>
-
-        <div class="tags col-xs-6">
-          <!-- About the author? -->
-        </div>
-
-        <div class="col-xs-3 next-post">{{ if .Next }}<a href="{{ .Next }}">Next post</a>{{ end }}</div>
-      </footer>
+      {{ partial "post-footer.html" . }}
 
       <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
