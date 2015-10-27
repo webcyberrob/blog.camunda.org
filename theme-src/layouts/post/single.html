@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-  <div class="page-content col-xs-12 col-sm-8">
+  <div class="page-content post">
     <article>
       {{ partial "post-header.html" . }}
 
@@ -10,11 +10,8 @@
 
       {{ partial "post-footer.html" . }}
 
-      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      {{ partial "disqus.html" . }}
     </article>
   </div>
-
-  {{ partial "sidebar.html" . }}
 
 {{ partial "footer.html" . }}

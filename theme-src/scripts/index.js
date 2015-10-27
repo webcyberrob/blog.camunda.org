@@ -4,6 +4,7 @@
 
 var xhr = require('xhr');
 require('./classList');
+require('./img-lazy-loading');
 
 
 /********************************************************************\
@@ -12,7 +13,7 @@ require('./classList');
 var utils = require('./utils');
 // var toArray = utils.toArray;
 var attr = utils.attr;
-var mkEl = utils.mkEl;
+// var mkEl = utils.mkEl;
 // var offset = utils.offset;
 // var query = utils.query;
 var queryAll = utils.queryAll;
@@ -23,9 +24,14 @@ var queryAll = utils.queryAll;
  * Code highlighting                                                *
 \********************************************************************/
 var Prism = (window.Prism || require('prismjs'));
-Prism.languages.xml = Prism.languages.markup;
-Prism.languages.html = Prism.languages.markup;
+
+require('prismjs/components/prism-markdown');
+Prism.languages.md = Prism.languages.markdown;
+
+require('prismjs/components/prism-bash');
 Prism.languages.sh = Prism.languages.bash;
+
+require('prismjs/components/prism-go');
 
 
 /********************************************************************\
@@ -43,7 +49,7 @@ topClass();
 
 queryAll('button.sidebar-toggle').forEach(function (btn) {
   btn.addEventListener('click', function () {
-    bdy.classList.toggle('page-sidebar-open');
+    bdy.classList.toggle('sidebar-open');
   });
 });
 

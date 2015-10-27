@@ -21,40 +21,31 @@
   <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css" />
   <link href='{{ .Site.BaseURL }}favicon.ico' rel='icon' type='image/x-icon'/>
 </head>
-<body>
+<body class="{{ if .IsHome }}home{{ end }}{{ if isset .Params "pagecssclass" }} {{ .Params.pagecssclass }}{{end}}">
 
 <header>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <button class="sidebar-toggle" title="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+  <div>
+    <h1>
+      <a class="site-link" href="{{ .Site.BaseURL }}">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">{{ .Site.Title }}</span>
+      </a>
+    </h1>
 
-        <h1>
-          <a class="site-link" href="{{ .Site.BaseURL }}">
-            <span class="bpmn-icon-bpmn-io"></span>
-            {{ .Site.Title }}
-          </a>
-        </h1>
-      </div>
-
-
-        <!--
-        <div class="col-xs-4 col-xs-2 networks">
-          <ul>
-            <li><a href=""><span></span><span class="name"></span></a></li>
-            <li><a href=""><span></span><span class="name"></span></a></li>
-            <li><a href=""><span></span><span class="name"></span></a></li>
-            <li><a href=""><span></span><span class="name"></span></a></li>
-          </ul>
-        </div>
-        -->
-    </div>
+    <nav class="categories">
+      <ul>
+        <li>
+          <a href="{{ .Site.BaseURL }}categories/modeling">Modeling</a>
+        </li>
+        <li>
+          <a href="{{ .Site.BaseURL }}categories/execution">Execution</a>
+        </li>
+        <li>
+          <a href="{{ .Site.BaseURL }}categories/community">Community</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-<div class="page-wrapper container">
-  <div class="row">
+<div class="page-wrapper">

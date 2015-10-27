@@ -121,26 +121,41 @@ module.exports = function (grunt) {
     var postTemplate = [
       '---',
       'title: "<%= title.split(\'\\"\').join(\'\\\\"\') %>"',
-      'date: "<%= published %>"',
+      'date: "<%= (new Date(published)).toISOString().split("T").shift() %>"',
       'author: "<%= author.displayName %>"',
       '',
       'categories:',
       '  - "<%= category %>"',
-      // 'tags: <%= labels.map(function (tag) { return \'\\n  - "\'+ tag +\'"\'; }).join(\'\') %>',
+      'tags: <%= tags.map(function (tag) { return \'\\n  - "\'+ tag +\'"\'; }).join(\'\') %>',
       '',
       'aliases:',
       '  - "<%= alias %>"',
       '',
       '---',
       '',
-      '<%= content %>'
+      '<div>',
+      '<%= content %>',
+      '</div>'
     ].join('\n');
 
     jsonContent.items.forEach(function (post) {
       var nameParts = post.url.split('/');
       var name = 'content/post/' + nameParts[3] + '/' + nameParts[4] + '/' + nameParts[5].split('.html')[0] + '.md';
 
-      post.category = post.title.toLowerCase().indexOf('release') < 0 ? 'Development' : 'Release';
+      post.tags = [];
+      if (post.title.toLowerCase().indexOf('release')) {
+        post.tags.push('Release Note');
+      }
+
+      post.category = 'Execution';
+      if (post.title.toLowerCase().indexOf('community') > -1) {
+        post.category = 'Community';
+      }
+      else if (post.title.toLowerCase().indexOf('bpmn.io') > -1 ||
+               post.title.toLowerCase().indexOf('dmn.io') > -1) {
+        post.category = 'Modeling';
+      }
+
       post.labels = post.labels || [];
       post.alias = post.url.split('blog.camunda.org').pop();
 
