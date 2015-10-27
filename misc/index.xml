@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Miscs on Camunda Team Blog</title>
-    <link>http://localhost:1313/misc/</link>
+    <link>/misc/</link>
     <description>Recent content in Miscs on Camunda Team Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Oct 2015 00:00:00 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/misc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/misc/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
