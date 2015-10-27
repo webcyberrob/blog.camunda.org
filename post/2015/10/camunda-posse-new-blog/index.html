@@ -89,11 +89,11 @@ The nerd would probably start writing a client which would pump the posts using 
 <p>I&rsquo;m more of a creative guy. Which means that I don&rsquo;t make a fuss about the way,
 I want to reach my goals (which, by the way, might not always be the <span class="shortcode bpmn-icon-end-event-none" title="end-event-none" tooltip="end-event-none"></span>
 ,
-a bit like when Jakob put a <code>style</code> attribute in its HTML).<br />
+a bit like when a colleague put a <code>style</code> attribute in its HTML).<br />
 I went to the Google API console and got myself all the posts from there. Tada.</p>
 
 <p>After that, it&rsquo;s piece of cake, a <a href="//gruntjs.com/api/grunt.task">grunt task</a> consumes the JSON and
-creates the mardown files and it looks more or less like that:</p>
+creates the markdown files and it looks more or less like that:</p>
 
 <pre><code class="language-js">grunt.registerTask('import', function () {
   var jsonContent = grunt.file.readJSON('./camunda-blog-posts.json');
@@ -352,7 +352,7 @@ Anything that can go wrong will go wrong.
       </ul>
     </nav>
 
-    <div class="back-to-top text-right">
+    <div class="back-to-top">
       <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
     </div>
   </div>
