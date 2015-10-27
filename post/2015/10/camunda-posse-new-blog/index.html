@@ -144,13 +144,13 @@ creates the markdown files and it looks more or less like that:</p>
 
 <p>Based on <a href="http://gohugo.io">Hugo shortcodes</a> and <a href="http://bpmn.io">bpmn.io</a>, authors can now add their diagrams in a post in a breeze like that:</p>
 
-<pre><code class="language-html">{{&lt; bpmn-viewer path=&quot;/2015/10/order-process&quot; &gt;}}
+<pre><code class="language-html">{{&lt; bpmn-viewer name=&quot;order-process&quot; &gt;}}
 </code></pre>
 
 <p>And it renders something like that when the :</p>
 
 <div class="bpmn-viewer">
-  <div data-bpmn-diagram="/blog.camunda.org/post/2015/10/camunda-posse-new-blog//2015/10/order-process"></div>
+  <div data-bpmn-diagram="./order-process"></div>
 </div>
 
 
