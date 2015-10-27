@@ -2,121 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community on Camunda Team Blog</title>
-    <link>/categories/community/</link>
+    <link>http://camunda.github.io/blog.camunda.org/categories/community/</link>
     <description>Recent content in Community on Camunda Team Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Oct 2015 13:28:00 +0200</lastBuildDate>
-    <atom:link href="/categories/community/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://camunda.github.io/blog.camunda.org/categories/community/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A new blog for Camunda BPM posse</title>
-      <link>/post/2015/10/camunda-posse-new-blog/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-posse-new-blog/</link>
       <pubDate>Wed, 14 Oct 2015 13:28:00 +0200</pubDate>
       
-      <guid>/post/2015/10/camunda-posse-new-blog/</guid>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-posse-new-blog/</guid>
       <description>&lt;p&gt;I was delighted when &lt;a href=&#34;//twitter.com/meyerdan&#34;&gt;Daniel&lt;/a&gt; asked me to &lt;em&gt;valify&lt;/em&gt; (as Robert says) the &lt;strong&gt;Camunda BPM Team Blog&lt;/strong&gt;
 and make it fit our &lt;strong&gt;CI&lt;/strong&gt; (nope, for once, this ain&amp;rsquo;t meaning Continuous Integration). Here&amp;rsquo;s the little story about that work… erm… fun and some showoff about the new blog features.&lt;/p&gt;
- Read more on /post/2015/10/camunda-posse-new-blog/</description>
+ Read more on http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-posse-new-blog/</description>
     </item>
     
     <item>
       <title>Impressions from Camunda Community Day 2015</title>
-      <link>/post/2015/09/impressions-from-camunda-community-day/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/09/impressions-from-camunda-community-day/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015/09/impressions-from-camunda-community-day/</guid>
-      <description>Or in other words: Our most awesome community day yet! Last week our annual Camunda Community Day took place. I always enjoy that day very much because it gives me the opportunity to get in touch with community contributors and users. I always learn a lot during these days and I take a lot of engergy away from it. Same as last year, the Community Day took place here at the Camunda office in exactly the same space in which we normally sit behind our desks and write code. Read more on /post/2015/09/impressions-from-camunda-community-day/</description>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/09/impressions-from-camunda-community-day/</guid>
+      <description>Or in other words: Our most awesome community day yet! Last week our annual Camunda Community Day took place. I always enjoy that day very much because it gives me the opportunity to get in touch with community contributors and users. I always learn a lot during these days and I take a lot of engergy away from it. Same as last year, the Community Day took place here at the Camunda office in exactly the same space in which we normally sit behind our desks and write code. Read more on http://camunda.github.io/blog.camunda.org/post/2015/09/impressions-from-camunda-community-day/</description>
     </item>
     
     <item>
       <title>Spring Boot Support in Camunda - new Community Extension</title>
-      <link>/post/2015/06/spring-boot-support-in-camunda-new/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/06/spring-boot-support-in-camunda-new/</link>
       <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015/06/spring-boot-support-in-camunda-new/</guid>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/06/spring-boot-support-in-camunda-new/</guid>
       <description>I am very, very excited about this: the Camunda community now actively collaborates around providing support for Spring Boot. This is extremely cool and allows users to deploy Camunda process engine including the Rest Api and the Webapplication in Spring Boot. The project is in a very early stage, if you want to participate, join the ongoing discussion on the dev list and checkout the sources in GitHub! Many thanks to Oliver Steinhauer who provided an initial implementation that the community decided to collaborate around.</description>
     </item>
     
     <item>
       <title>Camunda &#43; Liferay Community Meeting</title>
-      <link>/post/2015/05/camunda-liferay-community-meeting/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/05/camunda-liferay-community-meeting/</link>
       <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015/05/camunda-liferay-community-meeting/</guid>
-      <description>Yesterday evening we met at our Partner Ancud IT in Nurremberg (Germany). Ancud presented their experiences using Portals (namely the Open Source Portal Liferay) in combination with Process Engines (namely camunda :-)). That was already a topic in a recent webinar, you can check out the recording online: English or German. Afterwards we had interessting discussions about DMN use cases and a &#34;social collaboration hub&#34; research project. But let&#39;s start from the beginning. Read more on /post/2015/05/camunda-liferay-community-meeting/</description>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/05/camunda-liferay-community-meeting/</guid>
+      <description>Yesterday evening we met at our Partner Ancud IT in Nurremberg (Germany). Ancud presented their experiences using Portals (namely the Open Source Portal Liferay) in combination with Process Engines (namely camunda :-)). That was already a topic in a recent webinar, you can check out the recording online: English or German. Afterwards we had interessting discussions about DMN use cases and a &#34;social collaboration hub&#34; research project. But let&#39;s start from the beginning. Read more on http://camunda.github.io/blog.camunda.org/post/2015/05/camunda-liferay-community-meeting/</description>
     </item>
     
     <item>
       <title>Camunda meets Cassandra @Zalando: Community Meeting Write-up</title>
-      <link>/post/2015/03/camunda-meets-cassandra-zalando/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/03/camunda-meets-cassandra-zalando/</link>
       <pubDate>Wed, 11 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015/03/camunda-meets-cassandra-zalando/</guid>
-      <description>Jorn Horstman, André Hartmann and Lukas Niemeier from Zalando Tech visited us yesterday evening to present their prototype for running Camunda engine on Apache Cassandra. They published their slides. Zalando is a &#34;multinational e-commerce company that specialises in selling shoes, clothing and other fashion and lifestyle products online&#34;. 2014 they had a revenue of €2.3 billion and currently have 8,500 employees (Source: Wikipedia). AND: they are Camunda enterprise edition subscribers and use Camunda process engine for processing their orders. Read more on /post/2015/03/camunda-meets-cassandra-zalando/</description>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/03/camunda-meets-cassandra-zalando/</guid>
+      <description>Jorn Horstman, André Hartmann and Lukas Niemeier from Zalando Tech visited us yesterday evening to present their prototype for running Camunda engine on Apache Cassandra. They published their slides. Zalando is a &#34;multinational e-commerce company that specialises in selling shoes, clothing and other fashion and lifestyle products online&#34;. 2014 they had a revenue of €2.3 billion and currently have 8,500 employees (Source: Wikipedia). AND: they are Camunda enterprise edition subscribers and use Camunda process engine for processing their orders. Read more on http://camunda.github.io/blog.camunda.org/post/2015/03/camunda-meets-cassandra-zalando/</description>
     </item>
     
     <item>
       <title>camunda-bpm-platform-osgi 1.1.0 released as a community extension</title>
-      <link>/post/2015/03/camunda-bpm-platform-osgi-110-released/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/03/camunda-bpm-platform-osgi-110-released/</link>
       <pubDate>Mon, 09 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015/03/camunda-bpm-platform-osgi-110-released/</guid>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/03/camunda-bpm-platform-osgi-110-released/</guid>
       <description>camunda-bpm-platform-osgi&amp;nbsp;is a community extension that provides support for camunda Bpm platform inside OSGi containers. Ronny Bräunlich has just released a new version 1.1.0 of the libary. Read the official release blog post and make sure to fork the project on GitHub.&amp;nbsp;</description>
     </item>
     
     <item>
       <title>camunda BPM Community Day 2014</title>
-      <link>/post/2014/09/camunda-bpm-community-day/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2014/09/camunda-bpm-community-day/</link>
       <pubDate>Mon, 22 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/post/2014/09/camunda-bpm-community-day/</guid>
-      <description>Last Thursday we organized the 2nd camunda BPM community Day. After visiting Prague last year we went for the home game and invited the community to our Berlin offices. So we put all our desks and chairs and other stuff away to make room for the attendees. Around 65 people had registered and without doing an exact headcount, I suppose that more than 50 attended which Bernd described as &#34;the biggest open source community day he ever attended&#34;. Read more on /post/2014/09/camunda-bpm-community-day/</description>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2014/09/camunda-bpm-community-day/</guid>
+      <description>Last Thursday we organized the 2nd camunda BPM community Day. After visiting Prague last year we went for the home game and invited the community to our Berlin offices. So we put all our desks and chairs and other stuff away to make room for the attendees. Around 65 people had registered and without doing an exact headcount, I suppose that more than 50 attended which Bernd described as &#34;the biggest open source community day he ever attended&#34;. Read more on http://camunda.github.io/blog.camunda.org/post/2014/09/camunda-bpm-community-day/</description>
     </item>
     
     <item>
       <title>camunda-bpm-platform-osgi 1.0 released as a community extension</title>
-      <link>/post/2014/06/camunda-bpm-platform-osgi-10-released/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2014/06/camunda-bpm-platform-osgi-10-released/</link>
       <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>/post/2014/06/camunda-bpm-platform-osgi-10-released/</guid>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2014/06/camunda-bpm-platform-osgi-10-released/</guid>
       <description>camunda-bpm-platform-osgi&amp;nbsp;is a community extension that provides support for camunda BPM platform inside OSGi containers. It is a pleasure for me to announce that Ronny Bräunlich&amp;nbsp;has just released version 1.0 of the libary. Read the offical&amp;nbsp;release blog post&amp;nbsp;and make sure to&amp;nbsp;fork the project on GitHub.</description>
     </item>
     
     <item>
       <title>camunda-bpm-assert 1.0 released as a community extension</title>
-      <link>/post/2014/03/camunda-bpm-assert-10-released-as/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2014/03/camunda-bpm-assert-10-released-as/</link>
       <pubDate>Wed, 05 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/post/2014/03/camunda-bpm-assert-10-released-as/</guid>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2014/03/camunda-bpm-assert-10-released-as/</guid>
       <description>camunda-bpm-assert&amp;nbsp;is a community extension to camunda BPM&amp;nbsp;that makes it easier to test-drive processes that are implemented with camunda BPM. I am happy to say that our contributor&amp;nbsp;Martin Schimak&amp;nbsp;from&amp;nbsp;plexiti&amp;nbsp;has just published version 1.0 of the library. The release comes with a stable api, maven coordinates and tons of&amp;nbsp;documentation&amp;nbsp;and examples. Read the offical release blog post and make sure to fork the project on GitHub.</description>
     </item>
     
     <item>
       <title>What a wonderful community day in Prague</title>
-      <link>/post/2013/10/what-wonderful-community-day-in-prague/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2013/10/what-wonderful-community-day-in-prague/</link>
       <pubDate>Wed, 23 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>/post/2013/10/what-wonderful-community-day-in-prague/</guid>
-      <description>Last Friday we had our first camunda BPM community day! It was really awesome! Thanks everybody who joined. I am really impressed that we could organize that so close after the 7.0 release and so many people already traveled to Prague just for us. I can just repeat myself: AWESOME! Today I want to share some impressions and slides with you - we recorded the sessions and hope we will get videos online soon as well. Read more on /post/2013/10/what-wonderful-community-day-in-prague/</description>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2013/10/what-wonderful-community-day-in-prague/</guid>
+      <description>Last Friday we had our first camunda BPM community day! It was really awesome! Thanks everybody who joined. I am really impressed that we could organize that so close after the 7.0 release and so many people already traveled to Prague just for us. I can just repeat myself: AWESOME! Today I want to share some impressions and slides with you - we recorded the sessions and hope we will get videos online soon as well. Read more on http://camunda.github.io/blog.camunda.org/post/2013/10/what-wonderful-community-day-in-prague/</description>
     </item>
     
     <item>
       <title>The start of camunda.org community events</title>
-      <link>/post/2013/04/the-start-of-camundaorg-community-events/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2013/04/the-start-of-camundaorg-community-events/</link>
       <pubDate>Wed, 24 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/post/2013/04/the-start-of-camundaorg-community-events/</guid>
-      <description>Last week we had our first two camunda.org community kick-off events. On Wednesday we were at the Deutsche WertpapierService Bank AG in Frankfurt followed by an evening on Thursday at LVM Versicherung in Münster. Both companies successfully work with camunda BPM and have spoken of their experiences with the platform. We also got a chance to present the camunda project to groups of about 20 BPM enthusiasts and had open discussions about aims, preferences, likes and wishes. Read more on /post/2013/04/the-start-of-camundaorg-community-events/</description>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2013/04/the-start-of-camundaorg-community-events/</guid>
+      <description>Last week we had our first two camunda.org community kick-off events. On Wednesday we were at the Deutsche WertpapierService Bank AG in Frankfurt followed by an evening on Thursday at LVM Versicherung in Münster. Both companies successfully work with camunda BPM and have spoken of their experiences with the platform. We also got a chance to present the camunda project to groups of about 20 BPM enthusiasts and had open discussions about aims, preferences, likes and wishes. Read more on http://camunda.github.io/blog.camunda.org/post/2013/04/the-start-of-camundaorg-community-events/</description>
     </item>
     
     <item>
       <title>New: camunda BPM-Community</title>
-      <link>/post/2013/04/new-camunda-bpm-community/</link>
+      <link>http://camunda.github.io/blog.camunda.org/post/2013/04/new-camunda-bpm-community/</link>
       <pubDate>Tue, 09 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/post/2013/04/new-camunda-bpm-community/</guid>
-      <description>Process management is not a bureaucratic evil but can be a key instrument for scalable business models. But to do so we need to get rid of our old ways of thinking. Need an example? The whole Zero Code BPM – Illusion, is one of many errors that have dominated process management in the past. On 18th March we released our BPM platform under an open source license as Business Process Management is impossible without IT (not everyone likes this, but it’s just the way it is). Read more on /post/2013/04/new-camunda-bpm-community/</description>
+      <guid>http://camunda.github.io/blog.camunda.org/post/2013/04/new-camunda-bpm-community/</guid>
+      <description>Process management is not a bureaucratic evil but can be a key instrument for scalable business models. But to do so we need to get rid of our old ways of thinking. Need an example? The whole Zero Code BPM – Illusion, is one of many errors that have dominated process management in the past. On 18th March we released our BPM platform under an open source license as Business Process Management is impossible without IT (not everyone likes this, but it’s just the way it is). Read more on http://camunda.github.io/blog.camunda.org/post/2013/04/new-camunda-bpm-community/</description>
     </item>
     
   </channel>
