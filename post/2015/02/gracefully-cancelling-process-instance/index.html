@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  
+
+  <title>Gracefully Cancelling a Process Instance | Camunda BPM</title>
+
+
+  <link rel="canonical" href="http://localhost:1313/post/2015/02/gracefully-cancelling-process-instance/">
+
+  
+
+  <meta name="generator" content="Hugo 0.15-camunda" />
+
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/styles.css" />
+  <link href='http://localhost:1313/favicon.ico' rel='icon' type='image/x-icon'/>
+</head>
+<body class="">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="http://localhost:1313/">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">Camunda Team Blog</span>
+      </a>
+    </h1>
+
+    <nav class="categories">
+      <ul>
+        <li>
+          <a href="http://localhost:1313/categories/modeling">Modeling</a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/categories/execution">Execution</a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/categories/community">Community</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+
+  <div class="page-content post">
+    <article>
+      <header class="row">
+  <h1><a href="/post/2015/02/gracefully-cancelling-process-instance/">Gracefully Cancelling a Process Instance</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 2 Feb 2020</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content">
+        <div>
+Cancelling a running process instance in Camunda is easy:
+<br />
+<pre>DELETE /process-instance/{id}
+</pre>
+or, using Java API:
+<br />
+<pre>RuntimeService.deleteProcessInstance(String, String)
+</pre>
+this will simply delete the process instance and remove it from the database. Sometimes this is exactly what you need.<br />
+<br />
+However: what if you want to cancel the process instance gracefully? Gracefully in the sense that the effects it has had on the outside world are undone? The answer to this is compensation. In this post I discuss two ways to implement compensation.<br />
+<br />
+<a name='more'></a><br /><br />
+<h3>
+Internal Compensation</h3>
+Modeling compensation inside the process itself:<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-KBa6dKFuMxE/VM9uZjhaNvI/AAAAAAAABNQ/MWRNag5wgqA/s1600/internal-compensation.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-KBa6dKFuMxE/VM9uZjhaNvI/AAAAAAAABNQ/MWRNag5wgqA/s1600/internal-compensation.png" /></a></div>
+<br />
+<br />
+The compensation undoes the effects of the process so far. This is usually modeled in a way where you attach a <a href="http://docs.camunda.org/latest/api-references/bpmn20/#tasks-task-markers-compensation">compensation handler</a> to those service tasks which have effects on "the outside world" and implement logic which undoes the effects of those service tasks. Then, top level inside the process you can have an <a href="http://docs.camunda.org/latest/api-references/bpmn20/#subprocesses-event-subprocess">interrupting event subprocess</a> with a message start event followed by an intermediate compensation throw event.<br />
+<br />
+When you send the message it will<br />
+<br />
+<ol>
+<li>interrupt (effectively cancel) everything currently happening inside the process instance.</li>
+<li>throw compensation which will propagate to all compensation handlers which have been activated so far.</li>
+</ol>
+<br />
+<b>Advantage</b><br />
+<br />
+<ul>
+<li>everything self-contained inside the same process model</li>
+<li>compensation handlers can directly access variables of the process instance</li>
+<li>the process engine "knows" which service tasks have already been executed (effectively how far the process instance made progress) and handles triggering of the right compensation handlers for you</li>
+</ul>
+<br />
+<b>Downside</b><br />
+<br />
+<ul>
+<li>you cannot implement it "retro actively" in the sense that it already has to be modeled inside the process before you deploy the process.</li>
+<li>if every service task has a compensation handler, the model may become "cluttered".</li>
+</ul>
+<h3>
+External Compensation</h3>
+Modeling a second process which undoes the effects of the first process.<br />
+<br />
+First, you model a regular process (lets call it the "main process") without any compensation logic:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://3.bp.blogspot.com/-lMshnWfbdOQ/VM9unCamdaI/AAAAAAAABNY/tOCswuXzvwU/s1600/external-compensation-main.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-lMshnWfbdOQ/VM9unCamdaI/AAAAAAAABNY/tOCswuXzvwU/s1600/external-compensation-main.png" /></a></div>
+<br />
+Then you can model a second process (lets call it "compensation process") which undoes the effects of the main process:<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://4.bp.blogspot.com/-RIHkO93Tl4s/VM9vMUGTZ7I/AAAAAAAABNo/S6xKQkPLYy4/s1600/external-compensation.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-RIHkO93Tl4s/VM9vMUGTZ7I/AAAAAAAABNo/S6xKQkPLYy4/s1600/external-compensation.png" /></a></div>
+<br />
+The compensation process can load the variables of the main process from history and may also check history to see how far the main process has made progress (because it does not know which services in the main process were executed and which services were not).<br />
+<br />
+<b>Or Better</b>: you provide the necessary variables as input of the compensation process and make the compensation services idempotent. Meaning, the Cancel Flight service does nothing if no flight has been booked. That way you can just call them all.<br />
+<br />
+<b>Advantage</b><br />
+<br />
+<ul>
+<li>can be done retro-actively after the "main process" has been deployed into production</li>
+<li>cancellation and compendation logic do not "clutter" main process model</li>
+</ul>
+<br />
+<b>Downside</b><br />
+<br />
+<ul>
+<li>if you change the main process you may have to change the compensation process. People tend to forget to do this :) If you have everything inside a single model, this is simpler.</li>
+<li>You either need to load the progress of the main process from history or make the compensation services idempotent</li>
+</ul>
+<div>
+<br /></div>
+<div>
+Any thoughts?</div>
+
+<p></div></p>
+
+      </div>
+
+      <footer>
+  <div>
+    <div class="tags">
+      <span class="glyphicon glyphicon-tag"></span>
+      <ul class="list-inline">
+        
+          <li><a href="http://localhost:1313/tags/release-note">Release Note</a> </li>
+        
+      </ul>
+    </div>
+
+    <div class="author" id="author-badge">
+      
+  Daniel Meyer
+
+
+    </div>
+  </div>
+
+  <div>
+    <div class="next-post">
+      <a href="/post/2015/02/the-symbiosis-of-test-and-documentation/">« The symbiosis of test and documentation</a>
+    </div>
+
+    <div class="previous-post">
+      <a href="/post/2015/01/camunda-BPM-7.3.0-alpha1-released/">Camunda BPM 7.3.0-alpha1 released »</a>
+    </div>
+  </div>
+</footer>
+
+
+      <div class="comments">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+    </article>
+  </div>
+
+</div>
+
+
+
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="http://localhost:1313/misc/imprint">Imprint</a></li>
+        <li><a href="http://localhost:1313/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top text-right">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://localhost:1313/js/scripts.js"></script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
+

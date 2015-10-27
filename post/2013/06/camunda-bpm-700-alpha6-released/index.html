@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  
+
+  <title>camunda BPM 7.0.0-alpha6 released | Camunda BPM</title>
+
+
+  <link rel="canonical" href="http://localhost:1313/post/2013/06/camunda-bpm-700-alpha6-released/">
+
+  
+
+  <meta name="generator" content="Hugo 0.15-camunda" />
+
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/styles.css" />
+  <link href='http://localhost:1313/favicon.ico' rel='icon' type='image/x-icon'/>
+</head>
+<body class="">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="http://localhost:1313/">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">Camunda Team Blog</span>
+      </a>
+    </h1>
+
+    <nav class="categories">
+      <ul>
+        <li>
+          <a href="http://localhost:1313/categories/modeling">Modeling</a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/categories/execution">Execution</a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/categories/community">Community</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+
+  <div class="page-content post">
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/06/camunda-bpm-700-alpha6-released/">camunda BPM 7.0.0-alpha6 released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 14 Jun 14060</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content">
+        <div>
+<div>
+<br /></div>
+<div>
+Today we announce the <a href="http://www.camunda.org/download/">release of camunda BPM 7.0.0-alpha6</a>. In this release we focused on visualizing process instance state on top of a rendered diagram in cockpit. We added the following features:&nbsp;</div>
+<div>
+<ul>
+<li>Process Instance Detail view in cockpit visualizing active activity instances with count</li>
+<li>Updated process definition view to include failed jobs from subprocess instances</li>
+<li>Greatly improved <a href="https://github.com/camunda/camunda-bpmn.js">Javascript BPMN 2.0 Renderer</a> (now feature complete)</li>
+<li>Added persistent Activity Instance tree in process engine</li>
+<li><a href="http://docs.camunda.org/latest/api-references/rest/#execution-get-message-event-subscription">Event Subscription Query is exposed in REST and Java API</a></li>
+</ul>
+<div>
+41 issues were closed. See the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12893">complete release notes in Jira</a>.&nbsp;</div>
+<div>
+<a name='more'></a></div>
+<h3>
+Process Instance Detail View in Cockpit</h3>
+</div>
+<div>
+In cockpit we started work on the process instance detail view. This view will allow you to drill down into a single process instance and explore it's running and completed activities as well as the variables, tasks, jobs... &nbsp;associated. To open the process instance detail view, you can select a process definition on the start page (dashboard), navigate the the process definition page and select a process instance from the instance list.</div>
+<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://4.bp.blogspot.com/-KtTipRABJ5c/UbsRi0DQbbI/AAAAAAAAAJE/lQgx5Y9rakA/s1600/overview.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="244" src="http://4.bp.blogspot.com/-KtTipRABJ5c/UbsRi0DQbbI/AAAAAAAAAJE/lQgx5Y9rakA/s320/overview.png" width="320" /></a></div>
+<div>
+<br /></div>
+<div>
+<br /></div>
+<div>
+In the initial increment we focused on rendering the process diagram (using our <a href="https://github.com/camunda/camunda-bpmn.js">Javascript-based BPMN renderer</a>) and visualizing the currently active activity instances on this diagram:</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody>
+<tr><td><a href="http://3.bp.blogspot.com/-Q2jUYHFml98/UbsSI4lR16I/AAAAAAAAAJM/qHcXP-NeobQ/s1600/multiInstance.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="113" src="http://3.bp.blogspot.com/-Q2jUYHFml98/UbsSI4lR16I/AAAAAAAAAJM/qHcXP-NeobQ/s200/multiInstance.png" width="200" /></a></td></tr>
+<tr><td class="tr-caption" style="font-size: 13px;">Multi Instance</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-eeSzH-DLjmQ/UbsSJvzgAZI/AAAAAAAAAJY/NK0tOfpuHrg/s1600/scoping.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto; text-align: center;"><img alt="" border="0" height="150" src="http://3.bp.blogspot.com/-eeSzH-DLjmQ/UbsSJvzgAZI/AAAAAAAAAJY/NK0tOfpuHrg/s320/scoping.PNG" title="Embedded Subprocess and Scoping" width="320" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Embedded Subprocess and Scoping</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody>
+<tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-oczqZv4ZP4c/UbsSIx5TtoI/AAAAAAAAAJU/xwJ-0ETnpgw/s1600/compensation.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="125" src="http://4.bp.blogspot.com/-oczqZv4ZP4c/UbsSIx5TtoI/AAAAAAAAAJU/xwJ-0ETnpgw/s200/compensation.png" width="200" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Compensation</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-FarP3t8mJ8M/UbsSI6MXxYI/AAAAAAAAAJQ/nyuy6jzoUFM/s1600/join.png" imageanchor="1" style="margin-left: auto; margin-right: auto; text-align: center;"><img border="0" height="147" src="http://1.bp.blogspot.com/-FarP3t8mJ8M/UbsSI6MXxYI/AAAAAAAAAJQ/nyuy6jzoUFM/s400/join.png" width="400" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Parallel Join</td></tr>
+</tbody></table>
+<h3>
+How does it work?</h3>
+<div>
+In order to visualize these diagrams, camunda Cockpit creates two client side models:</div>
+<div>
+<ul>
+<li><b>The process definition object model</b>: is a Javascript object model representation of the parsed BPMN 2.0 process definition XML. The model has the form of a tree structured in accordance with the BPMN 2.0 semantic process model. We merge the BPMN Diagram Interchange information into this tree.</li>
+<li><b>The process instance object model</b>: is a Javascript object model representation of the current process instance state. The model has the form of a tree and is constructed from the Activity Instance Tree (new feature) retrieved from the process engine.&nbsp;</li>
+</ul>
+<div>
+Both the process definition tree and the process instance tree have the same structure (ie. activity instances in the process instance tree are at the same level as their corresponding activity definitions in the object model.). In order to achive this, we had to make a couple of additions in the core process engine (PVM-Process Virtual Machine).&nbsp;</div>
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://4.bp.blogspot.com/-V8nkTQOkxZs/UbsYqwAIRCI/AAAAAAAAAJ0/3lFh2RoXx6A/s1600/architecture.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="313" src="http://4.bp.blogspot.com/-V8nkTQOkxZs/UbsYqwAIRCI/AAAAAAAAAJ0/3lFh2RoXx6A/s320/architecture.png" width="320" /></a></div>
+<h3>
+Visualizing the Activity Instance Tree</h3>
+<div>
+We will visualize the Activity Instance tree in the process instance detail view on the left hand side:</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://4.bp.blogspot.com/-EeLbTkkAwPk/UbsqYY6bwGI/AAAAAAAAALc/ka0el09PyuM/s1600/Instance+Details+inkl+Tree.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="149" src="http://4.bp.blogspot.com/-EeLbTkkAwPk/UbsqYY6bwGI/AAAAAAAAALc/ka0el09PyuM/s320/Instance+Details+inkl+Tree.png" width="320" /></a></div>
+<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div>
+<br /></div>
+<div>
+See&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-719">CAM-719</a></div>
+<h3>
+<a href="http://camundabpm.blogspot.de/2013/06/introducing-activity-instance-model-to.html">Read more about the activity instance tree in this follow up blog post</a>.</h3>
+</div>
+
+      </div>
+
+      <footer>
+  <div>
+    <div class="tags">
+      <span class="glyphicon glyphicon-tag"></span>
+      <ul class="list-inline">
+        
+          <li><a href="http://localhost:1313/tags/release-note">Release Note</a> </li>
+        
+      </ul>
+    </div>
+
+    <div class="author" id="author-badge">
+      
+  Daniel Meyer
+
+
+    </div>
+  </div>
+
+  <div>
+    <div class="next-post">
+      <a href="/post/2013/06/introducing-activity-instance-model-to/">« Introducing an Activity Instance Model to the core Process Engine</a>
+    </div>
+
+    <div class="previous-post">
+      <a href="/post/2013/05/camunda-bpm-70-alpha5-released/">camunda BPM 7.0-alpha5 released »</a>
+    </div>
+  </div>
+</footer>
+
+
+      <div class="comments">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+    </article>
+  </div>
+
+</div>
+
+
+
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="http://localhost:1313/misc/imprint">Imprint</a></li>
+        <li><a href="http://localhost:1313/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top text-right">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://localhost:1313/js/scripts.js"></script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
+

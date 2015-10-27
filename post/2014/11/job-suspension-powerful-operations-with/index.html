@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  
+
+  <title>Job Suspension - Powerful Operations with Camunda BPM | Camunda BPM</title>
+
+
+  <link rel="canonical" href="http://localhost:1313/post/2014/11/job-suspension-powerful-operations-with/">
+
+  
+
+  <meta name="generator" content="Hugo 0.15-camunda" />
+
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/styles.css" />
+  <link href='http://localhost:1313/favicon.ico' rel='icon' type='image/x-icon'/>
+</head>
+<body class="">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="http://localhost:1313/">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">Camunda Team Blog</span>
+      </a>
+    </h1>
+
+    <nav class="categories">
+      <ul>
+        <li>
+          <a href="http://localhost:1313/categories/modeling">Modeling</a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/categories/execution">Execution</a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/categories/community">Community</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+
+  <div class="page-content post">
+    <article>
+      <header class="row">
+  <h1><a href="/post/2014/11/job-suspension-powerful-operations-with/">Job Suspension - Powerful Operations with Camunda BPM</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Robert Gimbel</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 7 Nov 7110</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content">
+        <div>
+This blogpost is about a very powerful feature in <a href="http://camunda.org/">camunda BPM</a> for operating critical processes which are in production. Given a core process which operates under high volume, almost any problem is critical in a way. The more options you have to deal with those problem the better. I am going to show you one of those options, namely <b>job suspension</b>.<br />
+<br />
+<a name='more'></a><br />
+<h1>
+The Process</h1>
+Let's say you have automated your order processing, i.e. the orders which are generated in your web shop. I will use a very simple example. New orders start a process in the backend, the delivery is scheduled and once the goods are delivered, the payment is scheduled. Let's say your business is successful and you have many orders per minute.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-zowNdLTpVfM/VFuQyS8-BxI/AAAAAAAAAGM/U0aXmcvyJ4A/s1600/OrderProcessingOK.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-zowNdLTpVfM/VFuQyS8-BxI/AAAAAAAAAGM/U0aXmcvyJ4A/s1600/OrderProcessingOK.png" height="288" width="400" /></a></div>
+<br />
+From a technical perspective, all steps are executed <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-transactions-in-processes-asynchronous-continuations">asynchronously</a>.<br />
+<br />
+<h1>
+</h1>
+<h1>
+The Problem</h1>
+<div>
+Let's assume that the payment service is down for an hour. Immediately you will observe loads of exceptions from your engine, arising from failing process instances, which cannot settle the payment.</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://4.bp.blogspot.com/-taewLG8BYWw/VFuSUDzVIOI/AAAAAAAAAGY/8djUeiELl60/s1600/OrderProcessingDown.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-taewLG8BYWw/VFuSUDzVIOI/AAAAAAAAAGY/8djUeiELl60/s1600/OrderProcessingDown.png" height="288" width="400" /></a></div>
+<div>
+<br /></div>
+<div>
+While the payment service stays down, what do you need?</div>
+<div>
+<ul>
+<li>You still need to take incoming orders, no argument about that, that's your business</li>
+<li>Still, you do not want any process instance that calls the payment service to end up in a corrupted state, that has to be dealt with afterwards.&nbsp;</li>
+</ul>
+<h1>
+</h1>
+<h1>
+The Solution</h1>
+</div>
+<div>
+Since you are using asynchronous continuations, the job suspension feature of camunda BPM comes into play. Using job suspension you can suspend all jobs of process instances which are about to call the payment service. This is very helpful, since you are still able to start new process instances for incoming orders but you avoid running instances from ending up in a failed state. This can be done globally from a process perspective.&nbsp;</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://3.bp.blogspot.com/-s7Ygt3HCpfo/VFuUjUA4PWI/AAAAAAAAAGk/m002VSalOfg/s1600/OrderProcessingStop.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-s7Ygt3HCpfo/VFuUjUA4PWI/AAAAAAAAAGk/m002VSalOfg/s1600/OrderProcessingStop.png" height="288" width="400" /></a></div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Once the payment service is up again, you do the inverse and simply unsuspend the job definition. Of course it will take some time until all "waiting" jobs are executed, but in general the process engine is doing the job which would have involved manual intervention otherwise.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<h1 style="clear: both; text-align: left;">
+</h1>
+<h1 style="clear: both; text-align: left;">
+Other Use Cases</h1>
+<div>
+<ul>
+<li>you are calling java code which has a bug. you can stop all instances from calling the wrong java code, deploy a hotfix and continue</li>
+<li>you need to make changes to a script or business rules before you want processes to continues</li>
+<li>any other problem which is related to your process but beyond the control of the engine</li>
+</ul>
+<h1>
+</h1>
+<h1>
+</h1>
+<h1>
+Job Suspension vs. Job Retry</h1>
+<div>
+What are the different use cases for job suspension and the engine's built-in retry mechanism? In short, I would recommend the retry mechanism for unknown and unexpected problems which occur temporarily. As soon as you know that something is not going to work, I would recommend to use job suspension to avoid too many retries/exceptions of the same problem. Of course this is a general statement that has to be decided depending on the actual problem.</div>
+<h1>
+</h1>
+<h1>
+Related Readings</h1>
+</div>
+<div>
+<ul>
+<li>Cockpit provides Tooling for <a href="http://docs.camunda.org/latest/guides/user-guide/#cockpit-suspension-job-definition-suspension">job suspension</a>&nbsp;and <a href="http://docs.camunda.org/latest/guides/user-guide/#cockpit-failed-jobs-bulk-retry">bulk retry for failed jobs</a>.&nbsp;</li>
+<li>Read the <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-process-engine-concepts-suspending-and-activating-job-execution">engine documentation on job suspension</a></li>
+<li><a href="http://docs.camunda.org/latest/api-references/rest/#job-definition">REST API on job suspension</a>&nbsp;(globally for all instances)</li>
+<li><a href="http://docs.camunda.org/latest/api-references/rest/#job">REST API on job suspension</a> (for single jobs)</li>
+<li>Using camunda BPM as <a href="http://docs.camunda.org/latest/guides/user-guide/#introduction-architecture-overview-shared-container-managed-process-engine">shared process engine</a> makes this feature even more powerful, since the engine is more independent from your application logic</li>
+</ul>
+</div>
+<div>
+<br /></div>
+
+<p></div></p>
+
+      </div>
+
+      <footer>
+  <div>
+    <div class="tags">
+      <span class="glyphicon glyphicon-tag"></span>
+      <ul class="list-inline">
+        
+          <li><a href="http://localhost:1313/tags/release-note">Release Note</a> </li>
+        
+      </ul>
+    </div>
+
+    <div class="author" id="author-badge">
+      
+  Robert Gimbel
+
+
+    </div>
+  </div>
+
+  <div>
+    <div class="next-post">
+      <a href="/post/2014/11/camunda-bpm-720-alpha6-released/">« camunda BPM platform 7.2.0-alpha6 released</a>
+    </div>
+
+    <div class="previous-post">
+      <a href="/post/2014/09/announcing-release-date-of-camunda-bpm/">Announcing the Release Date of camunda BPM 7.2.0 GA »</a>
+    </div>
+  </div>
+</footer>
+
+
+      <div class="comments">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+    </article>
+  </div>
+
+</div>
+
+
+
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="http://localhost:1313/misc/imprint">Imprint</a></li>
+        <li><a href="http://localhost:1313/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top text-right">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://localhost:1313/js/scripts.js"></script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
+

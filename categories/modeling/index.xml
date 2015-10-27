@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modeling on Camunda Team Blog</title>
+    <link>http://localhost:1313/categories/modeling/</link>
+    <description>Recent content in Modeling on Camunda Team Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/modeling/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>First Version of dmn.io Released</title>
+      <link>http://localhost:1313/post/2015/08/first-version-of-dmnio-released/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2015/08/first-version-of-dmnio-released/</guid>
+      <description>Today we release the first version of dmn.io, our new DMN modeling toolkit. dmn.io allows you to view and model decisions with the DMN 1.0 standard directly on the web. The dmn.io library provides a viewer and an editor that can be embedded into web applications. With this release we provide the front-end element for the latest Camunda BPM 7.4.0 alpha release, which introduced support for DMN. Try it out Under the Hood dmn.io is build upon the work of the awesome bpmn.io framework. Read more on http://localhost:1313/post/2015/08/first-version-of-dmnio-released/</description>
+    </item>
+    
+    <item>
+      <title>Rendering BPMN and highlight current task using bpmn.io</title>
+      <link>http://localhost:1313/post/2015/08/rendering-bpmn-and-highlight-current/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2015/08/rendering-bpmn-and-highlight-current/</guid>
+      <description>With bpmn.io and the Camunda REST API it is really simple to develop a small HTML page that displays a process instance grafically and highlights some activities. In our &#34;JSF Simple Tasklist&#34; snippet we used this to highlight the current Task (like it is done in the Camunda BPM Tasklist): The cool thing - you do not need a lot of code to do this! This is what we do: Handed over the taskId via URL parameter (see Screenshot).&amp;nbsp; Load the Task details and BPMN XML via REST API. Read more on http://localhost:1313/post/2015/08/rendering-bpmn-and-highlight-current/</description>
+    </item>
+    
+    <item>
+      <title>BPMN.io releases 0.6.0 - Palette and Sub-Process Modeling</title>
+      <link>http://localhost:1313/post/2014/12/bpmnio-releases-060-connect-and-delete/</link>
+      <pubDate>Thu, 11 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2014/12/bpmnio-releases-060-connect-and-delete/</guid>
+      <description>The BPMN.io guys are making AWESOME progress. Version 0.6.0 of the BPMN Javascript toolkit BPMN.io has been released today. With this release support for modeling has been greatly enhanced. Read up on the details in Nico&#39;s Blogpost.</description>
+    </item>
+    
+    <item>
+      <title>bpmn.io introduces Simple Modeling Features</title>
+      <link>http://localhost:1313/post/2014/07/bpmnio-introduces-simple-modeling/</link>
+      <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2014/07/bpmnio-introduces-simple-modeling/</guid>
+      <description>The latest release of the bpmn.io Javascript toolkit for BPMN&amp;nbsp;introduces basic modeling features. Read more about it in Nico&#39;s blogpost.</description>
+    </item>
+    
+    <item>
+      <title>bpmn.io now with full BPMN render support</title>
+      <link>http://localhost:1313/post/2014/05/bpmnio-now-with-full-bpmn-render-support/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2014/05/bpmnio-now-with-full-bpmn-render-support/</guid>
+      <description>bpmn.io, the open source Javascript BPMN toolkit released a new version, now with full BPMN rendering support. Read more in Joerg&#39;s Blogpost: http://bpmn.io/blog/posts/2014-003-full-bpmn-render-support.html</description>
+    </item>
+    
+    <item>
+      <title>bpmn.io Source Code and Demo Application published</title>
+      <link>http://localhost:1313/post/2014/05/bpmnio-source-code-and-demo-application/</link>
+      <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2014/05/bpmnio-source-code-and-demo-application/</guid>
+      <description>Starting today, the code for bpmn.io, our next generation JavaScript Framework for BPMN 2.0, is available on GitHub. The bpmn.io team has also developed a simple&amp;nbsp;demo application which provides a BPMN viewer in the browser. Read Nico&#39;s official announcement on bpmn.io/blog.</description>
+    </item>
+    
+    <item>
+      <title>bpmn.io announced - a webbased BPMN modeling toolkit as part of camunda BPM</title>
+      <link>http://localhost:1313/post/2014/02/bpmnio-announced-webbased-bpmn-modeling/</link>
+      <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2014/02/bpmnio-announced-webbased-bpmn-modeling/</guid>
+      <description>Last week camunda and zalando announced bpmn.io. What is bpmn.io about? In short: BPMN everywhere, for everyone In detail: read this blogpost I want to explain why this is a really important step for camunda BPM. So far we are offering a great BPMN engine, probably the best you can find if you are a java developer. This engine comes with great Web Applications which fully utilize the deployed BPMN diagrams. Read more on http://localhost:1313/post/2014/02/bpmnio-announced-webbased-bpmn-modeling/</description>
+    </item>
+    
+  </channel>
+</rss>

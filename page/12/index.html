@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  
+
+  <title>Camunda Team Blog | Camunda BPM</title>
+
+
+  <link rel="canonical" href="http://localhost:1313/">
+
+  <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Camunda Team Blog" />
+
+  <meta name="generator" content="Hugo 0.15-camunda" />
+
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/styles.css" />
+  <link href='http://localhost:1313/favicon.ico' rel='icon' type='image/x-icon'/>
+</head>
+<body class="home">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="http://localhost:1313/">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">Camunda Team Blog</span>
+      </a>
+    </h1>
+
+    <nav class="categories">
+      <ul>
+        <li>
+          <a href="http://localhost:1313/categories/modeling">Modeling</a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/categories/execution">Execution</a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/categories/community">Community</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+  
+
+
+  <div class="page-content mixed-list list">
+  
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/10/camunda-modeler-210-released/">camunda Modeler 2.1.0 released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Nico Rehwaldt</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 15 Oct 15100</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Today we relased a new version of the camunda Modeler. It provides better property editing support for BPMN 2.0 and camunda BPM properties, improvements in pool and lane handling and fixes a number of important bugs. Property Editing Support Kristin and Roman extended the property panel to achieve partity with new engine extensions and features introduced in camunda BPM 7.0: On throwing message events and send tasks service task engine extensions may be edited On call activities passing the business key as well as all variables may be edited On call activities the called element binding and version may be specified On start events the form key may be edited independent of the event definition In addition, documentation may now be maintained for all BPMN 2.0 elements.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/post/2013/10/camunda-modeler-210-released/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/10/camunda-bpm-power-to-embedded-taskforms/">camunda BPM: Power to Embedded Taskforms</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Nico Rehwaldt</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 7 Oct 7100</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>For everyone out there using embedded task forms&nbsp;in the&nbsp;camunda tasklist&nbsp;there is great news: The forms are getting way more powerful. The upcoming alpha of camunda 7.1 introduces two extensions for embedded task forms: Client side form validation and form extensions via JavaScript. Form Validation Validation directives&nbsp;provided by&nbsp;AngularJS&nbsp;may now be attached to form fields to activate simple client-side validation constraints for them. The following form field will only accept one of the strings demo, john, mary or peter&nbsp;due to the defined pattern: &lt;input form-field type="string" name="assignee" ng-pattern="/^(demo|john|mary|peter)$/" /&gt; If a user enters an invalid value in a form field the field will be marked as invalid.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/post/2013/10/camunda-bpm-power-to-embedded-taskforms/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/09/camunda-bpm-apache-camel-integrating/">camunda BPM &#43; Apache Camel: Integrating two Open Source frameworks for a lightweight BPM&#43;SOA infrastructure</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Bernd Rücker</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 25 Sep 25090</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Apache Camel is a well known Open Source framework solving a lot of integration problems and implementing the Enterprise Integration Patterns. So combining it with camunda BPM is a perfect match: solve workflow and BPM requirements with camunda and integration requirements with Camel. Together with Rafael Cordones&nbsp;we took the existing&nbsp;Activiti Camel Module&nbsp;as a basis and did a huge refactoring. For everybody knowing this module I compiled the changes at the end of this article.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/post/2013/09/camunda-bpm-apache-camel-integrating/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/09/camunda-share-discuss-your-bpmn-20/">camunda share: Discuss your BPMN 2.0 process model in the cloud</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Bernd Rücker</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 13 Sep 13090</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Once a year the whole camunda team does a ShipIt-Day (inspired by Atlassian) - developing something awesome within 24 hours. This year, Kristin, Falko and me did "camunda share" - a web application in the cloud to share and discuss BPMN 2.0 process models. And we shipped it! It is live. Try it today: http://camunda.org/share/ Why camunda share? We often discuss with colleagues, partners or customers about process models. We often send around annotated PDF files via email.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/post/2013/09/camunda-share-discuss-your-bpmn-20/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/09/how-to-use-bpmn-20-scripttask-with/">How to use BPMN 2.0 ScriptTask with Groovy in JBoss</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Bernd Rücker</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 5 Sep 5090</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Note: this blogpost only applies to camunda BPM version &nbsp;&lt; 7.1.0. Starting from camunda BPM 7.2.0 we ship Groovy as part of the pre-packaged distribution. Recently at a customer we added a ScriptTask to a process and wanted to run a Groovy script. Pretty easy with camunda BPM - but in the JBoss environment you have to know how to correctly put Groovy on the classpath - as we correctly use the JSR 223 stuff to recognize existing Scripting Languages.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/post/2013/09/how-to-use-bpmn-20-scripttask-with/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/08/camunda-BPM-7.0.0-Final-released/">It&#39;s done: camunda BPM 7.0.0-Final released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 31 Aug 31080</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>We are happy to announce the first major release of camunda BPM: 7.0.0-Final. The highlights of this release are camunda cockpit: new webapplication for visual process monitoring and operations improved process engine with&nbsp; more flexible and better performing history (audit database), support for activity instance execution model, better clustering support REST Api based on JAX-RS Sophisticated Runtime Container Integration Container managed Threading (JBoss Threads, JCA, CommonJ), Shared Process Egnine as container managed service on all containers including Apache Tomcat.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/post/2013/08/camunda-BPM-7.0.0-Final-released/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/08/camunda-bpm-participates-in-bpmn/">camunda BPM participates in BPMN Roundtrip Demo of OMG</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Falko Menge</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 27 Aug 27080</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>The camunda BPM platform participated in a somewhat extreme BPMN roundtrip demo of the OMG. During that demo, the camunda engine managed to execute a BPMN process model that we pushed through five different modeling tools. Altogether, eight tools participated in the entire roundtrip. Among them where camunda Modeler for editing BPMN in Eclipse, the camunda engine for executing the BPMN process and camunda-bpmn.js for rendering BPMN in JavaScript. In addition, I also did a demo of how to use camunda Cycle for automating BPMN roundtrips.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/post/2013/08/camunda-bpm-participates-in-bpmn/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/08/camunda-bpm-700-alpha9-released/">camunda BPM 7.0.0-alpha9 released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Nico Rehwaldt</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 9 Aug 9080</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Today we are happy to announce the next alpha version of camunda BPM. Get it&nbsp;here. Highlights of this Release cockpit: instance filters added that allow you to filter for business key and variables called process definition tab added called process instances tab added admin: administrate users and groups added change group memberships added manage authorizations added assign access rights to cockpit and tasklist added (as part of manage authorizations) engine: ability to run process engine in a heterogenous cluster&nbsp;added unique constraint on business key&nbsp;removed&nbsp;(applied to new installations only) #noRetriesLeft to jobQuery&nbsp;added bpmn element throwing message event&nbsp;added bpmn element&nbsp;send task&nbsp;added exception types in error codes to declare business exceptions history performance&nbsp;improved configuration from camunda.cfg.xml file possible (in addition to activity.cfg.xml) Breaking changes: the tasklist is now part of the camunda webapp, you should find it at&nbsp;http://localhost:8080/camunda/app/tasklist.&nbsp; In total, 80 issues have been addressed including more than 20 bug fixes.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/post/2013/08/camunda-bpm-700-alpha9-released/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/07/prague-history-beer-and-camunda-bpm/">Prague: history, beer and …camunda BPM</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Nastasja Johnston</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 22 Jul 22070</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Yes, fellow BPM-enthusiasts it is time to head to Prague for the camunda BPM community event of the year! We are heading across the border and are hosting our first event in a non-German speaking country on Friday, October 18th at the fusion hotel in the great city of Prague. You will get the chance to learn more about camunda BPM from the people behind the platform (the whole team will be present!) but also get real-life reports from users.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/post/2013/07/prague-history-beer-and-camunda-bpm/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/post/2013/07/camunda-bpm-camunda-bpm-700-alpha8/">camunda BPM camunda BPM 7.0.0-alpha8 released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 19 Jul 19070</time>,
+    under <a href="http://localhost:1313/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Here comes the latest camunda BPM alpha release with the following highlights: New features in cockpit webapplication: Greatly improved layout Editing process variables Cancelling a process instance Increment retries for failed jobs Login based on Process Engine Identity Service We added a new application called camunda Admin which provides support for Managing users &amp; groups based on the process engine engine identity service Creating an initial user for a process engine The REST API was enhanced&nbsp; Improved variable handling Added Jobs resource (contribution by Clint Manning, 1&amp;1) Added User and Group Resources The Process Engine got smarter Started work on authorization service Braking change: the URL for cockpit is now http://localhost:8080/camunda/.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/post/2013/07/camunda-bpm-camunda-bpm-700-alpha8/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+
+  
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="/page/11/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="/">1</a></li>
+        
+        <li
+        ><a href="/page/2/">2</a></li>
+        
+        <li
+        ><a href="/page/3/">3</a></li>
+        
+        <li
+        ><a href="/page/4/">4</a></li>
+        
+        <li
+        ><a href="/page/5/">5</a></li>
+        
+        <li
+        ><a href="/page/6/">6</a></li>
+        
+        <li
+        ><a href="/page/7/">7</a></li>
+        
+        <li
+        ><a href="/page/8/">8</a></li>
+        
+        <li
+        ><a href="/page/9/">9</a></li>
+        
+        <li
+        ><a href="/page/10/">10</a></li>
+        
+        <li
+        ><a href="/page/11/">11</a></li>
+        
+        <li
+        class="active"><a href="/page/12/">12</a></li>
+        
+        <li
+        ><a href="/page/13/">13</a></li>
+        
+        <li
+        ><a href="/page/14/">14</a></li>
+        
+        <li
+        ><a href="/page/15/">15</a></li>
+        
+        <li
+        >
+        <a href="/page/13/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="/page/15/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+  </div>
+
+</div>
+
+
+
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="http://localhost:1313/misc/imprint">Imprint</a></li>
+        <li><a href="http://localhost:1313/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top text-right">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://localhost:1313/js/scripts.js"></script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
+
