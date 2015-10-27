@@ -4,27 +4,27 @@ date: "2015-10-14T13:28:00+02:00"
 author: "Valentin Vago"
 
 categories:
-  - "Release"
+  - "Community"
 
 tags:
-  - Blog
-  - Camunda
-  - Design
-  - Hugo
+  - "Blog"
+  - "Camunda"
+  - "Design"
+  - "Hugo"
 ---
 
 I was delighted when [Daniel](//twitter.com/meyerdan) asked me to *valify* (as Robert says) the **Camunda BPM Team Blog**
 and make it fit our **CI** (nope, for once, this ain't meaning Continuous Integration). Here's the little story about that work… erm… fun and some showoff about the new blog features.
 <!--more-->
 
-## Who, nowadways, wants to write HTML?
+# Who, nowadways, wants to write HTML?
 
 *None of my colleagues, that's pretty much a fact.*
 
 And since we rebuild our [documentation website](//docs.camunda.org/latest) using [Hugo](//gohugo.io)
 and liked it, it seemed legit to continue with that stack.
 
-## One cannot just drop the older posts
+# One cannot just drop the older posts
 
 *That's kind of obvious.*
 
@@ -81,15 +81,15 @@ grunt.registerTask('import', function () {
 });
 ```
 
-## New features?
+# New features?
 
 *Sure, got plenty.*
 
-### BPMN diagrams
+## BPMN diagrams
 
 Based on [Hugo shortcodes](http://gohugo.io) and [bpmn.io](http://bpmn.io), authors can now add their diagrams in a post in a breeze like that:
 
-```
+```html
 {{</* bpmn-viewer path="/2015/10/order-process" */>}}
 ```
 
@@ -99,27 +99,83 @@ And it renders something like that when the :
 
 
 
-### BPMN symbols
+## BPMN symbols
 
 Also base on Hugo shortcodes, you can add all the symbols contained in the [bpmn-font project](//github.com/bpmn-io/bpmn-font).
 
-```
-{{</* bpmn-icon name="end-event-none" */>}}
+```html
+<div>{{</* bpmn-icon name="end-event-none" */>}}</div>
 ```
 produces
 
-{{< bpmn-icon name="end-event-none" >}}
+<div>{{< bpmn-icon name="end-event-none" >}}</div>
 
-
-
-### Code highlighting
-
-You saw it above in action :)
-
-### Emoji
-
-Na. Not yet
-
-### Responsive layout
+## Responsive layout
 
 Yep. And soon responsive youtube video player.
+
+## Text formatting
+
+### Blockquotes
+
+Could be written the markdown way
+
+```md
+> Anything that can go wrong will go wrong.
+```
+
+which renders
+
+> Anything that can go wrong will go wrong.
+
+or using the special shortcode, which is used like
+
+```md
+{{</* blockquote attr="Capt. Ed Murphy" attrlink="https://en.wikipedia.org/wiki/Edward_A._Murphy,_Jr." */>}}
+Anything that can go wrong will go wrong.
+{{</* /blockquote */>}}
+```
+
+and allows to format something said and mention its author
+
+{{< blockquote attr="Capt. Ed Murphy" attrlink="https://en.wikipedia.org/wiki/Edward_A._Murphy,_Jr." >}}
+Anything that can go wrong will go wrong.
+{{< /blockquote >}}
+
+## Images
+
+Are loaded when the reader reaches them.
+
+```md
+{{</* figure src="/2015/10/please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" */>}}
+```
+produces
+
+{{< figure src="/2015/10/please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" >}}
+
+
+## Code highlighting
+
+You saw it above in action but here's other example with Markown
+
+```md
+
+# Heading 1
+## Heading 2
+### Heading 3
+
+> blockquote
+
+[link](//url.com)
+
+```
+and a last one with some bash
+
+```sh
+sudo ./fix-ie.sh # will segfault
+```
+
+## Emoji
+
+Na. Not yet. We're not here for fun.
+
