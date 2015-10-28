@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  
+
+  <title>Testing BPMN processes with fluent assertions: Awesome! | Camunda BPM</title>
+
+
+  <link rel="canonical" href="http://camunda.github.io/blog.camunda.org/post/2014/06/testing-bpmn-processes-with-fluent-api/">
+
+  
+
+  <meta name="generator" content="Hugo 0.15-camunda" />
+
+  <link type="text/css" rel="stylesheet" href="http://camunda.github.io/blog.camunda.org/css/styles.css" />
+  <link href='http://camunda.github.io/blog.camunda.org/favicon.ico' rel='icon' type='image/x-icon'/>
+</head>
+<body class="">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="http://camunda.github.io/blog.camunda.org/">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">Camunda Team Blog</span>
+      </a>
+    </h1>
+
+    <nav class="categories">
+      <ul>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/modeling">Modeling</a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/community">Community</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+
+  <div class="page-content post">
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2014/06/testing-bpmn-processes-with-fluent-api/">Testing BPMN processes with fluent assertions: Awesome!</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 3 Jun 3060</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content">
+        <div>
+<div>
+Sometimes this topic comes up in the <a href="https://groups.google.com/forum/#!topic/camunda-bpm-users/8j-ZrGW4LM4">camunda BPM foums</a> and I cannot stress &amp; highlight this enough! :)<br />
+<br />
+Writing test cases for your BPMN processes is a vital part of good process implementation. However, writing good, maintainable testcases can be cumbersome because you may have to write a lot of boilerplate code and the resulting testcases are often hard to read and understand.
+As a community extension,&nbsp;<a href="https://github.com/plexiti/">Martin Schimak</a> has developed a fluent and well readable API, <a href="https://github.com/camunda/camunda-bpm-assert">camunda BPM assert</a>:<br />
+<br /></div>
+<div>
+<script src="https://gist.github.com/meyerdan/bf50168b1661a0792d9e.js"></script>
+</div>
+<div>
+<br /></div>
+<div>
+Awesome, right? Using the Api frees your test code of a lot of boilerplate details, makes it easy to read and maintain. Without <a href="https://github.com/camunda/camunda-bpm-assert">assert</a>, that same testcase would look like this:</div>
+<div>
+<br />
+<div>
+<script src="https://gist.github.com/meyerdan/d900eb368a026e12dc1a.js"></script></div>
+<div>
+<br /></div>
+<div>
+<br />
+From a project management perspective, the project is very mature (it is the result of almost two years of on and off discussion and prototyping)&nbsp; and <a href="https://github.com/camunda/camunda-bpm-assert/blob/master/camunda-bpm-assert/README.md">well documented</a> and is <b>recommended for heavy usage in any camunda BPM project!</b> :)</div>
+<div>
+<br /></div>
+<div>
+Enjoy.</div>
+</div>
+
+<p></div></p>
+
+      </div>
+
+      <footer>
+  <div>
+    <div class="tags">
+      <span class="glyphicon glyphicon-tag"></span>
+      <ul class="list-inline">
+        
+          <li><a href="http://camunda.github.io/blog.camunda.org/tags/release-note">Release Note</a> </li>
+        
+      </ul>
+    </div>
+
+    <div class="author" id="author-badge">
+      
+  Daniel Meyer
+
+
+    </div>
+  </div>
+
+  <div>
+    <div class="next-post">
+      <a href="/blog.camunda.org/post/2014/06/camunda-bpm-720-alpha2-released/">« camunda BPM 7.2.0-alpha2 released</a>
+    </div>
+
+    <div class="previous-post">
+      <a href="/blog.camunda.org/post/2014/05/bpmnio-now-with-full-bpmn-render-support/">bpmn.io now with full BPMN render support »</a>
+    </div>
+  </div>
+</footer>
+
+
+      <div class="comments">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+    </article>
+  </div>
+
+</div>
+
+
+
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/imprint">Imprint</a></li>
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://camunda.github.io/blog.camunda.org/js/scripts.js"></script>
+</body>
+</html>
+

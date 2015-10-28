@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  
+
+  <title>camunda BPM 7.0.0-alpha4 released | Camunda BPM</title>
+
+
+  <link rel="canonical" href="http://camunda.github.io/blog.camunda.org/post/2013/05/camunda-bpm-700-alpha4-released/">
+
+  
+
+  <meta name="generator" content="Hugo 0.15-camunda" />
+
+  <link type="text/css" rel="stylesheet" href="http://camunda.github.io/blog.camunda.org/css/styles.css" />
+  <link href='http://camunda.github.io/blog.camunda.org/favicon.ico' rel='icon' type='image/x-icon'/>
+</head>
+<body class="">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="http://camunda.github.io/blog.camunda.org/">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">Camunda Team Blog</span>
+      </a>
+    </h1>
+
+    <nav class="categories">
+      <ul>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/modeling">Modeling</a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/community">Community</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+
+  <div class="page-content post">
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/05/camunda-bpm-700-alpha4-released/">camunda BPM 7.0.0-alpha4 released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 16 May 16050</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content">
+        <div>
+Release early and release often. Today we bring you<a href="http://www.camunda.org/download/"> the next release of camunda BPM (7.0.0-alpha4)</a>. The Highlights are:<br />
+<ul>
+<li><a href="http://camundabpm.blogspot.de/2013/05/extending-camunda-cockpit-through.html">First cut of new plugin API for camunda cockpit</a>.</li>
+<li>Added message correlation to REST API.</li>
+<li><a href="http://docs.camunda.org/guides/installation-guide/">Support for shared process engine in IBM Websphere distribution</a> (enterprise customers only).</li>
+</ul>
+<div>
+<br />
+Read the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12890">full release notes</a> in Jira.<br />
+<br /></div>
+<h3>
+Message correlation in REST API</h3>
+<div>
+With the previous release we added a message correlation method to the Java API. With this release we bring the new functionality&nbsp;to the REST API. (<a href="http://docs.camunda.org/api-references/rest/#!/message/post-message">Read the docs</a>).</div>
+<div>
+<br /></div>
+<div>
+The API is pretty straight forward, just execute a POST to the<span style="background-color: white; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">&nbsp;</span><code style="background-color: #f7f7f9; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border: 1px solid rgb(225, 225, 232); color: #dd1144; font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 12px; line-height: 20px; padding: 2px 4px; white-space: nowrap;">/message</code>&nbsp;resource. Example:&nbsp;</div>
+<div>
+<br /></div>
+<div>
+<pre class="ng-scope" style="background-color: whitesmoke; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.14902); color: #333333; font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 13px; line-height: 20px; margin-bottom: 10px; padding: 9.5px; white-space: pre-wrap; word-break: break-all; word-wrap: break-word;"><code style="background-color: transparent; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border: 0px; color: inherit; font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 12px; padding: 0px;">{"messageName" : "aMessage",
+"businessKey" : "aBusinessKey",
+"correlationKeys" : {
+    "aVariable" : "aValue"
+},
+"processVariables" : {
+    "aVariable" : "aNewValue",
+    "anotherVariable" : true
+}}</code></pre>
+This allows correlating a message to an existing process instance (or start a new process instance) in a single, atomic request.</div>
+<div>
+<br /></div>
+<div>
+The corresponding Java Api call looks like this:</div>
+<div>
+<br /></div>
+<div>
+<pre class="ng-scope" style="background-color: whitesmoke; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.14902); color: #333333; font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 13px; line-height: 20px; margin-bottom: 10px; padding: 9.5px; white-space: pre-wrap; word-break: break-all; word-wrap: break-word;"><code style="background-color: transparent; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border: 0px; color: inherit; font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 12px; padding: 0px;">Map<string object=""> correlationKeys = new HashMap<string object="">();
+correlationKeys.put("aVariable", "aValue");
+    
+Map<string object=""> processVariables = new HashMap<string object="">();
+processVariables.put("aVariable", "aNewValue");
+processVariables.put("anotherVariable", true);
+
+
+runtimeService.correlateMessage("aMessage", "aBusinessKey", correlationKeys, processVariables);</string></string></string></string></code></pre>
+</div>
+<h3>
+What's next?</h3>
+<div>
+Now that we have the infrastructure ready for writing cockpit plugins, we can start implementing a bunch of awesome features in cockpit. We will now also start work on the login and security modules for the&nbsp;web applications.</div>
+<div>
+<br /></div>
+<div>
+On top of that, we will continue work on the REST API and the Websphere distribution.</div>
+<div>
+<br /></div>
+<div>
+Read the full <a href="http://camunda.org/roadmap/">Roadmap</a>.</div>
+</div>
+
+      </div>
+
+      <footer>
+  <div>
+    <div class="tags">
+      <span class="glyphicon glyphicon-tag"></span>
+      <ul class="list-inline">
+        
+          <li><a href="http://camunda.github.io/blog.camunda.org/tags/release-note">Release Note</a> </li>
+        
+      </ul>
+    </div>
+
+    <div class="author" id="author-badge">
+      
+  Daniel Meyer
+
+
+    </div>
+  </div>
+
+  <div>
+    <div class="next-post">
+      <a href="/blog.camunda.org/post/2013/05/extending-camunda-cockpit-through/">« Extending camunda Cockpit through Plugins</a>
+    </div>
+
+    <div class="previous-post">
+      <a href="/blog.camunda.org/post/2013/05/camunda-bpm-70-on-weblogic-12c/">camunda BPM 7.0 on WebLogic 12c »</a>
+    </div>
+  </div>
+</footer>
+
+
+      <div class="comments">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+    </article>
+  </div>
+
+</div>
+
+
+
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/imprint">Imprint</a></li>
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://camunda.github.io/blog.camunda.org/js/scripts.js"></script>
+</body>
+</html>
+

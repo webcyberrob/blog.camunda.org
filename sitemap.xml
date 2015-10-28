@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/</loc>
+    <lastmod>2015-10-15T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/misc/imprint/</loc>
+    <lastmod>2015-10-15T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/misc/privacy/</loc>
+    <lastmod>2015-10-15T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-posse-new-blog/</loc>
+    <lastmod>2015-10-14T13:28:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-740-alpha2-released/</loc>
+    <lastmod>2015-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/09/impressions-from-camunda-community-day/</loc>
+    <lastmod>2015-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/09/scaling-camunda-bpm-in-cluster-job/</loc>
+    <lastmod>2015-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/09/bpmn-quest-camunda-as-game-engine/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/09/context-help-in-camunda-using-solr/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/08/process-test-coverage-report/</loc>
+    <lastmod>2015-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/08/how-to-repeat-task-in-cmmn/</loc>
+    <lastmod>2015-08-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/08/brining-together-transactions-cancel/</loc>
+    <lastmod>2015-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/08/migrate-process-versions/</loc>
+    <lastmod>2015-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/08/first-version-of-dmnio-released/</loc>
+    <lastmod>2015-08-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/08/rendering-bpmn-and-highlight-current/</loc>
+    <lastmod>2015-08-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/08/start-and-complete-process-with-rest-api/</loc>
+    <lastmod>2015-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/08/job-prioritization-asynchronous-processing/</loc>
+    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/07/camunda-bpm-740-alpha-1-released/</loc>
+    <lastmod>2015-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/07/setting-up-development-environment-for/</loc>
+    <lastmod>2015-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/07/how-to-clean-uppurge-camunda-history/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/06/deploy-camunda-bpm-docker-image-with/</loc>
+    <lastmod>2015-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/06/spring-boot-support-in-camunda-new/</loc>
+    <lastmod>2015-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/06/would-you-use-apache-cassandra-for/</loc>
+    <lastmod>2015-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/06/why-we-re-implemented-bpmn-multi/</loc>
+    <lastmod>2015-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/06/build-your-own-camunda-task-explorer/</loc>
+    <lastmod>2015-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/05/camunda-bpm-730-final-released/</loc>
+    <lastmod>2015-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/05/long-running-processes-and-service/</loc>
+    <lastmod>2015-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/05/camunda-liferay-community-meeting/</loc>
+    <lastmod>2015-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/04/camunda-bpm-730-alpha3-released/</loc>
+    <lastmod>2015-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/03/camunda-workbench-release-1.0.0-alpha9/</loc>
+    <lastmod>2015-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/03/camunda-meets-cassandra-zalando/</loc>
+    <lastmod>2015-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/03/camunda-bpm-platform-osgi-110-released/</loc>
+    <lastmod>2015-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/03/camunda-BPM-7.3.0-alpha2-released/</loc>
+    <lastmod>2015-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/02/feedback-wanted-camunda-bpm-and/</loc>
+    <lastmod>2015-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/02/json-everywhere-how-to-use-json-in/</loc>
+    <lastmod>2015-02-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/02/data-mapping-and-transformation-with/</loc>
+    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/02/the-symbiosis-of-test-and-documentation/</loc>
+    <lastmod>2015-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/02/gracefully-cancelling-process-instance/</loc>
+    <lastmod>2015-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/01/camunda-BPM-7.3.0-alpha1-released/</loc>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/01/camunda-72-hands-on-webinars-recordings/</loc>
+    <lastmod>2015-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2015/01/camunda-modeler-270-release/</loc>
+    <lastmod>2015-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/12/cycle-31-released/</loc>
+    <lastmod>2014-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/12/getting-started-cmmn-and-camunda/</loc>
+    <lastmod>2014-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/12/bpmnio-releases-060-connect-and-delete/</loc>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/12/camunda-modeler-261-release_5/</loc>
+    <lastmod>2014-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/12/internationalization-in-camunda-bpm/</loc>
+    <lastmod>2014-12-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/12/cockpit-and-deployments/</loc>
+    <lastmod>2014-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/11/camunda-BPM-7.2.0-Final-released/</loc>
+    <lastmod>2014-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/11/query-numeric-variable-values/</loc>
+    <lastmod>2014-11-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/11/camunda-bpm-720-alpha6-released/</loc>
+    <lastmod>2014-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/11/job-suspension-powerful-operations-with/</loc>
+    <lastmod>2014-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/09/announcing-release-date-of-camunda-bpm/</loc>
+    <lastmod>2014-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/09/camunda-bpm-720-alpha5-released/</loc>
+    <lastmod>2014-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/09/introducing-task-filters/</loc>
+    <lastmod>2014-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/09/how-to-handle-absent-assignees/</loc>
+    <lastmod>2014-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/09/camunda-bpm-community-day/</loc>
+    <lastmod>2014-09-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/08/cockpit-plugin-store/</loc>
+    <lastmod>2014-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/08/camunda-bpm-720-alpha4-released/</loc>
+    <lastmod>2014-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/07/hello-name-templating-with-camunda-bpm/</loc>
+    <lastmod>2014-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/07/news-from-front-end/</loc>
+    <lastmod>2014-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/07/embedded-case-management-with-cmmn-in/</loc>
+    <lastmod>2014-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/07/scripting-everywhere-in-camunda-bpm/</loc>
+    <lastmod>2014-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/07/bpmnio-introduces-simple-modeling/</loc>
+    <lastmod>2014-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/07/open-source-embedded-case-management/</loc>
+    <lastmod>2014-07-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/07/advanced-asynchronous-continuations/</loc>
+    <lastmod>2014-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/07/camunda-bpm-720-alpha3-released/</loc>
+    <lastmod>2014-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/07/automated-ui-testing-with-camunda-web/</loc>
+    <lastmod>2014-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/06/camunda-bpm-platform-osgi-10-released/</loc>
+    <lastmod>2014-06-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/06/camunda-bpm-720-alpha2-released/</loc>
+    <lastmod>2014-06-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/06/testing-bpmn-processes-with-fluent-api/</loc>
+    <lastmod>2014-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/05/bpmnio-now-with-full-bpmn-render-support/</loc>
+    <lastmod>2014-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/05/camunda-modeler-260-released-field/</loc>
+    <lastmod>2014-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/05/camunda-bpm-online-training-available/</loc>
+    <lastmod>2014-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/05/720-alpha1-released-rest-api-bugfixes/</loc>
+    <lastmod>2014-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/05/bpmnio-source-code-and-demo-application/</loc>
+    <lastmod>2014-05-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/05/feedback-request-process-implementation/</loc>
+    <lastmod>2014-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/04/sneak-preview-for-new-online-training/</loc>
+    <lastmod>2014-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/04/use-camunda-bom-for-maven-dependency/</loc>
+    <lastmod>2014-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/04/get-started-with-camunda-bpm-and-java-ee/</loc>
+    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/04/camunda-modeler-250-released-extension/</loc>
+    <lastmod>2014-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/03/camunda-BPM-7.1.0-Final-released/</loc>
+    <lastmod>2014-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/03/new-camunda-bpm-network/</loc>
+    <lastmod>2014-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/03/fluent-api-for-message-correlation/</loc>
+    <lastmod>2014-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/03/camunda-grails-plugin-by-martin-schimak/</loc>
+    <lastmod>2014-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/03/custom-location-for-bpm-platformxml/</loc>
+    <lastmod>2014-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/03/camunda-bpm-710-alpha4-released/</loc>
+    <lastmod>2014-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/03/camunda-bpm-assert-10-released-as/</loc>
+    <lastmod>2014-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/02/how-to-use-camunda-bpmnjs-to-visulize/</loc>
+    <lastmod>2014-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/02/camunda-bpm-71-live-webinar/</loc>
+    <lastmod>2014-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/02/bpmnio-announced-webbased-bpmn-modeling/</loc>
+    <lastmod>2014-02-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/02/camunda-bpm-710-alpha3-released-cockpit/</loc>
+    <lastmod>2014-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/02/announcing-release-date-of-camunda-bpm/</loc>
+    <lastmod>2014-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/02/camunda-modeler-240-released-design/</loc>
+    <lastmod>2014-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/02/the-new-camunda-bpmn-model-api/</loc>
+    <lastmod>2014-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/02/camunda-modeler-standalone-100-released/</loc>
+    <lastmod>2014-02-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/01/camunda-bpm-710-alpha2-released/</loc>
+    <lastmod>2014-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/01/benchmarking-camunda-process-engine/</loc>
+    <lastmod>2014-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/01/gaining-insight-into-performance-of/</loc>
+    <lastmod>2014-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/01/get-your-tasklist-as-rss-feed/</loc>
+    <lastmod>2014-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2014/01/three-core-developers-join-camunda-bpm/</loc>
+    <lastmod>2014-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/12/camunda-modeler-standalone-introduction/</loc>
+    <lastmod>2013-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/12/get-your-own-camunda-bpm-t-shirt/</loc>
+    <lastmod>2013-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/12/camunda-modeler-231-released-fixes/</loc>
+    <lastmod>2013-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/12/camunda-Modeler-2-3-0-released/</loc>
+    <lastmod>2013-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/12/how-to-use-generated-task-forms-with/</loc>
+    <lastmod>2013-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/11/monitor-collaborating-executable-bpmn/</loc>
+    <lastmod>2013-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/11/camunda-BPM-7.1.0-alpha1-released/</loc>
+    <lastmod>2013-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/11/create-camunda-bpm-process-applications/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/11/camunda-bpm-php-sdk-v110-released/</loc>
+    <lastmod>2013-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/11/bpmn-service-synchronous-asynchronous/</loc>
+    <lastmod>2013-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/11/camunda-modeler-220-released-kepler/</loc>
+    <lastmod>2013-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/10/how-to-send-email-when-usertask-is/</loc>
+    <lastmod>2013-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/10/what-wonderful-community-day-in-prague/</loc>
+    <lastmod>2013-10-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/10/camunda-modeler-210-released/</loc>
+    <lastmod>2013-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/10/camunda-bpm-power-to-embedded-taskforms/</loc>
+    <lastmod>2013-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/09/camunda-bpm-apache-camel-integrating/</loc>
+    <lastmod>2013-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/09/camunda-share-discuss-your-bpmn-20/</loc>
+    <lastmod>2013-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/09/how-to-use-bpmn-20-scripttask-with/</loc>
+    <lastmod>2013-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/08/camunda-BPM-7.0.0-Final-released/</loc>
+    <lastmod>2013-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/08/camunda-bpm-participates-in-bpmn/</loc>
+    <lastmod>2013-08-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/08/camunda-bpm-700-alpha9-released/</loc>
+    <lastmod>2013-08-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/07/prague-history-beer-and-camunda-bpm/</loc>
+    <lastmod>2013-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/07/camunda-bpm-camunda-bpm-700-alpha8/</loc>
+    <lastmod>2013-07-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/07/camunda-bpm-70-alpha7-released/</loc>
+    <lastmod>2013-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/06/announcing-release-date-of-camunda-bpm/</loc>
+    <lastmod>2013-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/06/introducing-activity-instance-model-to/</loc>
+    <lastmod>2013-06-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/06/camunda-bpm-700-alpha6-released/</loc>
+    <lastmod>2013-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/05/camunda-bpm-70-alpha5-released/</loc>
+    <lastmod>2013-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/05/php-sdk-for-camunda-bpm-new-incubation/</loc>
+    <lastmod>2013-05-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/05/extending-camunda-cockpit-through/</loc>
+    <lastmod>2013-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/05/camunda-bpm-700-alpha4-released/</loc>
+    <lastmod>2013-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/05/camunda-bpm-70-on-weblogic-12c/</loc>
+    <lastmod>2013-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/05/camunda-vs-oracle-shootout-roadshow/</loc>
+    <lastmod>2013-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/05/camunda-bpm-700-alpha3-released/</loc>
+    <lastmod>2013-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/04/the-start-of-camundaorg-community-events/</loc>
+    <lastmod>2013-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/04/camunda-bpm-incubation-space-launched/</loc>
+    <lastmod>2013-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/04/camunda-bpm-700-alpha2-released/</loc>
+    <lastmod>2013-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/04/camunda-bpm-launch-party/</loc>
+    <lastmod>2013-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/04/new-camunda-bpm-community/</loc>
+    <lastmod>2013-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/04/the-camunda-hypothesis/</loc>
+    <lastmod>2013-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/04/camunda-modeler-2012-released/</loc>
+    <lastmod>2013-04-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/03/camunda-bpmnext-2013/</loc>
+    <lastmod>2013-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/03/a-closer-look-at-camunda-modeler/</loc>
+    <lastmod>2013-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/03/the-html5-parts-in-camunda-bpm/</loc>
+    <lastmod>2013-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/03/a-look-at-fresh-rest-api/</loc>
+    <lastmod>2013-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/03/sandy-kemsley-writes-about-camunda-bpm/</loc>
+    <lastmod>2013-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://camunda.github.io/blog.camunda.org/post/2013/03/camunda-forks-activiti-and-launches/</loc>
+    <lastmod>2013-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>

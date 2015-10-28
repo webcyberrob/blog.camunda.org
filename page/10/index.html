@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  
+
+  <title>Camunda Team Blog | Camunda BPM</title>
+
+
+  <link rel="canonical" href="http://camunda.github.io/blog.camunda.org/">
+
+  <link href="http://camunda.github.io/blog.camunda.org/index.xml" rel="alternate" type="application/rss+xml" title="Camunda Team Blog" />
+
+  <meta name="generator" content="Hugo 0.15-camunda" />
+
+  <link type="text/css" rel="stylesheet" href="http://camunda.github.io/blog.camunda.org/css/styles.css" />
+  <link href='http://camunda.github.io/blog.camunda.org/favicon.ico' rel='icon' type='image/x-icon'/>
+</head>
+<body class="home">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="http://camunda.github.io/blog.camunda.org/">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">Camunda Team Blog</span>
+      </a>
+    </h1>
+
+    <nav class="categories">
+      <ul>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/modeling">Modeling</a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/community">Community</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+  
+
+
+  <div class="page-content mixed-list list">
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2014/02/the-new-camunda-bpmn-model-api/">The new camunda BPMN model API</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Sebastian Menski</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 7 Feb 7020</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>As already mentioned in our last alpha release blog post&nbsp;we are currently working on a BPMN model API to parse, create, edit and write BPMN 2.0 XML files. Last Friday we opened our GitHub repository&nbsp;and have since then created a userguide and some quickstarts. The BPMN model API offers you a simple and straightforward way to interact with an BPMN 2.0 model. It enables you to gather information from an existing model, edit and extend them.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2014/02/the-new-camunda-bpmn-model-api/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2014/02/camunda-modeler-standalone-100-released/">camunda Modeler Standalone 1.0.0 released as an official part of camunda BPM</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Nico Rehwaldt</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 6 Feb 6020</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>The camunda Modeler Standalone&nbsp;is a tool that allows you to create, view and edit&nbsp;BPMN&nbsp;process and collaboration diagrams in a seamless way. I am happy to say that the project,&nbsp;previously a side project of mine,&nbsp;is now an official part of camunda BPM. Today we released version 1.0.0 as the first stable version of the modeler. Get it now. As part of camunda BPM the camunda Modeler Standalone got its&nbsp;own place&nbsp;on&nbsp;camunda.org&nbsp;and a&nbsp;one-click-to-distribution build.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2014/02/camunda-modeler-standalone-100-released/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2014/01/camunda-bpm-710-alpha2-released/">camunda BPM 7.1.0-alpha2 released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Roman Smirnov</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 31 Jan 31010</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>It was a hard time of two months without a new camunda BPM release, but the waiting came to an end today. We are happy to announce the first release of 2014: camunda BPM 7.1.0-alpha2.&nbsp;The highlights of this release are: engine: enhance PVM Atomic Operation and Graph Model to provide facility for an activity to cancel a scope or be executed concurrently to activities in the same scope. This refactoring has the following positive effects: write History for Boundary Events, Intermediate Catch Events following an Event Based Gateway Execution Listeners on cancel scope / concurrent activities now work proper and fixed a lot of further bugs a Receive Task with a message reference can be triggered like an ordinary event (docs) query after Historic Activity Statistics cockpit: use grunt to build client sides assets, manage client sides dependencies and fetch them (github-docs) show suspended Job Definitions on the process diagram add a view switcher to be able to write an own process definition or instance view as a plugin implement a new process definition view as a enterprise plugin to show historic process instances data performance test suite (github) enterprise support for Oracle WebLogic 12c, jBoss EAP 6.1 and 6.2 some contributions from Clint&nbsp;and Markus In total, about 90 Issues have been closed during the last two months.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2014/01/camunda-bpm-710-alpha2-released/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2014/01/benchmarking-camunda-process-engine/">Benchmarking Performance of camunda Process Engine - Broken SSDs and some Numbers</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 22 Jan 22010</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Yesterday morning I posted some details about our current performance testing efforts. At that point I was still developing the performance testing framework and using the H2 in-memory database when running tests, just to check whether everything runs clean. Yesterday evening, finally, I wanted to run some tests on a "real" database. &nbsp;I hadn't done any serious performance testing since a couple of month back when we released camunda BPM 7.0 Final and in the meantime I have switched my operating system from Windows 7 to Ubuntu Linux.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2014/01/benchmarking-camunda-process-engine/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2014/01/gaining-insight-into-performance-of/">Gaining insight into the Performance of camunda Process Engine</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 21 Jan 21010</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>The camunda process engine has a very active codebase and is constantly evolving. Only last week we did a major refactoring, re-implementing the way the BPMN Boundary Event, Event Subprocess, Terminate End Event and similar constructs work. In summer we introduced an activity instance model and rewrote the history implementation, turning it into a fire-and-forget event stream.&nbsp;We also constantly add new features such as incidents&nbsp;and many others. When doing such refactorings, the extensive process engine testsuite gives us the confidence that we do not break existing functionality from a functional perspective (process engine currently has 1669&nbsp;Testases, over 500 were added last year).</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2014/01/gaining-insight-into-performance-of/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2014/01/get-your-tasklist-as-rss-feed/">Get your Tasklist as RSS Feed</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Jakob Freund</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 14 Jan 14010</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>I don't like watching my Tasklist all day. Getting email notifications for tasks that I should complete is nice, but sometimes I don't want to complete the task right after being notified but still need to keep in mind there is something pending. This is how I came to create a simple PHP script that exposes my tasks as an RSS Feed. I can use that in my personal master dashboard (Microsoft Outlook) to keep track of my camunda Tasklist.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2014/01/get-your-tasklist-as-rss-feed/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2014/01/three-core-developers-join-camunda-bpm/">Three new core Developers join camunda BPM Team</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 7 Jan 7010</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>A warm welcome to the new guys! camunda BPM development Team I am very happy to announce that last week, three new core developers joined our team here at camunda. Here they are: Danny Gräf Danny is an experienced developer and will focus on the backend side of things: process engine, databases, programming models (Spring / CDI) and application server integration. His Github Profile:&nbsp;https://github.com/dgf Sebastian Menski Sebastian is an expert in distributed systems and networking and joins us as core process engine hacker.&nbsp; His Github Profile:&nbsp;https://github.com/menski Valentin Vago Valentin is a seasoned Frontend Developer and Javascript hacker.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2014/01/three-core-developers-join-camunda-bpm/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/12/camunda-modeler-standalone-introduction/">camunda Modeler as a standalone tool</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Nico Rehwaldt</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 19 Dec 19120</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>As a small little side project I was working on a standalone version of the camunda BPMN 2.0 modeling plugin for Eclipse. The camunda Modeler standalone offers nice little features to better integrate with the operating system and focuses 100% on process modeling. It is available for Mac, Linux and Windows. Update (2014-02-05) The project is now an official part of camunda BPM. Read the offical announcement&nbsp;or check out its&nbsp;home on camunda.org.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/12/camunda-modeler-standalone-introduction/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/12/get-your-own-camunda-bpm-t-shirt/">Get your own camunda BPM T-Shirt!</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Bernd Rücker</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 11 Dec 11120</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Still need a Christmas present? How about a cool camunda BPM T-Shirt? Various team members designed the Shirts themselves and we got quite some response throughout the year. So we will make them available to you! OK - to be honest we will not make it before Christmas - but you can look forward to your new Shirt early in 2014! T-Shirts cost 20 € each (including shipping within Germany - ask us for international shipment options if applicable).</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/12/get-your-own-camunda-bpm-t-shirt/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/12/camunda-modeler-231-released-fixes/">camunda Modeler 2.3.1 released: Fixes installation issues</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Nico Rehwaldt</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 9 Dec 9120</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Some users experienced difficulties installing version 2.3.0 of the camunda Modeler from our update site. This patch release fixes the installation issues. Grab it if you had trouble installing.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/12/camunda-modeler-231-released-fixes/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+
+  
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="/page/9/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="/">1</a></li>
+        
+        <li
+        ><a href="/page/2/">2</a></li>
+        
+        <li
+        ><a href="/page/3/">3</a></li>
+        
+        <li
+        ><a href="/page/4/">4</a></li>
+        
+        <li
+        ><a href="/page/5/">5</a></li>
+        
+        <li
+        ><a href="/page/6/">6</a></li>
+        
+        <li
+        ><a href="/page/7/">7</a></li>
+        
+        <li
+        ><a href="/page/8/">8</a></li>
+        
+        <li
+        ><a href="/page/9/">9</a></li>
+        
+        <li
+        class="active"><a href="/page/10/">10</a></li>
+        
+        <li
+        ><a href="/page/11/">11</a></li>
+        
+        <li
+        ><a href="/page/12/">12</a></li>
+        
+        <li
+        ><a href="/page/13/">13</a></li>
+        
+        <li
+        ><a href="/page/14/">14</a></li>
+        
+        <li
+        ><a href="/page/15/">15</a></li>
+        
+        <li
+        >
+        <a href="/page/11/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="/page/15/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+  </div>
+
+</div>
+
+
+
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/imprint">Imprint</a></li>
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://camunda.github.io/blog.camunda.org/js/scripts.js"></script>
+</body>
+</html>
+

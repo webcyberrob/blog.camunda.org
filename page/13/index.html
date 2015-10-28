@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  
+
+  <title>Camunda Team Blog | Camunda BPM</title>
+
+
+  <link rel="canonical" href="http://camunda.github.io/blog.camunda.org/">
+
+  <link href="http://camunda.github.io/blog.camunda.org/index.xml" rel="alternate" type="application/rss+xml" title="Camunda Team Blog" />
+
+  <meta name="generator" content="Hugo 0.15-camunda" />
+
+  <link type="text/css" rel="stylesheet" href="http://camunda.github.io/blog.camunda.org/css/styles.css" />
+  <link href='http://camunda.github.io/blog.camunda.org/favicon.ico' rel='icon' type='image/x-icon'/>
+</head>
+<body class="home">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="http://camunda.github.io/blog.camunda.org/">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">Camunda Team Blog</span>
+      </a>
+    </h1>
+
+    <nav class="categories">
+      <ul>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/modeling">Modeling</a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/categories/community">Community</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+  
+
+
+  <div class="page-content mixed-list list">
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/07/camunda-bpm-70-alpha7-released/">camunda BPM 7.0-alpha7 released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Roman Smirnov</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 4 Jul 4070</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>camunda BPM 7.0.0-alpha7 is out now! The highlights of this new release are: In Cockpit we worked on the visualization of Process Instances: Incidents of a running process instance will be shown in the corresponding rendered process diagram. The former introduced Activity Instance Tree will be visualized as a tree. Now it is possible to select a BPMN element in the rendered process diagram or to select a activity instance wihtin the activity instance tree.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/07/camunda-bpm-70-alpha7-released/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/06/announcing-release-date-of-camunda-bpm/">Announcing the Release Date of camunda BPM 7.0.0 GA</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Robert Gimbel</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 18 Jun 18060</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>We are proud to announce the major release date of&nbsp;camunda BPM: 7.0.0 GA* on 31.08.2013 &nbsp;All features will be open source, exept for the IBM Websphere AS distribution. From that day on, there will also exist the&nbsp;supported enterprise edition&nbsp;of &nbsp;camunda BPM. (*General Availability) Highlights of 7.0.0 New webapplication for process monitoring with BPMN 2.0, based on an open&nbsp;plugin infrastructure Faster process engine with asynchronous history, optimized for high load scenarios New&nbsp;embeddable&nbsp;REST API, based on JAX-RS Java Script library for&nbsp;rendering&nbsp;BPMN 2.0 diagrams&nbsp; Support for: Tomcat, JBoss, Glassfish and IBM Websphere AS Enahnced user management, supporting LDAP and JAAS Also new in 7.0.0 Fully Java EE 6 compliant process engine, support for message correlation,&nbsp;HTML5&nbsp;Tasklist for human workflow, a&nbsp;new&nbsp;incident infrastructure&nbsp;in the process engine, lots of bugfixes, lots of helpful&nbsp;documentation.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/06/announcing-release-date-of-camunda-bpm/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/06/introducing-activity-instance-model-to/">Introducing an Activity Instance Model to the core Process Engine</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 17 Jun 17060</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>(this post was originally part of the 7.0.0-alpha6 release blog post but later extracted into an own post). In 7.0.0-alpha6 we introduced the concept of&nbsp;activity&nbsp;instances and the activity instance tree to the core process engine. This post explains the motivation and gives some insight into the internal implementation. Why do we need an Activity Instance Tree? The activity instance tree contains a node for each activity that is currently active in the process instance.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/06/introducing-activity-instance-model-to/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/06/camunda-bpm-700-alpha6-released/">camunda BPM 7.0.0-alpha6 released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 14 Jun 14060</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Today we announce the release of camunda BPM 7.0.0-alpha6. In this release we focused on visualizing process instance state on top of a rendered diagram in cockpit. We added the following features:&nbsp; Process Instance Detail view in cockpit visualizing active activity instances with count Updated process definition view to include failed jobs from subprocess instances Greatly improved Javascript BPMN 2.0 Renderer (now feature complete) Added persistent Activity Instance tree in process engine Event Subscription Query is exposed in REST and Java API 41 issues were closed.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/06/camunda-bpm-700-alpha6-released/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/05/camunda-bpm-70-alpha5-released/">camunda BPM 7.0-alpha5 released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 31 May 31050</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Two weeks after the last alpha release we bring you the freshly baked* alpha5 version of the camunda BPM platform. The highlights of this crispy new release are: Failed jobs plugin in cockpit, Process Instance table in cockpit, Refined client-side plugin infrastructure, New incident infrastructure in process engine, Additions to the REST API, Complete support for websphere application server 8.5 (enterprise customers only) 50 JIRA issues were closed, see the complete release notes.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/05/camunda-bpm-70-alpha5-released/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/05/php-sdk-for-camunda-bpm-new-incubation/">PHP SDK for camunda BPM: new Incubation Project started</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 24 May 24050</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>If you want to do BPM / Workflow and BPMN 2.0 in PHP then we have good news for you: as part of our camunda BPM polyglot initiative we started a new incubation project which aims at providing a PHP SDK for camunda BPM. This SDK will facilitate the development of PHP-based applications that use the camunda BPM middleware services. The project will provide a client library which authenticates against the REST Api and provide PHP developers with a native API for interacting with the process engine: While the camunda BPM project stays&nbsp;focused&nbsp;on Java as primary programming language, we believe that it is important to support developers that use other programming languages and give them access to the BPMN 2.0 process engine technology, without having to rewrite that technology in every programming language.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/05/php-sdk-for-camunda-bpm-new-incubation/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/05/extending-camunda-cockpit-through/">Extending camunda Cockpit through Plugins</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Nico Rehwaldt</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 17 May 17050</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>camunda Cockpit with a plugin. Yeaaah. As we have seen in the past, it is impossible for camunda Cockpit ---our process monitoring tool--- to satisfy all needs, out of the box. That is why we have long thought about providing it with an appopriate extension mechanism that empoweres users to fit the tool to their very own monitoring needs. With the latest relase of camunda BPM a first version of a plugin system for camunda Cockpit is finally here.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/05/extending-camunda-cockpit-through/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/05/camunda-bpm-700-alpha4-released/">camunda BPM 7.0.0-alpha4 released</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Daniel Meyer</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 16 May 16050</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>Release early and release often. Today we bring you the next release of camunda BPM (7.0.0-alpha4). The Highlights are: First cut of new plugin API for camunda cockpit. Added message correlation to REST API. Support for shared process engine in IBM Websphere distribution (enterprise customers only). Read the full release notes in Jira. Message correlation in REST API With the previous release we added a message correlation method to the Java API.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/05/camunda-bpm-700-alpha4-released/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/05/camunda-bpm-70-on-weblogic-12c/">camunda BPM 7.0 on WebLogic 12c</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Bernd Rücker</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 14 May 14050</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>If we go on tour together with Oracle&nbsp;I think we have to have camunda BPM running on the Oracle WebLogic application server 12c (WLS in short). And one of our enterprise customers asked - so I invested a&nbsp;Sunday&nbsp;and got it running (okay - to be honest - I needed quite some help from our Java EE server guru&nbsp;Christian). In this blog post I give a step by step description how run camunda BPM on WLS.</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/05/camunda-bpm-70-on-weblogic-12c/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/05/camunda-vs-oracle-shootout-roadshow/">camunda vs. Oracle: Shootout Roadshow</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Jakob Freund</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 7 May 7050</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content summary">
+        <div>High Noon in BPM City: not a soul walks the dusty main road and the sun glares mercilessly onto El Camundo and his opponent – the Oracle of the Desert. The wireless mouse still rests in his holster, his hand hovers above it – only the slightest quiver reveals Camundo's tension. Pearly beads of sweat are glistening on Oracle's face. Who will be the first to shoot off his token? This is close to what you can expect from our Shootout Roadshow, that we will run together with Oracle and Opitz Consulting (the latter as a neutral presenter).</div>
+      </div>
+
+      <footer>
+        <div class="read-more-link">
+  <a href="/blog.camunda.org/post/2013/05/camunda-vs-oracle-shootout-roadshow/">Read more »</a>
+</div>
+
+      </footer>
+    </article>
+  
+
+  
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="/page/12/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="/">1</a></li>
+        
+        <li
+        ><a href="/page/2/">2</a></li>
+        
+        <li
+        ><a href="/page/3/">3</a></li>
+        
+        <li
+        ><a href="/page/4/">4</a></li>
+        
+        <li
+        ><a href="/page/5/">5</a></li>
+        
+        <li
+        ><a href="/page/6/">6</a></li>
+        
+        <li
+        ><a href="/page/7/">7</a></li>
+        
+        <li
+        ><a href="/page/8/">8</a></li>
+        
+        <li
+        ><a href="/page/9/">9</a></li>
+        
+        <li
+        ><a href="/page/10/">10</a></li>
+        
+        <li
+        ><a href="/page/11/">11</a></li>
+        
+        <li
+        ><a href="/page/12/">12</a></li>
+        
+        <li
+        class="active"><a href="/page/13/">13</a></li>
+        
+        <li
+        ><a href="/page/14/">14</a></li>
+        
+        <li
+        ><a href="/page/15/">15</a></li>
+        
+        <li
+        >
+        <a href="/page/14/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="/page/15/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+  </div>
+
+</div>
+
+
+
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/imprint">Imprint</a></li>
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://camunda.github.io/blog.camunda.org/js/scripts.js"></script>
+</body>
+</html>
+
