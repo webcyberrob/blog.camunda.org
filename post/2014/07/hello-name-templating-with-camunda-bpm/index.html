@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  
+
+  <title>Hello ${name}! - Templating with camunda BPM | Camunda BPM</title>
+
+
+  <link rel="canonical" href="http://camunda.github.io/blog.camunda.org/post/2014/07/hello-name-templating-with-camunda-bpm/">
+
+  
+
+  <meta name="generator" content="Hugo 0.15-camunda" />
+
+  <link type="text/css" rel="stylesheet" href="http://camunda.github.io/blog.camunda.org/css/styles.css" />
+  <link href='http://camunda.github.io/blog.camunda.org/favicon.ico' rel='icon' type='image/x-icon'/>
+</head>
+<body class="">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="http://camunda.github.io/blog.camunda.org/">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">Camunda Team Blog</span>
+      </a>
+    </h1>
+
+    
+
+    <div class="grill">
+      <button class="sidebar-toggle" title="Toggle menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+    </div>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+
+  <div class="page-content post">
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2014/07/hello-name-templating-with-camunda-bpm/">Hello ${name}! - Templating with camunda BPM</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Sebastian Menski</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 25 Jul 25070</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content">
+        <div>
+As part of our <a href="http://blog.camunda.org/2014/07/scripting-everywhere-in-camunda-bpm.html" target="_blank">scripting improvements</a>&nbsp;we also addressed templating as a new feature of camunda BPM. With the new <a href="http://blog.camunda.org/2014/07/camunda-bpm-720-alpha3-released.html" target="_blank">camunda BPM 7.2.0-alpha3</a> release it is now also possible to use <a href="http://freemarker.org/" target="_blank">FreeMarker</a> or <a href="https://velocity.apache.org/" target="_blank">Apache Velocity</a> templates inside your BPMN process.<br />
+<br />
+<a name='more'></a><br />
+We integrated this template engines as JSR 223 compatible scripting engines. Therefore we create small wrappers for these template engines in our <a href="https://github.com/camunda/camunda-template-engines-jsr223" target="_blank">camunda-template-engines-jsr223</a>&nbsp;project.&nbsp;This has the advantage that we do not need new extension elements or attributes for the BPMN xml. Instead a template can be used everywhere a script can be used. This is especially useful for script tasks and input output mappings. If the template engine JSR 223 wrapper is part of your classpath you can use the name of the template engine as script language.<br />
+<br />
+The maven coordinates of the template engine wrappers a the following if you want to use them with an embedded engine or in a JUnit test case:<br />
+<br />
+<pre style="white-space: pre-wrap; word-wrap: break-word;">&lt;dependency&gt;
+  &lt;groupId&gt;org.camunda.template-engines&lt;/groupId&gt;
+  &lt;artifactId&gt;camunda-template-engines-freemarker&lt;/artifactId&gt;
+  &lt;version&gt;1.0.0&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+  &lt;groupId&gt;org.camunda.template-engines&lt;/groupId&gt;
+  &lt;artifactId&gt;camunda-template-engines-velocity&lt;/artifactId&gt;
+  &lt;version&gt;1.0.0&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+<pre style="white-space: pre-wrap; word-wrap: break-word;"></pre>
+<pre style="white-space: pre-wrap; word-wrap: break-word;"></pre>
+<div style="white-space: pre-wrap; word-wrap: break-word;">
+<span style="font-family: inherit;">The following example shows a simple use case where an input output mapping is used on a service task to generate a text content needed by this task. Here we use the FreeMarker template engine to generate the body of an email.</span></div>
+<br />
+<script src="https://gist.github.com/menski/b880b33bdb34aae5e50b.js"></script>
+
+As you can see the process variables in the current scope can directly be used in the template. The result of the processed template is than save in a local variable which is available inside of the service task.<br />
+<br />
+Another interesting use case for templates are camunda connectors (added in <a href="http://blog.camunda.org/2014/06/camunda-bpm-720-alpha2-released.html" target="_blank">7.2.0-alpha2</a>). As templates like scripts can be loaded from external resources it is possible to use the a SOAP envelope template in multiple processes or projects. An example for such an template can be found in our <a href="https://github.com/camunda/camunda-bpm-examples/tree/master/servicetask/soap-service" target="_blank">SOAP connector example</a>.<br />
+<br />
+<script src="https://gist.github.com/menski/2fd9e14f175d5755def4.js"></script>
+
+As a side effect of this new feature we have demonstrated that you can now easily integrate own scripting-like languages in camunda BPM. If it is possible to create a JSR 223 compatible wrapper it can be used in camunda BPM.<br />
+<br />
+To read more technical details about templating please visit our <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-templating" target="_blank">user guide</a>. And please let us know what you think about this new feature.
+</div>
+
+      </div>
+
+      <footer>
+  <div>
+    <div class="tags">
+      <span class="glyphicon glyphicon-tag"></span>
+      <ul class="list-inline">
+        
+          <li><a href="http://camunda.github.io/blog.camunda.org/tags/release-note">Release Note</a> </li>
+        
+      </ul>
+    </div>
+
+    <div class="author" id="author-badge">
+      
+  Sebastian Menski
+
+
+    </div>
+  </div>
+
+  <div>
+    <div class="next-post">
+      <a href="/blog.camunda.org/post/2014/08/camunda-bpm-720-alpha4-released/">« camunda BPM 7.2.0-alpha4 released: CMMN Listener, Tasklist, Spin, Connect</a>
+    </div>
+
+    <div class="previous-post">
+      <a href="/blog.camunda.org/post/2014/07/news-from-front-end/">News from the front-(end) »</a>
+    </div>
+  </div>
+</footer>
+
+
+      <div class="comments">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+    </article>
+  </div>
+
+</div>
+
+<div class="sidebar">
+  <div class="sidebar-content">
+    <div class="col">
+      <h5>Links</h5>
+      <ul>
+        <li><a href="http://bpmn.io">bpmn.io</a></li>
+        <li><a href="http://github.com/camunda">Camunda on github</a></li>
+        <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
+        <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h5>Links</h5>
+      <ul>
+        <li><a href="http://bpmn.io">bpmn.io</a></li>
+        <li><a href="http://github.com/camunda">Camunda on github</a></li>
+        <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
+        <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h5>Links</h5>
+      <ul>
+        <li><a href="http://bpmn.io">bpmn.io</a></li>
+        <li><a href="http://github.com/camunda">Camunda on github</a></li>
+        <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
+        <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/imprint">Imprint</a></li>
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://camunda.github.io/blog.camunda.org/js/scripts.js"></script>
+</body>
+</html>
+

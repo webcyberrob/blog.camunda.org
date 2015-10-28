@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  
+
+  <title>A closer look at the camunda modeler | Camunda BPM</title>
+
+
+  <link rel="canonical" href="http://camunda.github.io/blog.camunda.org/post/2013/03/a-closer-look-at-camunda-modeler/">
+
+  
+
+  <meta name="generator" content="Hugo 0.15-camunda" />
+
+  <link type="text/css" rel="stylesheet" href="http://camunda.github.io/blog.camunda.org/css/styles.css" />
+  <link href='http://camunda.github.io/blog.camunda.org/favicon.ico' rel='icon' type='image/x-icon'/>
+</head>
+<body class="">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="http://camunda.github.io/blog.camunda.org/">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">Camunda Team Blog</span>
+      </a>
+    </h1>
+
+    
+
+    <div class="grill">
+      <button class="sidebar-toggle" title="Toggle menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+    </div>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+
+  <div class="page-content post">
+    <article>
+      <header class="row">
+  <h1><a href="/blog.camunda.org/post/2013/03/a-closer-look-at-camunda-modeler/">A closer look at the camunda modeler</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">Nico Rehwaldt</a>
+    on <time pubdate="0001-01-01 00:00:00 &#43;0000 UTC">Wed, 22 Mar 22030</time>,
+    under <a href="http://camunda.github.io/blog.camunda.org/categories/execution">Execution</a> category.
+    
+  </div>
+
+</header>
+
+
+      <div class="content">
+        <div>
+Along with the <a href="http://camundabpm.blogspot.de/2013/03/camunda-forks-activiti-and-launches.html">launch</a> of our <a href="http://camunda.org/">open-source BPM platform</a> we made the camunda modeler available to the public, both as <a href="http://camunda.org/download/modeler/">a&nbsp;software</a> and as&nbsp;<a href="https://github.com/camunda/camunda-modeler" target="_blank">source code</a>.<br />
+<br />
+With the camunda modeler, you get at free modeling tool that integrates in your Eclipse IDE and <span style="font-family: inherit;"><span style="background-color: white; line-height: 24.44444465637207px;">focuses on seamless modeling of process and collaboration</span><span style="background-color: white; line-height: 24.44444465637207px;">&nbsp;diagrams.&nbsp;</span></span>But see yourself:<br />
+<div style="font-size: medium; font-weight: normal;">
+<br /></div>
+<div style="font-size: medium; font-weight: normal;">
+<embed align="middle" allowscriptaccess="always" height="501" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" src="http://camunda.github.com/camunda-modeler/assets/video/intro.swf" type="application/x-shockwave-flash" width="591"></embed></div>
+<div style="font-size: medium; font-weight: normal;">
+<br /></div>
+<div style="font-size: medium; font-weight: normal;">
+We invite you to&nbsp;<a href="http://camunda.org/download/modeler/">try out the modeler</a>,&nbsp;<a href="https://groups.google.com/forum/#!forum/camunda-bpm-users">give us feedback</a>&nbsp;and&nbsp;<a href="https://github.com/camunda/camunda-modeler/blob/kepler/CONTRIBUTING.md">contribute to it</a>.<br />
+<h2>
+Present, past and Future</h2>
+The camunda modeler is based on the <a href="http://eclipse.org/bpmn2-modeler/">Eclipse BPMN 2.0 Modeler</a>&nbsp;that integrates into the Eclipse IDE. Its aim was to allow users with technical focus to create BPMN 2.0 diagrams and maintain BPMN and&nbsp;<a href="http://camunda.org/">camunda BPM</a>&nbsp;/&nbsp;<a href="http://activiti.org/">Activiti</a>&nbsp;specific attributes in those diagrams.<br />
+<br />
+Beginning October 2012, we decided to dedicate bigger long term efforts to make the modeler a general purpose tool to create and refactor BPMN 2.0 diagrams. As a result the focus of the tool shifted towards user&nbsp;friendliness, quality (in terms of bugs) and an easier maintainable code base.<br />
+<br />
+Since then, we have taken huge steps forward:<br />
+<ul>
+<li>We simplified the modeler architecture.</li>
+<li>We established a test infrastructure which comprises both unit tests for modeler features as well as blackbox user interface tests (400 Unit tests and 45 Minutes of blackbox Jubula tests).</li>
+<li>We rewrote many, if not most of the modeler features to increase testability and maintainability of the code base.</li>
+<li>We wrote a new model import to allow it to work with (most) diagrams, including BPMN 2.0 exports from other tool vendors.</li>
+<li>We reworked the property panels and added help texts and input validation&nbsp;to aid the user.</li>
+<li>We added advanced layouting features for flows to make it easier to work with complex models.</li>
+</ul>
+<div>
+As of now there are still numerous areas to improve and work is long from finished. Many things such as layouting of message flows, better handling of pools and refactoring of the symbol palette are on our <a href="http://camunda.org/roadmap/">roadmap</a>. Further, we would like to publish the modeler as a ready-to-use standalone tool for non-Eclipse users. Progress on all these issues is documented in both our&nbsp;<a href="https://github.com/camunda/camunda-modeler/blob/kepler/CHANGELOG.md">technical changelog</a>&nbsp;as well as in our&nbsp;<a href="http://camunda.org/components/modeler/release-notes/">release notes</a>.&nbsp;</div>
+<h2>
+The modeler for contributors</h2>
+<div>
+We highly encourage you to contribute to the modeler if you share our vision of a user&nbsp;friendly, high quality BPMN 2.0 modeling tool. Check out our <a href="https://github.com/camunda/camunda-modeler/blob/kepler/CONTRIBUTING.md">contribution guidelines</a>&nbsp;to get started. Tell us what you think and share your ideas on the tool in our&nbsp;<a href="https://groups.google.com/forum/#!forum/camunda-bpm-dev">development forum</a>.</div>
+<div>
+<br /></div>
+<div>
+Stay tuned for frequent camunda modeler releases and upcomming blog posts.</div>
+<div>
+In the mean time, we will continue to code with quality in mind.</div>
+</div>
+</div>
+
+      </div>
+
+      <footer>
+  <div>
+    <div class="tags">
+      <span class="glyphicon glyphicon-tag"></span>
+      <ul class="list-inline">
+        
+          <li><a href="http://camunda.github.io/blog.camunda.org/tags/release-note">Release Note</a> </li>
+        
+      </ul>
+    </div>
+
+    <div class="author" id="author-badge">
+      
+  Nico Rehwaldt
+
+
+    </div>
+  </div>
+
+  <div>
+    <div class="next-post">
+      <a href="/blog.camunda.org/post/2013/03/camunda-bpmnext-2013/">« camunda @bpmNEXT 2013</a>
+    </div>
+
+    <div class="previous-post">
+      <a href="/blog.camunda.org/post/2013/03/the-html5-parts-in-camunda-bpm/">The HTML5 parts in camunda BPM »</a>
+    </div>
+  </div>
+</footer>
+
+
+      <div class="comments">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+    </article>
+  </div>
+
+</div>
+
+<div class="sidebar">
+  <div class="sidebar-content">
+    <div class="col">
+      <h5>Links</h5>
+      <ul>
+        <li><a href="http://bpmn.io">bpmn.io</a></li>
+        <li><a href="http://github.com/camunda">Camunda on github</a></li>
+        <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
+        <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h5>Links</h5>
+      <ul>
+        <li><a href="http://bpmn.io">bpmn.io</a></li>
+        <li><a href="http://github.com/camunda">Camunda on github</a></li>
+        <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
+        <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h5>Links</h5>
+      <ul>
+        <li><a href="http://bpmn.io">bpmn.io</a></li>
+        <li><a href="http://github.com/camunda">Camunda on github</a></li>
+        <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
+        <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/imprint">Imprint</a></li>
+        <li><a href="http://camunda.github.io/blog.camunda.org/misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://camunda.github.io/blog.camunda.org/index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://camunda.github.io/blog.camunda.org/js/scripts.js"></script>
+</body>
+</html>
+
