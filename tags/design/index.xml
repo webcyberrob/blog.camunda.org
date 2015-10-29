@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Camunda Team Blog</title>
+    <link>http://camunda.github.io/blog.camunda.org/tags/design/</link>
+    <description>Recent content in Design on Camunda Team Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Oct 2015 13:28:00 +0200</lastBuildDate>
+    <atom:link href="http://camunda.github.io/blog.camunda.org/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A new blog for Camunda BPM posse</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-posse-new-blog/</link>
+      <pubDate>Wed, 14 Oct 2015 13:28:00 +0200</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-posse-new-blog/</guid>
+      <description>&lt;p&gt;I was delighted when &lt;a href=&#34;//twitter.com/meyerdan&#34;&gt;Daniel&lt;/a&gt; asked me to &lt;em&gt;valify&lt;/em&gt; (as Robert says) the &lt;strong&gt;Camunda BPM Team Blog&lt;/strong&gt;
+and make it fit our &lt;strong&gt;CI&lt;/strong&gt; (nope, for once, this ain&amp;rsquo;t meaning Continuous Integration). Here&amp;rsquo;s the little story about that work… erm… fun and some showoff about the new blog features.&lt;/p&gt;
+ Read more on http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-posse-new-blog/</description>
+    </item>
+    
+  </channel>
+</rss>

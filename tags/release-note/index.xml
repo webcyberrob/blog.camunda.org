@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Release Note on Camunda Team Blog</title>
+    <link>http://camunda.github.io/blog.camunda.org/tags/release-note/</link>
+    <description>Recent content in Release Note on Camunda Team Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://camunda.github.io/blog.camunda.org/tags/release-note/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Camunda 7.4.0-Alpha2 released</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-740-alpha2-released/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-740-alpha2-released/</guid>
+      <description>Today we release Camunda BPM 7.4.0-Alpha2. This is the second alpha release previewing the upcoming 7.4.0 Release. The highlights of this release are: Improved DMN Engine Hit Policies Data Types New Cockpit Features, Auditing of DMN Decisions, BPMN Heat Map, Improved BPMN Engine Support for BPMN Escalation Improved Asynchronous Execution Efficiency SLF4j Logging Faster Deployments Improved CMMN Engine Add Support for Repetition Rule Support for Tomcat 8 New Documenation Many Bugfixes Overall more than 170 issues were closed. Read more on http://camunda.github.io/blog.camunda.org/post/2015/10/camunda-740-alpha2-released/</description>
+    </item>
+    
+    <item>
+      <title>Impressions from Camunda Community Day 2015</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/09/impressions-from-camunda-community-day/</link>
+      <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/09/impressions-from-camunda-community-day/</guid>
+      <description>Or in other words: Our most awesome community day yet! Last week our annual Camunda Community Day took place. I always enjoy that day very much because it gives me the opportunity to get in touch with community contributors and users. I always learn a lot during these days and I take a lot of engergy away from it. Same as last year, the Community Day took place here at the Camunda office in exactly the same space in which we normally sit behind our desks and write code. Read more on http://camunda.github.io/blog.camunda.org/post/2015/09/impressions-from-camunda-community-day/</description>
+    </item>
+    
+    <item>
+      <title>Scaling Camunda BPM in a Cluster: Job Executors and Coordination</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/09/scaling-camunda-bpm-in-cluster-job/</link>
+      <pubDate>Fri, 11 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/09/scaling-camunda-bpm-in-cluster-job/</guid>
+      <description>Throughout development of Camunda 7.4, one of our focus points is job executor features and improvements. The job executor is the process engine&#39;s component to perform deferred actions, such as executing an intermediate timer event or an asynchronous continuation. Thus it is central in the Camunda architecture and central for scaling the BPM platform in a cluster. In this post we provide insight in job executor behavior and how job executor instances be coordinated by employing a backoff strategy that is part of the upcoming Camunad 7.4.0-alpha2 release. Read more on http://camunda.github.io/blog.camunda.org/post/2015/09/scaling-camunda-bpm-in-cluster-job/</description>
+    </item>
+    
+    <item>
+      <title>BPMN Quest - Camunda as a Game Engine!</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/09/bpmn-quest-camunda-as-game-engine/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/09/bpmn-quest-camunda-as-game-engine/</guid>
+      <description>This year at the annual Camunda hackdays one team bravely took it upon themselves to balance out the innovative and useful projects with something fun and frivolous. For two days somewhere in Brandenburg we were &#34;Awesome-Team-Awesome&#34; and we turned the Camunda engine into a platform to create a D&amp;amp;D style quest game. We call it BPMN Quest. If you can&#39;t wait for it - here you can play it right away. Read more on http://camunda.github.io/blog.camunda.org/post/2015/09/bpmn-quest-camunda-as-game-engine/</description>
+    </item>
+    
+    <item>
+      <title>Context Help in Camunda using SOLR Search Server</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/09/context-help-in-camunda-using-solr/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/09/context-help-in-camunda-using-solr/</guid>
+      <description>Last week we had our anual hack days - that means 48 hours of producing something aswesome. Together with Falko, Ingo and Thorben we build a context help within the Camunda BPM Workbench protoype. This uses Apache SOLR&amp;nbsp;to index various sources (we did the user forum, the docs on Github, a Community Extension and internal best practices). We discussed details on this index and did a comparison to ElasticSearch. It was a great study for options and use cases of such a help in our tool chain - but watch the result yourself: Context Help / Search via SOLR - hooken into Camunda BPM Workbench from camunda on Vimeo. Read more on http://camunda.github.io/blog.camunda.org/post/2015/09/context-help-in-camunda-using-solr/</description>
+    </item>
+    
+    <item>
+      <title>Process Test Coverage Report</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/08/process-test-coverage-report/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/08/process-test-coverage-report/</guid>
+      <description>As part of the Hack Days this year my colleague Falko migrated an existing tool we (Camunda Consulting) used with success in a lot of projects to&amp;nbsp;bpmn.io: The Process Test Coverage Report Generator. It just hooks into an automated test (typically JUnit) and creates an HTML report showing the coverage: For every Test Case For the whole Test Suite See this example for one test case - obviously the Happy Path of the process model: The report can easily be watched locally within your IDE or hooked into your Jenkins Build. Read more on http://camunda.github.io/blog.camunda.org/post/2015/08/process-test-coverage-report/</description>
+    </item>
+    
+    <item>
+      <title>How to repeat a task in CMMN?</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/08/how-to-repeat-task-in-cmmn/</link>
+      <pubDate>Wed, 19 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/08/how-to-repeat-task-in-cmmn/</guid>
+      <description>We have some good news: We implemented the repetition rule in our CMMN engine. This gives the users the ability to repeat a task under certain conditions. We invite you to try it out! For testing purposes use the current 7.4.0-SNAPSHOT of the engine and repeat a CMMN task as often as you wish. There also exists some documentation with an explanation how the repetition rule works and how you can use it. Read more on http://camunda.github.io/blog.camunda.org/post/2015/08/how-to-repeat-task-in-cmmn/</description>
+    </item>
+    
+    <item>
+      <title>Bringing Together: Transactions, Cancel Events and Compensation Tasks</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/08/brining-together-transactions-cancel/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/08/brining-together-transactions-cancel/</guid>
+      <description>If you&#39;ve ever been lucky enough to enjoy Camunda&#39;s BPMN training then you probably have fond memories of the slide featuring Compensation tasks and Cancel events. It happens to be the very last slide in the symbol set section and is traditionally follows by a well deserved break. It also happens to be a very well implemented part of the Camunda engine. This post is going to be all about how a process containing a transaction, cancel end event and compensation task are all implemented. Read more on http://camunda.github.io/blog.camunda.org/post/2015/08/brining-together-transactions-cancel/</description>
+    </item>
+    
+    <item>
+      <title>Migrate Process Versions</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/08/migrate-process-versions/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/08/migrate-process-versions/</guid>
+      <description>My colleague Ingo just finished a new cockpit plugin allowing to easily migrate a running process instance to a new version of the process definition: You can find the sources of the plugin on GitHub: https://github.com/camunda/camunda-cockpit-plugins/tree/master/cockpit-plugin-version-migration&amp;nbsp; If you want to build some migration scrips (as customers often do) you can easily cherry-pick some code from the plugin to apply it yourself, see ProcessInstanceMigrationResource.java for the core functionality). By doing so you can e.g. Read more on http://camunda.github.io/blog.camunda.org/post/2015/08/migrate-process-versions/</description>
+    </item>
+    
+    <item>
+      <title>First Version of dmn.io Released</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/08/first-version-of-dmnio-released/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/08/first-version-of-dmnio-released/</guid>
+      <description>Today we release the first version of dmn.io, our new DMN modeling toolkit. dmn.io allows you to view and model decisions with the DMN 1.0 standard directly on the web. The dmn.io library provides a viewer and an editor that can be embedded into web applications. With this release we provide the front-end element for the latest Camunda BPM 7.4.0 alpha release, which introduced support for DMN. Try it out Under the Hood dmn.io is build upon the work of the awesome bpmn.io framework. Read more on http://camunda.github.io/blog.camunda.org/post/2015/08/first-version-of-dmnio-released/</description>
+    </item>
+    
+    <item>
+      <title>Rendering BPMN and highlight current task using bpmn.io</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/08/rendering-bpmn-and-highlight-current/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/08/rendering-bpmn-and-highlight-current/</guid>
+      <description>With bpmn.io and the Camunda REST API it is really simple to develop a small HTML page that displays a process instance grafically and highlights some activities. In our &#34;JSF Simple Tasklist&#34; snippet we used this to highlight the current Task (like it is done in the Camunda BPM Tasklist): The cool thing - you do not need a lot of code to do this! This is what we do: Handed over the taskId via URL parameter (see Screenshot).&amp;nbsp; Load the Task details and BPMN XML via REST API. Read more on http://camunda.github.io/blog.camunda.org/post/2015/08/rendering-bpmn-and-highlight-current/</description>
+    </item>
+    
+    <item>
+      <title>Start and Complete a process with the REST API</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/08/start-and-complete-process-with-rest-api/</link>
+      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/08/start-and-complete-process-with-rest-api/</guid>
+      <description>If you’ve already downloaded the Camunda BPM platform you’ve already got our invoice example running locally. So I’m going to start with how you might run through that process using our REST API. I’m going to assume that you’ve got some method of making those calls either programmatically or using a RestClient (I’ve used chrome’s advanced rest client&amp;nbsp;to test the calls). So lets begin...&amp;nbsp; Starting the process.&amp;nbsp; For most processes we could kick things off by using the start process instance rest call /process-definition/key/{key}/start.&amp;nbsp;But because the invoice process has a start form I’m going to use another way of starting the process /process-definition/key/{key}/submit-form [2]. Read more on http://camunda.github.io/blog.camunda.org/post/2015/08/start-and-complete-process-with-rest-api/</description>
+    </item>
+    
+    <item>
+      <title>Job Prioritization for Asynchronous Processing at Scale</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/08/job-prioritization-asynchronous-processing/</link>
+      <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/08/job-prioritization-asynchronous-processing/</guid>
+      <description>Camunda users process heavy workloads with the process engine. Often this includes asynchronous processing which is handled using the job executor component. The amount of jobs that need to be processed can quickly reach an order of magnitude of millions of jobs per day. To bring order into situations of high job executor load, Camunda BPM 7.4.0 will ship job prioritization. With our first 7.4.0-alpha1 release, you can already have a look at it and give it a try. Read more on http://camunda.github.io/blog.camunda.org/post/2015/08/job-prioritization-asynchronous-processing/</description>
+    </item>
+    
+    <item>
+      <title>Camunda BPM 7.4.0 Alpha 1 Released</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/07/camunda-bpm-740-alpha-1-released/</link>
+      <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/07/camunda-bpm-740-alpha-1-released/</guid>
+      <description>Today we release Camunda BPM 7.4.0-Alpha1. This is the first alpha release previewing the upcoming 7.4.0 Release. The highlights of this release are: DMN (Decision Model and Notation): DMN Engine and browser based Decision Table Editor, Job Priorities: Control execution order of asynchronous Jobs, Enhanced BPMN Support: add Signal Start events, Compensation Event Subprocess, enhanced asynchronous continuations for Multi Instance Activities, Native support for File Variables in Api and Html Forms, Many Bugfixes Overall more than 140 issues were closed. Read more on http://camunda.github.io/blog.camunda.org/post/2015/07/camunda-bpm-740-alpha-1-released/</description>
+    </item>
+    
+    <item>
+      <title>Setting up a Development Environment for Camunda HTML Forms</title>
+      <link>http://camunda.github.io/blog.camunda.org/post/2015/07/setting-up-development-environment-for/</link>
+      <pubDate>Tue, 28 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://camunda.github.io/blog.camunda.org/post/2015/07/setting-up-development-environment-for/</guid>
+      <description>Are you developing HTML forms for Camunda Tasklist? Are you re-packaging your application with maven and re-deploying it to Tomcat or Wildfly for each HMTL form change? Are you annoyed by this? :) There is hope: this post explains how to setup a development environment which allows you to develop forms inside Camunda Tasklist and refresh your changes without re-packaging and re-deploying your application. We use this kind of setup ourselves when working on the Invoice Example which is provided with the Camunda Distribution. Read more on http://camunda.github.io/blog.camunda.org/post/2015/07/setting-up-development-environment-for/</description>
+    </item>
+    
+  </channel>
+</rss>
