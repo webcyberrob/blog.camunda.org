@@ -8,6 +8,7 @@ title = "Camunda 7.9.0-alpha1 Released"
 
 Camunda 7.9.0-alpha1 is here and it is packed with new features. The highlights are:
 
+* Internationalization of Cockpit Full (enterprise)
 * Webapps: drill down in Metrics Charts and general facelift
 * Core Engine: drastic reduction of optimistic locking exceptions when using Job Executor
 * External Tasks: History API and monitoring in Cockpit
@@ -25,7 +26,20 @@ or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
 <!--more-->
 
-## FEATURE 1
+## Internationalization of Cockpit Full (enterprise)
+Internationalization (i18n) basically means that in addition to the English language, further translations can be added in a simple way.
+
+**Cockpit Basic** of the Community Platform 
+[supports i18n since Camunda BPM 7.8](http://blog.camunda.org/post/2017/10/camunda-bpm-780-alpha5-released/#internationalization-i18n-for-cockpit-admin).
+With this release we also added this feature to **Cockpit Full** of the Enterprise Platform.
+
+By default, the Camunda BPM Platform is only shipped with the English language. 
+To add more translations, it is necessary to create or add a separate translation file to each webapp.
+The selection of the language is performed automatically, based on the language settings in the browser.
+
+> Please bear in mind that this feature is only available in the Enterprise Platform of Camunda BPM.
+> To try it out anyway, please request a [Free Trial](https://camunda.com/download/enterprise/) or a
+> [Quote](https://camunda.com/enterprise/).
 
 ## FEATURE 2
 
