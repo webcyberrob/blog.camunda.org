@@ -37,6 +37,10 @@ By default, the Camunda BPM Platform is only shipped with the English language.
 To add more translations, it is necessary to create or add a separate translation file to each webapp.
 The selection of the language is performed automatically, based on the language settings in the browser.
 
+A collection of several translations can already be found as a community extension in a 
+[central repository](https://github.com/camunda/camunda-webapp-translations).
+We highly appreciate your contribution to improve the current translations or to add new ones.
+
 > Please bear in mind that this feature is only available in the Enterprise Platform of Camunda BPM.
 > To try it out anyway, please request a [Free Trial](https://camunda.com/download/enterprise/) or a
 > [Quote](https://camunda.com/enterprise/).
