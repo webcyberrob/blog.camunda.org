@@ -9,12 +9,9 @@ title = "Camunda 7.9.0-alpha1 Released"
 Camunda 7.9.0-alpha1 is here and it is packed with new features. The highlights are:
 
 * Internationalization of Cockpit Full (enterprise)
-* Webapps: drill down in Metrics Charts and general facelift
-* Core Engine: drastic reduction of optimistic locking exceptions when using Job Executor
-* External Tasks: History API and monitoring in Cockpit
-* Fluent BPMN builder API: now generates BPMN diagram elements
-* Supported Environments: IBM Websphere 9 and OpenJDK 8
-* Security: salts and stronger hashing of user passwords
+* Conditional Start Event
+* 
+* 
 * [32 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.7.0-alpha1)
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14609) are available in Jira.
@@ -45,7 +42,37 @@ We highly appreciate your contribution to improve the current translations or to
 > To try it out anyway, please request a [Free Trial](https://camunda.com/download/enterprise/) or a
 > [Quote](https://camunda.com/enterprise/).
 
-## FEATURE 2
+## Conditional Start Event
+The conditional event defines an event which is triggered if a given condition is evaluated to true. We are introducing support for Conditional Start Event, until now we have conditional start event only for Event Subprocess.
+This allows you to start processes if some condition is fulfilled. Let's check the below picture.
+
+{{< figure src="start-condition.png" >}}
+
+The process will be started if the temperature is higher than 22Co. But how is it possible to do this?
+In Java API you can trigger the evaluation of the deployed process's start conditions via RuntimeService:
+```java
+List<ProcessInstance> instances = runtimeService
+    .createConditionEvaluation()
+    .setVariable("temperature", 24)
+    .evaluateStartConditions();
+```
+The REST API call would look like:
+POST /condition
+```json
+{
+  "variables" : {
+    "temperature" : {"value" : 24, "type": "Integer",
+                    "valueInfo" : { "transient" : true } },
+    "city" : {"value" : "Parma", "type": "String"}
+  },
+  "businessKey" : "aBusinessKey",
+  "tenantId" : "aTenantId"
+}
+```
+For more details, please see the documentation about the [Java API](https://docs.camunda.org/manual/latest/reference/bpmn20/events/conditional-events/#conditional-start-event) and the
+[REST API](http://docs.camunda.org/manual/latest/reference/rest/condition/post-condition/).
+
+## FEATURE 3
 
 ## What's Next?
 The next alpha version is scheduled for the end of February and our team is already working on it.
