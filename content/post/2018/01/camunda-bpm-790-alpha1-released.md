@@ -10,8 +10,8 @@ Camunda 7.9.0-alpha1 is here and it is packed with new features. The highlights 
 
 * Internationalization of Cockpit Full (enterprise)
 * Conditional Start Event
-* 
-* 
+* Call Activity Drill Down
+* Manual User Operations (enterprise)
 * [32 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.7.0-alpha1)
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14609) are available in Jira.
@@ -39,8 +39,7 @@ A collection of several translations can already be found as a community extensi
 We highly appreciate your contribution to improve the current translations or to add new ones.
 
 > Please bear in mind that this feature is only available in the Enterprise Platform of Camunda BPM.
-> To try it out anyway, please request a [Free Trial](https://camunda.com/download/enterprise/) or a
-> [Quote](https://camunda.com/enterprise/).
+> To try it out anyway, please request a [Free Trial or Quote](https://camunda.com/enterprise/)
 
 ## Conditional Start Event
 The conditional event defines an event which is triggered if a given condition is evaluated to true. We are introducing support for Conditional Start Event, until now we have conditional start event only for Event Subprocess.
@@ -72,7 +71,20 @@ POST /condition
 For more details, please see the documentation about the [Java API](https://docs.camunda.org/manual/latest/reference/bpmn20/events/conditional-events/#conditional-start-event) and the
 [REST API](http://docs.camunda.org/manual/latest/reference/rest/condition/post-condition/).
 
-## FEATURE 3
+## Call Activity Drill Down
+Navigating to called process instances can be very painful, especially when you have an important number of them. To solve this issue, Call Activity
+instances have now an overlay that allows to link to their respective called process instances.
+
+{{< figure class="teaser" src="CallActivity.gif" alt="Call Activity Drill Down" caption="Call Activity Drill Down" title="Camunda BPM Cockpit" >}}
+
+
+## Manual User Operations (enterprise)
+You can now audit the activity of different users in the User Operations table. The table can be found both in the Process Definition and Process Instance history views. The feature allows to view the history of various user operations (e.g., delete a process instance) and information about the changes involved.
+
+
+> Please bear in mind that this feature is only available in the Enterprise Platform of Camunda BPM.
+> To try it out anyway, please request a [Free Trial or Quote](https://camunda.com/enterprise/)
+
 
 ## What's Next?
 The next alpha version is scheduled for the end of February and our team is already working on it.
