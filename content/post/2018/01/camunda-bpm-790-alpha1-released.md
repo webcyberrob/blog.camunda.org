@@ -12,7 +12,7 @@ Camunda 7.9.0-alpha1 is here and it is packed with new features. The highlights 
 * Conditional Start Event
 * Call Activity Drill Down
 * Manual User Operations (enterprise)
-* [32 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.7.0-alpha1)
+* [xx Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.7.0-alpha1)
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14609) are available in Jira.
 
@@ -28,7 +28,7 @@ Internationalization (i18n) basically means that in addition to the English lang
 
 **Cockpit Basic** of the Community Platform 
 [supports i18n since Camunda BPM 7.8](http://blog.camunda.org/post/2017/10/camunda-bpm-780-alpha5-released/#internationalization-i18n-for-cockpit-admin).
-With this release we also added this feature to **Cockpit Full** of the Enterprise Platform.
+In this release, we also added this feature to **Cockpit Full** of the Enterprise Platform.
 
 By default, the Camunda BPM Platform is only shipped with the English language. 
 To add more translations, it is necessary to create or add a separate translation file to each webapp.
@@ -38,24 +38,23 @@ A collection of several translations can already be found as a community extensi
 [central repository](https://github.com/camunda/camunda-webapp-translations).
 We highly appreciate your contribution to improve the current translations or to add new ones.
 
-> Please bear in mind that this feature is only available in the Enterprise Platform of Camunda BPM.
-> To try it out anyway, please request a [Free Trial or Quote](https://camunda.com/enterprise/)
-
 ## Conditional Start Event
-The conditional event defines an event which is triggered if a given condition is evaluated to true. We are introducing support for Conditional Start Event, until now we have conditional start event only for Event Subprocess.
-This allows you to start processes if some condition is fulfilled. Let's check the below picture.
+The conditional event defines an event which is triggered if a given condition is evaluated to true. 
+Until now we had conditional start event only for Event Subprocesses. In this alpha release, it is now possible to start processes when the conditional start event is fulfilled. 
+
+Let's check the below picture:
 
 {{< figure src="start-condition.png" >}}
 
-The process will be started if the temperature is higher than 22Co. But how is it possible to do this?
-In Java API you can trigger the evaluation of the deployed process's start conditions via RuntimeService:
+The process will be started if the temperature is higher than 22Co.
+To do so through the Java API, you can trigger the evaluation of the deployed process's start conditions via RuntimeService:
 ```java
 List<ProcessInstance> instances = runtimeService
     .createConditionEvaluation()
     .setVariable("temperature", 24)
     .evaluateStartConditions();
 ```
-The REST API call would look like:
+The REST API call would look like:  
 POST /condition
 ```json
 {
@@ -72,14 +71,14 @@ For more details, please see the documentation about the [Java API](https://docs
 [REST API](http://docs.camunda.org/manual/latest/reference/rest/condition/post-condition/).
 
 ## Call Activity Drill Down
-Navigating to called process instances can be very painful, especially when you have an important number of them. To solve this issue, Call Activity
+Navigating to called process instances can be very painful, especially when you have an important number of them. To solve this issue, call activity
 instances have now an overlay that allows to link to their respective called process instances.
 
 {{< figure class="teaser" src="CallActivity.gif" alt="Call Activity Drill Down" caption="Call Activity Drill Down" title="Camunda BPM Cockpit" >}}
 
 
 ## Manual User Operations (enterprise)
-You can now audit the activity of different users in the User Operations table. The table can be found both in the Process Definition and Process Instance history views. The feature allows to view the history of various user operations (e.g., delete a process instance) and information about the changes involved.
+You can now audit the activity of different users in the User Operations table. The table can be found both in the process definition and process instance history views. The feature allows to view the history of various user operations (e.g., delete a process instance) and information about the changes involved.
 
 
 > Please bear in mind that this feature is only available in the Enterprise Platform of Camunda BPM.
@@ -89,10 +88,10 @@ You can now audit the activity of different users in the User Operations table. 
 ## What's Next?
 The next alpha version is scheduled for the end of February and our team is already working on it.
 
-If you are curious about what the team is cooking for the next releases, here are few highlights:
+Here are few highlights if you want to know what the team is preparing for the next releases:
 
-* UPCOMING FEATURE 1
-* UPCOMING FEATURE 2
+* Long polling
+* Docker Container for Camunda Enterprise
 
 You can also find out more details if you check out our [roadmap](https://camunda.org/roadmap).
 
