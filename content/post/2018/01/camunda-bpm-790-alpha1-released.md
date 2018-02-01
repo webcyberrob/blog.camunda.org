@@ -9,9 +9,9 @@ title = "Camunda 7.9.0-alpha1 Released"
 Camunda 7.9.0-alpha1 is here and it is packed with new features. The highlights are:
 
 * Internationalization of Cockpit Full (enterprise)
+* Call Activity Drill Down in Cockpit
+* Manual User Operations in Cockpit Full (enterprise)
 * Conditional Start Event
-* Call Activity Drill Down
-* Manual User Operations (enterprise)
 * Support for Wildfly 11 (enterprise)
 * [xx Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.7.0-alpha1)
 
@@ -38,6 +38,20 @@ The selection of the language is performed automatically, based on the language 
 A collection of several translations can already be found as a community extension in a 
 [central repository](https://github.com/camunda/camunda-webapp-translations).
 We highly appreciate your contribution to improve the current translations or to add new ones.
+
+## Call Activity Drill Down in Cockpit
+Navigating to called process instances in Cockpit can be very painful, especially when you have an important number of them. To solve this issue, call activity
+instances have now an overlay that allows to link to their respective called process instances.
+
+{{< figure class="teaser" src="CallActivity.gif" alt="Call Activity Drill Down" caption="Call Activity Drill Down" title="Camunda BPM Cockpit" >}}
+
+
+## Manual User Operations in Cockpit Full (enterprise)
+You can now audit the activity of different users in the User Operations table. The table can be found both in the process definition and process instance history views. The feature allows to view the history of various user operations (e.g., delete a process instance) and information about the changes involved.
+
+
+> Please bear in mind that this feature is only available in the Enterprise Platform of Camunda BPM.
+> To try it out anyway, please request a [Free Trial or Quote](https://camunda.com/enterprise/)
 
 ## Conditional Start Event
 The conditional event defines an event which is triggered if a given condition is evaluated to true. 
@@ -94,7 +108,7 @@ Here are few highlights if you want to know what the team is preparing for the n
 * Long polling
 * Docker Container for Camunda Enterprise
 
-You can also find out more details if you check out our [roadmap](https://camunda.org/roadmap).
+You can also find out more details if you check out our [roadmap](https://camunda.com/learn/community/#roadmap).
 
 ## Your Feedback Matters!
 Your feedback is extremely important for us in order to improve Camunda BPM, so your thoughts are always highly appreciated and considered by our team.
