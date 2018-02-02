@@ -6,12 +6,12 @@ date = "2018-02-02T12:00:00+01:00"
 title = "Camunda 7.9.0-alpha1 Released"
 +++
 
-Camunda 7.9.0-alpha1 is here and it is packed with new features. The highlights are:
+The first alpha version of Camunda 7.9.0 is here and it is loaded with new features. The highlights are:
 
 * Internationalization of Cockpit Full (enterprise)
 * Call Activity Drill Down in Cockpit
 * Sortable and Persistent Table Columns in Cockpit and Admin 
-* Activity Instance Restriction by timer period
+* Restriction of Diagram Statistics by Time Period in Cockpit (enterprise)
 * Manual User Operations in Cockpit Full (enterprise)
 * Conditional Start Event
 * Support for Wildfly 11 (enterprise)
@@ -48,17 +48,23 @@ instances have now an overlay that allows to link to their respective called pro
 {{< figure class="teaser" src="CallActivity.gif" alt="Call Activity Drill Down" caption="Call Activity Drill Down" title="Camunda BPM Cockpit" >}}
 
 ## Sortable and Persistent Table Columns in Cockpit and Admin 
-With this release sorting becomes part of most tables within cockpit and Admin. This features helps you to faster get an overview over your data. In order to help you also keep it, we added persistens to your selected sorting. So whenever you decide on a certain sorting for a table it remains in that order. 
+This release brings another improvement to facilitate dealing with large data: most tables in Cockpit and Admin can now be sorted based on different criteria. 
+To avoid repetition when sorting tables, sorting orders are also persisted whenever they are altered.
 
 {{< figure class="teaser" src="SortableColumns.gif" alt="Sortable Columns" caption="Sortable Columns" title="Camunda BPM Cockpit" >}}
 
 
-## Activity Instance Restriction by timer period
-The interface of selecting the heatmap and activity instance overlays has been improved. 
-Through the new drop-down menue the shown time period can be set to today, this week, this month. Of course it is still possible to show the 'complete' history. The default timer period can be set in the configurations file, it is alsp possible to simply lock the default time period, without leaving the choice to the user.
+## Restriction of Diagram Statistics by Time Period  (enterprise)
+In order to enhance viewing large data in the BPMN diagram heatmap, the interface overlaying the BPMN diagram has been improved. 
+It is now possible to restrict the BPMN diagram statistics to only include activity instances for a specific period (i.e. today, this week, or this this month).
+However, it is also possible to remove any restriction and show all the activity instances.
 
-{{< figure class="teaser" src="HeatmapTimePeriod.gif" alt="Activity Instance Restriction" caption="Activity Instance Restriction by timer period" title="Camunda BPM Cockpit" >}}
+The default timer period can be set in the cockpit configurations file. Moreover, the configuration file allows to lock the default time period in order to prevent any possible changes in the period filter in Cockpit.
 
+{{< figure class="teaser" src="heatmapTimePeriod.gif" alt="Activity Instance Restriction" caption="Activity Instance Restriction by timer period" title="Camunda BPM Cockpit" >}}
+
+> Please bear in mind that this feature is only available in the Enterprise Platform of Camunda BPM.
+> To try it out anyway, please request a [Free Trial or Quote](https://camunda.com/enterprise/)
 
 ## Manual User Operations in Cockpit Full (enterprise)
 You can now audit the activity of different users in the User Operations table. The table can be found both in the process definition and process instance history views. The feature allows to view the history of various user operations (e.g., delete a process instance) and information about the changes involved.
