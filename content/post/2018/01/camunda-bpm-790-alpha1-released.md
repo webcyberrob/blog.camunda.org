@@ -10,6 +10,8 @@ Camunda 7.9.0-alpha1 is here and it is packed with new features. The highlights 
 
 * Internationalization of Cockpit Full (enterprise)
 * Call Activity Drill Down in Cockpit
+* Sortable and Persistent Table Columns in Cockpit and Admin 
+* Activity Instance Restriction by timer period
 * Manual User Operations in Cockpit Full (enterprise)
 * Conditional Start Event
 * Support for Wildfly 11 (enterprise)
@@ -44,6 +46,18 @@ Navigating to called process instances in Cockpit can be very painful, especiall
 instances have now an overlay that allows to link to their respective called process instances.
 
 {{< figure class="teaser" src="CallActivity.gif" alt="Call Activity Drill Down" caption="Call Activity Drill Down" title="Camunda BPM Cockpit" >}}
+
+## Sortable and Persistent Table Columns in Cockpit and Admin 
+With this release sorting becomes part of most tables within cockpit and Admin. This features helps you to faster get an overview over your data. In order to help you also keep it, we added persistens to your selected sorting. So whenever you decide on a certain sorting for a table it remains in that order. 
+
+{{< figure class="teaser" src="SortableColumns.gif" alt="Sortable Columns" caption="Sortable Columns" title="Camunda BPM Cockpit" >}}
+
+
+## Activity Instance Restriction by timer period
+The interface of selecting the heatmap and activity instance overlays has been improved. 
+Through the new drop-down menue the shown time period can be set to today, this week, this month. Of course it is still possible to show the 'complete' history. The default timer period can be set in the configurations file, it is alsp possible to simply lock the default time period, without leaving the choice to the user.
+
+{{< figure class="teaser" src="HeatmapTimePeriod.gif" alt="Activity Instance Restriction" caption="Activity Instance Restriction by timer period" title="Camunda BPM Cockpit" >}}
 
 
 ## Manual User Operations in Cockpit Full (enterprise)
