@@ -16,13 +16,13 @@ The first alpha version of Camunda 7.9.0 is here and it is loaded with new featu
 * Transient variables
 * Conditional Start Event
 * Support for Wildfly 11 (Enterprise)
-* [xx Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.7.0-alpha1)
+* [40 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0-alpha1)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14609) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15191) are available in Jira.
 
-[List of known Issues.](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.7.0-alpha1)
+[List of known Issues.](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.9.0-alpha1)
 
-You can [Download Camunda For Free](https://camunda.org/download/)
+You can [Download Camunda For Free](https://camunda.com/download/)
 or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
 <!--more-->
@@ -148,7 +148,7 @@ The next alpha version is scheduled for the end of February and our team is alre
 Here are few highlights if you want to know what the team is preparing for the next releases:
 
 * Long polling
-* Docker Container for Camunda Enterprise
+* Client for External Tasks
 
 You can also find out more details if you check out our [roadmap](https://camunda.com/learn/community/#roadmap).
 
