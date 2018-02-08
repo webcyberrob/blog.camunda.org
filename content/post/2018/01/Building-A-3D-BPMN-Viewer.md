@@ -1,5 +1,9 @@
 Those of you who were at BPMCon 2017 will probably remember the interactive experience "Be A Token" where you could walk around in BPMN process in virtual reality. This blog post explores how we built the 3D rendering of bpmn processes using [bpmn-js](https://github.com/bpmn-io/bpmn-js) and [A-Frame](https://aframe.io/).
 
+<!-- Add a link to the game where they can play it instantly -->
+
+<!-- Add a link to the game where they can upload their own process diagrams -->
+
 <!-- more -->
 
 # Getting a Javascript representation of the process
@@ -68,11 +72,29 @@ In "Be a Token", tasks are represented by rooms sequence flows connect to. A bas
 
 The floor and ceiling of the task room can just re-use the vertices created by the four walls.
 
-Note that the placement of the "hole" in the wall for the sequence flow is always in the same place. That means that the connection to a sequence flow also always has to be in the same place. This works well with the manhattan-layout, where only 90° angles are allowed. A sequence flow connecting to the corner of a task will not be rendered correctly.
+Note that the placement of the "hole" in the wall for the sequence flow is always in the same place. That means that the connection to a sequence flow also always has to be in the same place. This works well with the manhattan-layout, where only 90° angles are allowed. A sequence flow connecting to the corner of a task will not be rendered correctly. For "Be a Token" this is not a problem as the levels can be designed accordingly.
 
-When a wall
+When the geometry of the wall is generated like described above, the hole in the wall will always be there, even when there is no sequence flow attached. In "Be a Token" this is fixed the same way you might fix a hole in the wall in your home: By hiding it with a poster. When there is no sequence flow attached, we render a image in the color of the wall in that position, so that the player cannot see through this hole. If you are curious how this is done, you can find the code [here](https://github.com/SebastianStamm/BAT/blob/1f4a480c924bc7a236d2a629c500a809c783f9a8/task.js#L378).
+
+!Image of doors!
+
+<!-- door mechanism with link to source code -->
+We can use the same mechanism to implement a door mechanism: When we detect that a sequence flow is attached to a side of a task, a semi-transparent image is created and placed on top of that opening. Since a pure white image looks a bit off, I put the Camunda logo on there to make it look like it is a trendy glass-door. Since I did not want to deal with collission detection for doors, I decided to make them open automatically when the player is near them. Since the player is already in an unusual and futuristic scenario as a token in a BPMN process, I decided to make to doors slide open vertically, like in a spaceship.
+
+This looks like the door disappears in the ceiling, but actually it goes through the ceiling. If the player uses cheats to get out of bounds of the process like shown in the picture below, he can see that the door is actually still there. The implementation of the door opening and closing is done in the [collission component](https://github.com/SebastianStamm/BAT/blob/1f4a480c924bc7a236d2a629c500a809c783f9a8/collision.js).
+
+!GIF of door opening and closing + getting out of bounds!
+
+
+# Gateways and Events
+
+<!-- Motivation for handling gateways and events the same way - putting a texture on the ground indicating what it is -->
+
+<!-- Description of the vertices and faces -->
 
 
 # Resources
 
 You can find the sourcecode of "Be A Token" [here](https://github.com/SebastianStamm/BAT).
+
+<!-- add ready to play version online somewhere -->
