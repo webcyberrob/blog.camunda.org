@@ -78,7 +78,6 @@ When the geometry of the wall is generated like described above, the hole in the
 
 !Image of doors!
 
-<!-- door mechanism with link to source code -->
 We can use the same mechanism to implement a door mechanism: When we detect that a sequence flow is attached to a side of a task, a semi-transparent image is created and placed on top of that opening. Since a pure white image looks a bit off, I put the Camunda logo on there to make it look like it is a trendy glass-door. Since I did not want to deal with collission detection for doors, I decided to make them open automatically when the player is near them. Since the player is already in an unusual and futuristic scenario as a token in a BPMN process, I decided to make to doors slide open vertically, like in a spaceship.
 
 This looks like the door disappears in the ceiling, but actually it goes through the ceiling. If the player uses cheats to get out of bounds of the process like shown in the picture below, he can see that the door is actually still there. The implementation of the door opening and closing is done in the [collission component](https://github.com/SebastianStamm/BAT/blob/1f4a480c924bc7a236d2a629c500a809c783f9a8/collision.js).
@@ -88,9 +87,15 @@ This looks like the door disappears in the ceiling, but actually it goes through
 
 # Gateways and Events
 
-<!-- Motivation for handling gateways and events the same way - putting a texture on the ground indicating what it is -->
+Now that sequence flows and tasks are handled, there is a third type of elements that are used in "Be A Token": Gateways and Events. Events are usually round and Gateways have a diamond-shape, with sequence flows connecting to the corners. While these different shapes work well in 2D rendering where the sequence flows have a negligible width, in our 3D rendering the sequence flows are considerable wider, making it hard to differentiate between the two shapes in 3D. Therefore I decided to create the same 3D model for gateways and events and make the different types distinguishable by putting the symbol on the ground.
 
-<!-- Description of the vertices and faces -->
+!Image for a Gateway vs Image of an Event!
+
+While task rooms are rectangular in shape, I wanted to keep the approximate diamond-shape of gateways. There still needs to be a connection for the sequence flows, giving the element a octagonal shape:
+
+!Image of Gateway, Top Down View with sequence flows and original gateway form!
+
+Like tasks, gateways and event have doors for connecting sequence flows and intransparent images covering unused sequence flow connections. You can find the source code that created the vertices faces, images on the ground, doors and door-covers [here](https://github.com/SebastianStamm/BAT/blob/1f4a480c924bc7a236d2a629c500a809c783f9a8/gateway.js).
 
 
 # Resources
