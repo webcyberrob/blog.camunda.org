@@ -10,6 +10,7 @@ The second alpha version of Camunda 7.9.0 is here and it is loaded with new feat
 
 
 * Long polling to fetch and lock external tasks
+* Throttle login attempts
 * Feature 1 
 * Feature 2
 
@@ -48,6 +49,15 @@ The following example shows how to perform a long polling request:
   ]
 }
 ```
+
+## Trottle login attempts
+
+Within this alpha release we introduce a mechanism for throttling login attempts.
+After each unsuccessful attempt the user needs to wait for specified time until next attempt.
+This delay is configurable and you can find more information about it in the [User guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/identity-service/#throttle-login-attempts).
+The user will be locked (not able to login) after reaching predefined maximum number of unsuccessful attempts to login. (Bear in mind that only camunda administartor is able to unlock users.)
+
+This mechanism is not applicable if the system uses LDAP configuration. Each LDAP vendor offers similar mechanisms if you want to achieve the same behaviour. 
 
 # Feature 1 
 
