@@ -6,10 +6,10 @@ date = "2018-03-02T12:00:00+01:00"
 title = "Camunda 7.9.0-alpha2 Released"
 +++
 
-The second alpha version of Camunda 7.9.0 is here and it is loaded with new features. The highlights are:
-
+The second alpha version of Camunda 7.9.0 is here and it's loaded with new features. The highlights are:
 
 * Throttle login attempts
+* Jackson version update 
 * Long polling for 'Fetch and Lock' of External Tasks
 * Additional filtering options for 'Fetch and Lock'
 * Support for expressions in External Task topics
@@ -19,14 +19,18 @@ The second alpha version of Camunda 7.9.0 is here and it is loaded with new feat
 <!--more-->
 
 
-## Throttle login attempts
+## Throttle Login Attempts
 
-Within this alpha release we introduce a mechanism for throttling login attempts.
-After each unsuccessful attempt the user needs to wait for specified time until next attempt.
-This delay is configurable and you can find more information about it in the [User guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/identity-service/#throttle-login-attempts).
+Within this alpha release we support throttling login attempts. In order to improve security, it can now be configured that after each unsuccessful attempt the user needs to wait for specified time until next attempt.
+You can find more information about the configuration in the [User guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/identity-service/#throttle-login-attempts).
 The user will be locked (not able to login) after reaching predefined maximum number of unsuccessful attempts to login. (Bear in mind that only a Camunda administrator is able to unlock users.)
 
 This mechanism is not applicable if the system uses LDAP configuration. Each LDAP vendor offers similar mechanisms allowing you to achieve the same behaviour. 
+
+
+## Jackson Version Update 
+
+This alpha release is accompanied by a Spin project v. 1.5.0 release with updated Jackson dependency. From now on Spin by default relies on Jackson 2.9.3.
 
 
 ## Long Polling to 'Fetch and Lock' External Tasks
@@ -63,12 +67,12 @@ The following example shows how to perform a long polling request:
 }
 ```
 
-## Additional filtering options for 'Fetch and Lock'
+## Additional Filtering Options for 'Fetch and Lock'
 
 When the client has already received the queried External Tasks, resources may be further expended by trying to confirm that the fetched tasks conform to the client's criteria.
 By providing additional filtering options to the 'Fetch and Lock' feature for External Tasks, a more fine-grained control is obtained over which External Tasks are fetched and locked.
 
-### Filter External Task topics by Business Key
+### Filter External Task Topics by Business Key
 
 When filtering External Task topics by Business Key, it can be ensured that an External Task, associated with a certain topic, also has the defined Business Key.
 
@@ -92,7 +96,7 @@ Here's an example of how to utilise this feature:
 }
 ```
 
-### Filter External Task topics by Process Variable values
+### Filter External Task Topics by Process Variable Values
 
 Another filter that can be applied allows to filter External Task topics by Process Variable values.
 
@@ -119,7 +123,7 @@ Below is an example on how this feature can be utilised:
 }
 ```
 
-## Support for expressions in External Task topics
+## Support for Expressions in External Task Topics
 
 Now possible to dynamically determine the External Task's topic during runtime by providing expression support in the topic. 
 This allows more flexible assignment and opens up a wider range of new application scenarios.
@@ -135,11 +139,8 @@ Here is a usage scenario of this new feature:
     camunda:topic="${invoiceType}" />
 ```
 
-## Jackson version update 
-
-This alpha release is accompanied by Spin project v. 1.5.0 release with updated Jackson dependency. From now on Spin by default relies on Jackson 2.9.3.
-
 ## What's Next?
+
 The next alpha version is scheduled for the end of March and our team is already working on it.
 
 Here are few highlights if you want to know what the team is preparing for the next releases:
@@ -149,6 +150,7 @@ Here are few highlights if you want to know what the team is preparing for the n
 You can also find out more details if you check out our [roadmap](https://camunda.com/learn/community/#roadmap).
 
 ## Your Feedback Matters!
+
 Your feedback is extremely important for us in order to improve Camunda BPM, so your thoughts are always highly appreciated and considered by our team.
 
 Feel free to share your ideas and suggestions with us by writing a post in the [forum](https://forum.camunda.org/).
