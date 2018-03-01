@@ -9,8 +9,8 @@ title = "Camunda 7.9.0-alpha2 Released"
 The second alpha version of Camunda 7.9.0 is here and it is loaded with new features. The highlights are:
 
 
-* Long polling for 'Fetch and Lock' External Tasks
 * Throttle login attempts
+* Long polling for 'Fetch and Lock' of External Tasks
 * Additional filtering options for 'Fetch and Lock'
 * Support for expressions in External Task topics
 * Jackson version update
@@ -18,7 +18,18 @@ The second alpha version of Camunda 7.9.0 is here and it is loaded with new feat
 
 <!--more-->
 
-## Long Polling for 'Fetch and Lock' External Tasks
+
+## Throttle login attempts
+
+Within this alpha release we introduce a mechanism for throttling login attempts.
+After each unsuccessful attempt the user needs to wait for specified time until next attempt.
+This delay is configurable and you can find more information about it in the [User guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/identity-service/#throttle-login-attempts).
+The user will be locked (not able to login) after reaching predefined maximum number of unsuccessful attempts to login. (Bear in mind that only a Camunda administrator is able to unlock users.)
+
+This mechanism is not applicable if the system uses LDAP configuration. Each LDAP vendor offers similar mechanisms allowing you to achieve the same behaviour. 
+
+
+## Long Polling to 'Fetch and Lock' External Tasks
 
 Ordinary HTTP requests are immediately answered by the server, irrespective of whether or not the requested information 
 is available. This inevitably leads to a situation where the client has to perform multiple recurring requests until 
@@ -52,16 +63,7 @@ The following example shows how to perform a long polling request:
 }
 ```
 
-## Throttle login attempts
-
-Within this alpha release we introduce a mechanism for throttling login attempts.
-After each unsuccessful attempt the user needs to wait for specified time until next attempt.
-This delay is configurable and you can find more information about it in the [User guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/identity-service/#throttle-login-attempts).
-The user will be locked (not able to login) after reaching predefined maximum number of unsuccessful attempts to login. (Bear in mind that only a Camunda administrator is able to unlock users.)
-
-This mechanism is not applicable if the system uses LDAP configuration. Each LDAP vendor offers similar mechanisms allowing you to achieve the same behaviour. 
-
-## Additional filtering options for Fetch and Lock
+## Additional filtering options for 'Fetch and Lock'
 
 When the client has already received the queried External Tasks, resources may be further expended by trying to confirm that the fetched tasks conform to the client's criteria.
 By providing additional filtering options to the 'Fetch and Lock' feature for External Tasks, a more fine-grained control is obtained over which External Tasks are fetched and locked.
@@ -119,10 +121,10 @@ Below is an example on how this feature can be utilised:
 
 ## Support for expressions in External Task topics
 
-Now possible to dynamically determine an External Task's topic during runtime by providing expression support in the External Task topic. 
-This allows more flexible topic assignment and a wider range of application scenarios.
+Now possible to dynamically determine the External Task's topic during runtime by providing expression support in the topic. 
+This allows more flexible assignment and opens up a wider range of new application scenarios.
 
-Here is one usage scenario of this new feature:
+Here is a usage scenario of this new feature:
 
 ```xml
   <!-- where invoiceType may be "incoming" or "outgoing" -->
