@@ -13,6 +13,8 @@ The second alpha version of Camunda 7.9.0 is here and it is loaded with new feat
 * Throttle login attempts
 * Additional filtering options for 'Fetch and Lock'
 * Support for expressions in External Task topics
+* Jackson version update
+* Support for Tomcat 9
 
 <!--more-->
 
