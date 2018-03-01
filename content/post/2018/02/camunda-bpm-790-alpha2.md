@@ -131,9 +131,9 @@ Here is one usage scenario of this new feature:
     camunda:topic="${invoiceType}" />
 ```
 
-## Feature 4
+## Jackson version update 
 
-
+This alpha release is accompanied by Spin project v. 1.5.0 release with updated Jackson dependency. From now on Spin by default relies on Jackson 2.9.3.
 
 ## What's Next?
 The next alpha version is scheduled for the end of March and our team is already working on it.
