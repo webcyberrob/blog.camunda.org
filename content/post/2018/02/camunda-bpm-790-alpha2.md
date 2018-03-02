@@ -9,7 +9,6 @@ title = "Camunda 7.9.0-alpha2 Released"
 The second alpha version of Camunda 7.9.0 is here and it's loaded with new features. The highlights are:
 
 * Throttle login attempts
-* Jackson version update 
 * Long polling for 'Fetch and Lock' of External Tasks
 * Additional filtering options for 'Fetch and Lock'
 * Support for expressions in External Task topics
@@ -26,11 +25,6 @@ You can find more information about the configuration in the [User guide](https:
 The user will be locked (not able to login) after reaching predefined maximum number of unsuccessful attempts to login. (Bear in mind that only a Camunda administrator is able to unlock users.)
 
 This mechanism is not applicable if the system uses LDAP configuration. Each LDAP vendor offers similar mechanisms allowing you to achieve the same behaviour. 
-
-
-## Jackson Version Update 
-
-This alpha release is accompanied by a Spin project v. 1.5.0 release with updated Jackson dependency. From now on Spin by default relies on Jackson 2.9.3.
 
 
 ## Long Polling to 'Fetch and Lock' External Tasks
@@ -138,6 +132,11 @@ Here is a usage scenario of this new feature:
     camunda:type="external"
     camunda:topic="${invoiceType}" />
 ```
+
+## Jackson Version Update 
+
+This alpha release is accompanied by a Spin project v. 1.5.0 release with updated Jackson dependency. From now on Spin by default relies on Jackson 2.9.3.
+
 
 ## What's Next?
 
