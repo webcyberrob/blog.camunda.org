@@ -3,11 +3,11 @@ author = "Nikola Koevski"
 categories = ["Execution"]
 tags = ["Release Note"]
 date = "2018-03-29T16:00:00+01:00"
-title = "Camunda BPM 7.9.0-alpha3 Released"
+title = "Camunda 7.9.0-alpha3 Released"
 
 +++
 
-Announcing the third alpha version of Camunda BPM 7.9.0 and there are some pretty new features to see. The highlights are:
+Announcing the third alpha version of Camunda BPM 7.9.0 and there are some pretty new features. The highlights are:
 
 * Payload in Signal Events
 * Feature 2
