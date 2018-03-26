@@ -19,7 +19,53 @@ Announcing the third alpha version of Camunda BPM 7.9.0 and there are some prett
 
 ## Payload in Signal Events
 
-<!-- TODO(Nikola) Explain Signal Event payload -->
+This alpha release adds support for payload in Signal Events.
+
+Signal Events are broadcast to all of the signal-catching Process Instances. However, at times, additional information (Process Variables, Business Keys, etc.) is needed for the Signal Event to be properly utilized. Previously, this was only possible by using workarounds which could result in a semantically incorrect BPMN diagram. Furthermore, these workarounds had to be implemented with custom code which added to the complexity of the solution.
+
+{{< figure class="teaser no-border" src="signal_no_payload.png" alt="Signal Events with no payload" >}}
+
+From now on, a Signal Payload can be used out-of-the-box with the Camunda BPM Platform. It is possible to pass to the Signal-catching instances:
+
+* All of the Signal-throwing Process Instance Variables;
+* Only the local execution variables;
+* Single Process Variables along with their target names;
+* Expressions, to further manipulate the value of the target variables;
+* A Business Key, for Signal-catching Process Instances starting with a Start Signal Event.
+
+{{< figure class="teaser no-border" src="signal_with_payload.png" alt="Payload feature for Signal Events" >}}
+
+The Signal payload is declared in the Throwing Signal Event Definition, meaning that the same Signal can be thrown with different payloads at different points of the diagram.
+
+Finally, the Signal Definition with payload can be created using XML:
+
+```xml
+<signalEventDefinition signalRef="thePizzaSignal">
+    <extensionElements>
+        <camunda:in source="X" target="Y" />
+        <camunda:in sourceExpression="${X + 5}" target="Z" />
+        <camunda:in variables="all" local="true" />
+        <camunda:in businessKey="${execution.processBusinessKey}" />
+    </extensionElements>
+</signalEventDefinition>
+```
+
+Or, by using the (Java) Fluent Builder API:
+
+```java
+BpmnModelInstance modelInstance = Bpmn.createProcess()
+  .startEvent()
+  .intermediateThrowEvent("thePizzaSignal")
+    .signalEventDefinition("signal")
+      .camundaInSourceTarget("X", "Y")
+      .camundaInSourceExpressionTarget("${X + 5}", "Z")
+      .camundaInAllVariables("all", true)
+      .camundaInBusinessKey("${execution.processBusinessKey}")
+      .throwEventDefinitionDone()
+  .endEvent()
+  .done();
+```
+
 
 ## Feature 2
 
@@ -35,7 +81,7 @@ Announcing the third alpha version of Camunda BPM 7.9.0 and there are some prett
 
 The next alpha version is scheduled for the end of April and our team is already working on it.
 
-Here are few highlights if you want to know what the team is preparing for the next releases:
+Here are a few highlights if you want to know what the team is preparing for the next releases:
 
 <!-- TODO(Nikola) Add next highlight -->
 * Next Highlight
