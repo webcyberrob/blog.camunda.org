@@ -9,13 +9,22 @@ title = "Camunda 7.9.0-alpha3 Released"
 
 Announcing the third alpha version of Camunda BPM 7.9.0 and there are some pretty new features. The highlights are:
 
+* Spring Boot Starter 3.0.0-alpha1
 * Payload in Signal Events
-* Feature 2
-* Feature 3
+* Camunda NodeJS External Task Client
+* Camunda External Task Client (Java)
 <!-- TODO(Nikola) Add NUM Fixes -->
 * [NUM Fixes]()
 
 <!-- TODO please add your beautiful explanations to the new features below -->
+
+## Spring Boot Starter
+
+As previously announced the next stable release of Spring Boot Starter will be in May together with Camunda 7.9.
+The news related to the Spring Boot Starter are that we are going to release 3.0.0 version.
+This Spring Boot Starter 3.0.0-alpha1 version comes with recently released Spring Boot 2.0.0 version.
+
+...
 
 ## Payload in Signal Events
 
@@ -67,15 +76,15 @@ BpmnModelInstance modelInstance = Bpmn.createProcess()
 ```
 
 
-## Feature 2
+## Camunda NodeJS External Task Client & Camunda External Task Client (Java)
 
-<!-- Feature 2 text here -->
+In the past month the team was busy implementing camunda-external-task-client-js and we already released second alpha of the project. You can read more about it in the previous [Camunda NodeJS External Task Client](https://blog.camunda.com/post/2018/03/extermal-task-js-alpha2/) blog post.
 
-## Feature 3
+For the Java dev world the first alpha release of the [External Task Java Client](https://blog.camunda.com/post/2018/03/camunda-external-task-client-java-010-alpha1-released/) was released just a week ago.
 
-<!-- Feature 3 text here -->
+If you want to dive in deeper check out the loan granting example of the [NodeJS](https://github.com/camunda/camunda-external-task-client-js/tree/master/examples/granting-loans) and [Java](https://github.com/camunda/camunda-external-task-client-java/tree/master/examples/loan-granting) client.
 
-<!-- the features' explanations end here -->
+We will be happy to receive some feedback from you, so don't hesitate to try it and share your thoughts with us.
 
 ## What's Next?
 
