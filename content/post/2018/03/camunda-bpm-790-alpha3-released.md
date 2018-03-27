@@ -24,7 +24,6 @@ As previously announced the next stable release of Spring Boot Starter will be i
 The news related to the Spring Boot Starter are that we are going to release 3.0.0 version.
 This Spring Boot Starter 3.0.0-alpha1 version comes with recently released Spring Boot 2.0.0 version.
 
-...
 
 ## Payload in Signal Events
 
