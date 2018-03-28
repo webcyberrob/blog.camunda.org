@@ -1,5 +1,5 @@
 +++
-author = "Nikola Koevski"
+author = "Yana Vasileva"
 categories = ["Execution"]
 tags = ["Release Note"]
 date = "2018-03-29T16:00:00+01:00"
@@ -7,45 +7,31 @@ title = "Camunda 7.9.0-alpha3 Released"
 
 +++
 
-Announcing the third alpha version of Camunda BPM 7.9.0 and there are some pretty new features. The highlights are:
+Camunda BPM platform 7.8.0-alpha3 is here and the highlights are:
 
-* Spring Boot Starter 3.0.0-alpha1
+* Spring Boot Starter alpha release
 * Payload in Signal Events
-* Camunda NodeJS External Task Client
-* Camunda External Task Client (Java)
-<!-- TODO(Nikola) Add NUM Fixes -->
-* [NUM Fixes]()
+* Implement Your BPMN Service Task with Node
+* [NUM Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0-alpha3)
 
-<!-- TODO please add your beautiful explanations to the new features below -->
+You can [Download Camunda BPM 7.9](https://camunda.com/download/) (Click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
-## Spring Boot Starter
 
-As previously announced the next stable release of Spring Boot Starter will be in May together with Camunda 7.9.
-The news related to the Spring Boot Starter are that we are going to release 3.0.0 version.
-This Spring Boot Starter 3.0.0-alpha1 version comes with recently released Spring Boot 2.0.0 version.
+To see a full list of the changes, please check out our [Release Notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15091)
+and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.9.0-alpha3).
 
+
+If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.9.0-alpha3).
+
+
+## Spring Boot Starter alpha release
+
+As previously announced the next stable release of Spring Boot Starter will be in May together with Camunda 7.9. This Spring Boot Starter 3.0.0-alpha1 version comes with recently released Spring Boot 2.0.0.
 
 ## Payload in Signal Events
 
-This alpha release adds support for payload in Signal Events.
-
-Signal Events are broadcast to all of the signal-catching Process Instances. However, at times, additional information (Process Variables, Business Keys, etc.) is needed for the Signal Event to be properly utilized. Previously, this was only possible by using workarounds which could result in a semantically incorrect BPMN diagram. Furthermore, these workarounds had to be implemented with custom code which added to the complexity of the solution.
-
-{{< figure class="teaser no-border" src="signal_no_payload.png" alt="Signal Events with no payload" >}}
-
-From now on, a Signal Payload can be used out-of-the-box with the Camunda BPM Platform. It is possible to pass to the Signal-catching instances:
-
-* All of the Signal-throwing Process Instance Variables;
-* Only the local execution variables;
-* Single Process Variables along with their target names;
-* Expressions, to further manipulate the value of the target variables;
-* A Business Key, for Signal-catching Process Instances starting with a Start Signal Event.
-
-{{< figure class="teaser no-border" src="signal_with_payload.png" alt="Payload feature for Signal Events" >}}
-
-The Signal payload is declared in the Throwing Signal Event Definition, meaning that the same Signal can be thrown with different payloads at different points of the diagram.
-
-Finally, the Signal Definition with payload can be created using XML:
+Signal Events are broadcast to all of the signal-catching Process Instances. This alpha release adds support for payload in Signal Events. This feature can be used in case you need to past some addition information (variables or business key) within the signal.
+The Signal payload is declared in the Throwing Signal Event Definition. Here is how the XML looks like:
 
 ```xml
 <signalEventDefinition signalRef="thePizzaSignal">
@@ -57,33 +43,17 @@ Finally, the Signal Definition with payload can be created using XML:
     </extensionElements>
 </signalEventDefinition>
 ```
+For more details about this feature, please check out the [documentation](https://docs.camunda.org/manual/latest/reference/bpmn20/events/signal-events/#passing-variables).
 
-Or, by using the (Java) Fluent Builder API:
+## Implement Your BPMN Service Task with Node
 
-```java
-BpmnModelInstance modelInstance = Bpmn.createProcess()
-  .startEvent()
-  .intermediateThrowEvent("thePizzaSignal")
-    .signalEventDefinition("signal")
-      .camundaInSourceTarget("X", "Y")
-      .camundaInSourceExpressionTarget("${X + 5}", "Z")
-      .camundaInAllVariables("all", true)
-      .camundaInBusinessKey("${execution.processBusinessKey}")
-      .throwEventDefinitionDone()
-  .endEvent()
-  .done();
-```
+Now it is possible to handle your BPMN Service Tasks in NodeJS. We already released second alpha of the Camunda NodeJS External Task Client project and you can read more about it in the previous [blog post](https://blog.camunda.com/post/2018/03/extermal-task-js-alpha2/) .
 
-
-## Camunda NodeJS External Task Client & Camunda External Task Client (Java)
-
-In the past month the team was busy implementing camunda-external-task-client-js and we already released second alpha of the project. You can read more about it in the previous [Camunda NodeJS External Task Client](https://blog.camunda.com/post/2018/03/extermal-task-js-alpha2/) blog post.
-
-For the Java dev world the first alpha release of the [External Task Java Client](https://blog.camunda.com/post/2018/03/camunda-external-task-client-java-010-alpha1-released/) was released just a week ago.
+In addition we released first alpha of the [External Task Java Client](https://blog.camunda.com/post/2018/03/camunda-external-task-client-java-010-alpha1-released/) just a week ago.
 
 If you want to dive in deeper check out the loan granting example of the [NodeJS](https://github.com/camunda/camunda-external-task-client-js/tree/master/examples/granting-loans) and [Java](https://github.com/camunda/camunda-external-task-client-java/tree/master/examples/loan-granting) client.
 
-We will be happy to receive some feedback from you, so don't hesitate to try it and share your thoughts with us.
+We will be happy to receive some [feedback](https://forum.camunda.org/) from you, so don't hesitate to try it and share your thoughts with us.
 
 ## What's Next?
 
@@ -91,15 +61,14 @@ The next alpha version is scheduled for the end of April and our team is already
 
 Here are a few highlights if you want to know what the team is preparing for the next releases:
 
-<!-- TODO(Nikola) Add next highlight -->
-* Next Highlight
+* Version tag in a business rule task to bind a decision to evaluate	
 
 You can also find out more details if you check out our [roadmap](https://camunda.com/learn/community/#roadmap).
 
 ## Your Feedback Matters!
 
-Your feedback is extremely important for us in order to improve Camunda BPM, so your thoughts are always highly appreciated and considered by our team.
+With every release we constantly strive to improve Camunda BPM. To make this possible, we are reliant on your feedback. Feel free to share your ideas and suggestions with us.
 
-Feel free to share your ideas and suggestions with us by writing a post in the [forum](https://forum.camunda.org/).
+You can contact us by writing a post in the [forum](https://forum.camunda.org/).
 
 Furthermore, if you have any feedback related to User Experience, things that keep bugging you, things that you think should work differently etc., please share your thoughts with us at [https://camundabpm.userecho.com](https://camundabpm.userecho.com)
