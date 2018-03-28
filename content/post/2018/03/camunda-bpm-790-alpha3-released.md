@@ -30,7 +30,7 @@ As previously announced, the next stable release of Spring Boot Starter will be 
 
 ## Payload in Signal Events
 
-Signal Events are broadcast to all of the signal-catching Process Instances. This alpha release adds support for payloads in Signal Events. This feature can be used in case you need to post some addition information (variables or business key) within the signal.
+Signal Events are broadcast to all of the signal-catching Process Instances. This alpha release adds support for payloads in Signal Events. This feature can be used in case you need to pass some addition information (variables or business key) within the signal.
 The Signal payload is declared in the Throwing Signal Event Definition. Here is how the XML looks like:
 
 ```xml
