@@ -14,7 +14,7 @@ Camunda BPM platform 7.8.0-alpha3 is here and the highlights are:
 * Implement Your BPMN Service Task with Node
 * [NUM Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0-alpha3)
 
-You can [Download Camunda BPM 7.9](https://camunda.com/download/) (Click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
+You can [Download Camunda BPM 7.9](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
 
 To see a full list of the changes, please check out our [Release Notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15091)
@@ -47,7 +47,7 @@ For more details about this feature, please check out the [documentation](https:
 
 ## Implement Your BPMN Service Task with Node
 
-Now it is possible to handle your BPMN Service Tasks in NodeJS. We already released second alpha of the Camunda NodeJS External Task Client project and you can read more about it in the previous [blog post](https://blog.camunda.com/post/2018/03/extermal-task-js-alpha2/) .
+Now it is possible to handle your BPMN Service Tasks in NodeJS. We already released second alpha of the Camunda NodeJS External Task Client project and you can read more about it in the previous [blog post](https://blog.camunda.com/post/2018/03/extermal-task-js-alpha2/).
 
 In addition we released first alpha of the [External Task Java Client](https://blog.camunda.com/post/2018/03/camunda-external-task-client-java-010-alpha1-released/) just a week ago.
 
