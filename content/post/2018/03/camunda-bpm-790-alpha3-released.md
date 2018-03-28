@@ -26,7 +26,7 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 
 ## Spring Boot Starter alpha release
 
-As previously announced, the next stable release of Spring Boot Starter will be in May, together with Camunda BPM 7.9. This Spring Boot Starter 3.0.0-alpha1 version comes with the recently released Spring Boot 2.0.0.
+As previously announced, the next stable release of Spring Boot Starter will be in May, together with Camunda BPM 7.9. This Spring Boot Starter 3.0.0-alpha1 version comes with the recently released Spring Boot 2.0.0. ([Camunda Spring Boot Starter repository](https://github.com/camunda/camunda-bpm-spring-boot-starter))
 
 ## Payload in Signal Events
 
