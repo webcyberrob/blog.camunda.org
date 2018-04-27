@@ -18,9 +18,40 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 # Data import improvements
 
-## Optimize data import can handle the deletion of historic data
+The data import already proved to work reliably. However, one scenario that we didn't think of was the deletion of historic data, which resulted in Optimize not importing all new incoming data. By solving this issue we were also able to boost the import quite a bit. So with the Camunda Optimize 2.1.0-alpha1 release we take another step to provide you with a rock-solid product that enables you to continously monitor your data even quicker.
+
+## Handle the deletion of historic data
+
+Until now, the scenario of the Camunda Platform and Optimize is depicted in the following figure:
+
+{{< figure class="main teaser no-border" src="Optimize-Setup-Assumption.png">}}
+
+The assumption was that the Engine keeps all the data and never throws anything away. Camunda Optimize can import all the data and everyone is happy. However, huge data also comes with a price and that is the latency of retrieving the data from the database. Therefore, many customers decided to use the [history cleanup feature](https://docs.camunda.org/manual/latest/user-guide/process-engine/history/#history-time-to-live) from the Engine and thus keeping only recent data (e.g. last 30 days, 6 months etc.). The idea was then to import always all data to Camunda Optimize while the Engine only keeps the recent data. The following figure depicts again crux of it:
+
+{{< figure class="main teaser no-border" src="Optimize-Setup-Reality.png">}}
+
+With the new Release, Camunda Optimize is now able to cope with this scenario. As a result now users have the power to get insights in their data over larger time periods.
 
 ## Performance enhancements
+
+To test the performance of the new import, we took a data set consisted of the following distribution:
+
+<table class="table table-striped">
+  <tr>
+    <th>Number of Process Definitions</th>
+    <th>Number of Activity Instances</th>
+    <th>Number of Process Instances</th>
+    <th>Number of Variable Instances</th>
+  </tr>
+  <tr>
+    <td align="center">20</td>
+    <td align="center">21 932 786</td>
+    <td align="center">2 000 000</td>
+    <td align="center">6 913 889</td>
+  </tr>
+</table>
+
+While the old import implementation took about 5 hours for the whole import process, does the new version only take about 40 minutes to import all data to Camunda Optimize and with that became five times faster. 
 
 # Table improvements
 
