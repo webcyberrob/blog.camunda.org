@@ -8,7 +8,7 @@ title = "Camunda Optimize 2.1.0-alpha1 Released"
 
 We are happy to announce the release of Camunda Optimize version 2.1.0-alpha1.
 
-This release marks the first alpha release of Camunda Optimize 2.1.0. The current alpha version can deal with process instances that were delete from the engine history and with that also the data import performance was improved significantly. In addition to that, the interactions with tables have been have been extended, especially for Raw Data Reports.
+This release marks the first alpha release of Camunda Optimize 2.1.0. The current alpha version can deal with process instances that were deleted from the engine history and with that also the data import performance was improved significantly. In addition, the interactions with tables have been have been extended, especially for Raw Data Reports.
 
 <!--more-->
 
@@ -18,7 +18,7 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 # Data import improvements
 
-The data import already proved to work reliably. However, one scenario that we didn't think of was the deletion of historic data, which resulted in Optimize not importing all new incoming data. By solving this issue we were also able to boost the import quite a bit. So with the Camunda Optimize 2.1.0-alpha1 release we take another step to provide you with a rock-solid product that enables you to continously monitor your data even quicker.
+The data import already proved to work reliably. However, one scenario that we didn't think of was the deletion of historic data which resulted in Optimize not importing all new incoming data. By solving this issue we were also able to boost the import significantly. With the Camunda Optimize 2.1.0-alpha1 release we are taking another step to provide you with a rock-solid product that enables you to continously monitor your data, even quicker.
 
 ## Handle the deletion of historic data
 
@@ -26,15 +26,15 @@ Until now, the scenario of the Camunda Platform and Optimize is depicted in the 
 
 {{< figure class="main teaser no-border" src="Optimize-Setup-Assumption.png">}}
 
-The assumption was that the Engine keeps all the data and never throws anything away. Camunda Optimize can import all the data and everyone is happy. However, huge data also comes with a price and that is the latency of retrieving the data from the database. Therefore, many customers decided to use the [history cleanup feature](https://docs.camunda.org/manual/latest/user-guide/process-engine/history/#history-time-to-live) from the Engine and thus keeping only recent data (e.g. last 30 days, 6 months etc.). The idea was then to import always all data to Camunda Optimize while the Engine only keeps the recent data. The following figure depicts again crux of it:
+The assumption was that the Engine keeps all the data and never throws anything away. Camunda Optimize can import all the data and everyone is happy. However, huge amounts of data comes with a price and that is the latency of retrieving the data from the database. Therefore, many customers decided to use the [history cleanup feature](https://docs.camunda.org/manual/latest/user-guide/process-engine/history/#history-time-to-live) from the Engine and thus keeping only recent data (e.g. last 30 days, 6 months etc.). The idea was then to import always all data to Camunda Optimize while the Engine only keeps the recent data. The following figure depicts again the crux of it:
 
 {{< figure class="main teaser no-border" src="Optimize-Setup-Reality.png">}}
 
-With the new Release, Camunda Optimize is now able to cope with this scenario. As a result now users have the power to get insights in their data over larger time periods.
+With the new release, Camunda Optimize is now able to cope with this scenario. As a result, users now have the power to get insights into their data over longer time periods.
 
 ## Performance enhancements
 
-To test the performance of the new import, we took a data set consisted of the following distribution:
+To test the performance of the new import, we took a data set consisting of the following distribution:
 
 <table class="table table-striped">
   <tr>
@@ -51,7 +51,7 @@ To test the performance of the new import, we took a data set consisted of the f
   </tr>
 </table>
 
-While the old import implementation took about 5 hours for the whole import process, does the new version only take about 40 minutes to import all data to Camunda Optimize and with that became five times faster. 
+While the old import implementation took about 5 hours for the whole import process, the new version only take about 40 minutes to import all data to Camunda Optimize and with that became five times faster. 
 
 # Table improvements
 
@@ -61,7 +61,7 @@ This release contains significant improvements to Raw Data Reports. With an incr
 
 ## Performance Improvements for large datasets
 
-Tables with a lot of rows and columns are now rendered significantly faster. If the table contains more than 20 rows, you can use the "Previous" and "Next" buttons at the bottom of the table to scroll through the entries.
+Tables with a lot of rows and columns are now render faster. If the table contains more than 20 rows, you can use the "Previous" and "Next" buttons at the bottom of the table to scroll through the entries.
 
 ## Hide and re-arrange columns
 
@@ -71,4 +71,4 @@ You can also re-arrange the order of columns by grabbing any column by the heade
 
 # How to get it
 
-If you want to give the new Camunda Optimize a shot, you can download the alpha release from [here](https://docs.camunda.org/enterprise/download/#camunda-optimize) with your enterprise customer credentials. In contrast to the core engine, Camunda Optimize is not open source, so please sign up [here](https://camunda.com/download/enterprise/) for a free 30 days trail version.
+If you want to give the new Camunda Optimize a shot, you can download the alpha release [here](https://docs.camunda.org/enterprise/download/#camunda-optimize) with your Enterprise customer credentials. In contrast to the core engine, Camunda Optimize is not open source, so please sign up [here](https://camunda.com/download/enterprise/) for a free 30 day trial version.
